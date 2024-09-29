@@ -1,0 +1,14 @@
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.GeneratedMSBuildEditorConfig.editorconfig
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.AssemblyInfoInputs.cache
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.AssemblyInfo.cs
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.csproj.CoreCompileInputs.cache
+C:\visual_studio_workspaces\workspace_di\Tarea\bin\Debug\net8.0\Tarea.exe
+C:\visual_studio_workspaces\workspace_di\Tarea\bin\Debug\net8.0\Tarea.deps.json
+C:\visual_studio_workspaces\workspace_di\Tarea\bin\Debug\net8.0\Tarea.runtimeconfig.json
+C:\visual_studio_workspaces\workspace_di\Tarea\bin\Debug\net8.0\Tarea.dll
+C:\visual_studio_workspaces\workspace_di\Tarea\bin\Debug\net8.0\Tarea.pdb
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.dll
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\refint\Tarea.dll
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.pdb
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\Tarea.genruntimeconfig.cache
+C:\visual_studio_workspaces\workspace_di\Tarea\obj\Debug\net8.0\ref\Tarea.dll
