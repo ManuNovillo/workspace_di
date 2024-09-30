@@ -1,0 +1,14 @@
+C:\Users\diurno\workspace_di\Funciones\bin\Debug\net8.0\Funciones.exe
+C:\Users\diurno\workspace_di\Funciones\bin\Debug\net8.0\Funciones.deps.json
+C:\Users\diurno\workspace_di\Funciones\bin\Debug\net8.0\Funciones.runtimeconfig.json
+C:\Users\diurno\workspace_di\Funciones\bin\Debug\net8.0\Funciones.dll
+C:\Users\diurno\workspace_di\Funciones\bin\Debug\net8.0\Funciones.pdb
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.AssemblyInfoInputs.cache
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.AssemblyInfo.cs
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.dll
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\refint\Funciones.dll
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.pdb
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\Funciones.genruntimeconfig.cache
+C:\Users\diurno\workspace_di\Funciones\obj\Debug\net8.0\ref\Funciones.dll

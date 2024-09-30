@@ -1,0 +1,15 @@
+C:\Users\diurno\workspace_di\Tarea\bin\Release\net8.0\Tarea.exe
+C:\Users\diurno\workspace_di\Tarea\bin\Release\net8.0\Tarea.deps.json
+C:\Users\diurno\workspace_di\Tarea\bin\Release\net8.0\Tarea.runtimeconfig.json
+C:\Users\diurno\workspace_di\Tarea\bin\Release\net8.0\Tarea.dll
+C:\Users\diurno\workspace_di\Tarea\bin\Release\net8.0\Tarea.pdb
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.AssemblyInfoInputs.cache
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.AssemblyInfo.cs
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.sourcelink.json
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.dll
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\refint\Tarea.dll
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.pdb
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\Tarea.genruntimeconfig.cache
+C:\Users\diurno\workspace_di\Tarea\obj\Release\net8.0\ref\Tarea.dll

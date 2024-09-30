@@ -1,0 +1,2 @@
+C:\Users\diurno\workspace_di\Ejercicios\obj\Release\Ejercicios.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\Ejercicios\obj\Release\Ejercicios.csproj.CoreCompileInputs.cache

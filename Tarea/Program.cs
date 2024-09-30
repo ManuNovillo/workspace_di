@@ -204,7 +204,11 @@ namespace Casa
         {
             return Reverse(s1).Equals(s2);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="s1"></param>
+        /// <returns></returns>
         static String Reverse(String s1)
         {
             if (s1.Length == 0 || s1.Length == 1) return s1;
@@ -271,7 +275,7 @@ namespace Casa
             {
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    int nuevaSegundaDim = (matriz.GetLength(1) - j) - 1;
+                    int nuevaSegundaDim = j + moveSegundaDim;
                     while (nuevaSegundaDim > (matriz.GetLength(1) - j - 1)) 
                     {
                         if (j == 1) Console.WriteLine(nuevaSegundaDim);
