@@ -5,3 +5,10 @@ C:\Users\diurno\workspace_di\Ejercicios\bin\Debug\Ejercicios.exe
 C:\Users\diurno\workspace_di\Ejercicios\bin\Debug\Ejercicios.pdb
 C:\Users\diurno\workspace_di\Ejercicios\obj\Debug\Ejercicios.exe
 C:\Users\diurno\workspace_di\Ejercicios\obj\Debug\Ejercicios.pdb
+C:\visual_studio_workspaces\workspace_di\Ejercicios\bin\Debug\Ejercicios.exe.config
+C:\visual_studio_workspaces\workspace_di\Ejercicios\bin\Debug\Ejercicios.exe
+C:\visual_studio_workspaces\workspace_di\Ejercicios\bin\Debug\Ejercicios.pdb
+C:\visual_studio_workspaces\workspace_di\Ejercicios\obj\Debug\Ejercicios.csproj.AssemblyReference.cache
+C:\visual_studio_workspaces\workspace_di\Ejercicios\obj\Debug\Ejercicios.csproj.CoreCompileInputs.cache
+C:\visual_studio_workspaces\workspace_di\Ejercicios\obj\Debug\Ejercicios.exe
+C:\visual_studio_workspaces\workspace_di\Ejercicios\obj\Debug\Ejercicios.pdb

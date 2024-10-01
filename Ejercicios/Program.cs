@@ -15,7 +15,7 @@ namespace Casa
                 { 6,7,8,9,10},
                 { 11,12,13,14,15}
             };
-            int[,] toroide = Toroide(ints, 0, 2);
+            int[,] toroide = Toroide(ints, 0, -1);
             for (int i = 0; i < ints.GetLength(0); i++)
             {
                 for (int j = 0; j < ints.GetLength(1); j++)
@@ -275,26 +275,24 @@ namespace Casa
 
             for (int i = 0; i < matriz.GetLength(0); i++)
             {
-                for (int j = 0; j < matriz.GetLength(1) - 1; j++)
+                for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    int extremo = moveSegundaDim > 0 ? matriz.GetLength(1) - 1 : 0;
+                    bool derecha = moveSegundaDim > 0;
                     int cuantoQuedaPorMover = moveSegundaDim;
-                    int pos = j;
-                    int extremoContrario = extremo == 0 ? matriz.GetLength(1) - 1 : 0;
-                    if (pos == matriz.Length - 1)
-                    {
-                        pos = 0;
-                        cuantoQuedaPorMover -= (cuantoQuedaPorMover > 0) ? 1 : -1;
-                    }
-                    while (Math.Abs(cuantoQuedaPorMover) > Math.Abs(extremo - pos))
-                    {
-                        Console.WriteLine(cuantoQuedaPorMover);
-                        cuantoQuedaPorMover -= extremo - pos;
-                    }
-                    toroide[i, pos + cuantoQuedaPorMover] = matriz[i,j];
+                    int pos = derecha ? 0 : matriz.GetLength(1);
+                    cuantoQuedaPorMover += derecha ? j : -j;
+                    int inicio = pos;
 
+                    while (Math.Abs(cuantoQuedaPorMover) > Math.Abs(matriz.GetLength(1) - 1))
+                    {
+                        cuantoQuedaPorMover -= derecha ? matriz.GetLength(1) : -matriz.GetLength(1);
+                    }
+                    pos = inicio + cuantoQuedaPorMover;
 
-                    
+                    toroide[i, pos] = matriz[i, j];
+
+                    //LLEVAR TODO AL CASO DE J = 0???
+
                 }
             }
             return toroide;
