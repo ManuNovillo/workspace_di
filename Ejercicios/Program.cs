@@ -11,21 +11,19 @@ namespace Casa
         static void Main(String[] args)
         {
             int[,] ints = {
-                { 1,2,3,4, 5 },
-                { 6,7,8,9,10},
-                { 11,12,13,14,15}
+                {1, 2, 3, 4, },
+                {5, 6, 7, 8, },
+                {9, 10, 11, 12,}
             };
-            int[,] toroide = Toroide(ints, 0, -1);
-            for (int i = 0; i < ints.GetLength(0); i++)
+            int[,] toroide = Toroide(ints, -7, 2);
+            for (int i = 0; i < toroide.GetLength(0); i++)
             {
-                for (int j = 0; j < ints.GetLength(1); j++)
+                for (int j = 0; j < toroide.GetLength(1); j++)
                 {
                     Console.Write($"{toroide[i, j]}, ");
                 }
                 Console.WriteLine();
             }
-
-
         }
 
         //Ejercicio 1
@@ -132,7 +130,7 @@ namespace Casa
         /// <param name="a">Primera coordenada de la submatriz, es decir, primera posición de <c>matriz</c></param>
         /// <param name="b">Segunda coordenada de la submatriz, es decir, Segunda posición de <c>matriz</c></param>
         /// <returns></returns>
-        static int[] GetSubMatriz(int[][] matriz, int a, int b)
+        static int[] GetSubMatriz(int[,] matriz, int a, int b)
         {
             if (matriz is null) throw new ArgumentNullException("matriz no puede ser nulo");
             //Crear una lista para guardar los números en ella, pues no se sabe cuántos habrá que guardar
@@ -140,9 +138,9 @@ namespace Casa
             //Recorrer la matriz a partir de las coordenadas aportadas
             for (int i = a; i < matriz.Length; i++)
             {
-                for (int j = b; j < matriz[i].Length; j++)
+                for (int j = b; j < matriz.GetLength(1); j++)
                 {
-                    list.Add(matriz[i][j]);
+                    list.Add(matriz[i, j]);
                 }
             }
             return list.ToArray();
@@ -207,7 +205,7 @@ namespace Casa
             return Reverse(s1).Equals(s2);
         }
         /// <summary>
-        /// 
+        /// Da la vuelta de manera
         /// </summary>
         /// <param name="s1"></param>
         /// <returns></returns>
@@ -222,7 +220,7 @@ namespace Casa
         //Ejercicio 8
 
         /// <summary>
-        /// Imprime en consola la cantidad de monedas de cada tipo a dar para el resto, o "Error" si <c>cantidad</c> < <c>precio</c>
+        /// Imprime en consola la cantidad de monedas de cada tipo a dar para el resto, o "Error" si <c><paramref name="cantidad"/></c> < <c><paramref name="precio"/></c>
         /// </summary>
         /// <param name="precio">Precio de la lata, en euros</param>
         /// <param name="cantidad">Cantidad introducida, en euros</param>
@@ -269,33 +267,72 @@ namespace Casa
 
         //Ejercicio 9
 
+        /// <summary>
+        /// Desplaza cada elemento de <c><paramref name="matriz"/></c> veces en el eje vertical y 
+        /// <c><paramref name="moveSegundaDim"/></c> en el eje horizontal
+        /// </summary>
+        /// <param name="matriz"></param>
+        /// <param name="movePrimeraDim"></param>
+        /// <param name="moveSegundaDim"></param>
+        /// <returns></returns>
         static int[,] Toroide(int[,] matriz, int movePrimeraDim, int moveSegundaDim)
         {
-            int[,] toroide = new int[matriz.Length, matriz.Length];
+            int[,] toroide = new int[matriz.GetLength(0), matriz.GetLength(1)];
 
             for (int i = 0; i < matriz.GetLength(0); i++)
             {
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    bool derecha = moveSegundaDim > 0;
-                    int cuantoQuedaPorMover = moveSegundaDim;
-                    int pos = derecha ? 0 : matriz.GetLength(1);
-                    cuantoQuedaPorMover += derecha ? j : -j;
-                    int inicio = pos;
+                    
+                    int newI = getNuevaCoord(matriz, movePrimeraDim, 0, i);
+                    int newJ = getNuevaCoord(matriz, moveSegundaDim, 1, j);
+                    toroide[newI, newJ] = matriz[i, j];
 
-                    while (Math.Abs(cuantoQuedaPorMover) > Math.Abs(matriz.GetLength(1) - 1))
-                    {
-                        cuantoQuedaPorMover -= derecha ? matriz.GetLength(1) : -matriz.GetLength(1);
-                    }
-                    pos = inicio + cuantoQuedaPorMover;
-
-                    toroide[i, pos] = matriz[i, j];
-
-                    //LLEVAR TODO AL CASO DE J = 0???
-
+                    
                 }
             }
             return toroide;
+        }
+
+        /// <summary>
+        /// Devuelve la nueva fila o columna de una posición de <c><paramref name="matriz"/></c> dado el número de movimientos, 
+        /// el eje (vertical u horizontal), y la posición original en ese eje
+        /// </summary>
+        /// <param name="matriz">La matriz de donde se leerá y se calculará la nueva posición</param>
+        /// <param name="movimientos">Cuántos movimientos se quieren realizar. Si son positivos, son hacia la derecha o hacia abajo.
+        /// Si son negativos, son hacia arriba o hacia la izquierda</param>
+        /// <param name="eje">0 para vertical, 1 para horizontal</param>
+        /// <param name="posOriginal">La posición donde se encuentra originalmente en ese eje</param>
+        /// <returns></returns>
+        private static int getNuevaCoord(int[,] matriz, int movimientos, int eje, int posOriginal)
+        {
+            //Determinar si está yendo en el sentido positivo o el negativo
+            bool positivo = movimientos > 0;
+
+            //Variable donde se guardan los movimientos que quedan por realizar. Al principio quedan todos por realizar
+            int movimientosRestantes = movimientos;
+
+            //Posición en la que se va a acabar. Por defecto, iniciamos en el extremo hacia el que nos dirijimos
+            int pos = positivo ? 0 : matriz.GetLength(eje) - 1;
+
+            //Guardamos donde hemos empezado, ya que pos irá cambiando
+            int inicio = pos;
+
+            //Como nos hemos desplazado antes en sentido contrario, tendremos que movernos aún más en el sentido que se pretende
+            movimientosRestantes += posOriginal - inicio;
+
+            //Mientras el número de movimientos sea mayor (en valor absoluto) que lo que realmente nos podemos mover sin dar la vuelta
+            while (Math.Abs(movimientosRestantes) > matriz.GetLength(eje) - 1)
+            {
+                //Restar la longitud del eje para que sea como dar una vuelta
+                movimientosRestantes += positivo ? -matriz.GetLength(eje) : matriz.GetLength(eje);
+            }
+
+            //A pos hay que sumarle los movimientos restantes para llegar a la posición final
+            pos += movimientosRestantes;
+
+            return pos;
+
         }
     }
 }
