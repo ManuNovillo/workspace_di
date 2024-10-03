@@ -10,24 +10,18 @@ namespace Casa
     {
         static void Main(String[] args)
         {
-            int[,] ints = {
-                {1, 2, 3, 4, },
-                {5, 6, 7, 8, },
-                {9, 10, 11, 12,}
-            };
-            int[,] toroide = Toroide(ints, -7, 2);
-            for (int i = 0; i < toroide.GetLength(0); i++)
-            {
-                for (int j = 0; j < toroide.GetLength(1); j++)
-                {
-                    Console.Write($"{toroide[i, j]}, ");
-                }
-                Console.WriteLine();
-            }
+            Ejercicio10();
         }
 
         //Ejercicio 1
-
+        static void Ejercicio1()
+        {
+            Console.WriteLine("Introduce un número para ver si es primo");
+            String introducido = Console.ReadLine();
+            bool intento = int.TryParse(introducido,out int num);
+            if (!intento) Console.WriteLine("No es un número");
+            else Console.WriteLine(EsPrimo(num) ? "Es primo" : "No es primo");
+        }
         /// <summary>
         /// Determina si un número es primo o no, y devuelve true o false en consecuencia
         /// </summary>
@@ -55,6 +49,20 @@ namespace Casa
 
         //Ejercicio 2
 
+        static void Ejercicio2()
+        {
+            Console.WriteLine("Introduce las longitudes del triangulo");
+            String lado1s = Console.ReadLine();
+            String lado2s = Console.ReadLine();
+            String lado3s = Console.ReadLine();
+            bool lado1Bien = float.TryParse(lado1s, out float lado1);
+            bool lado2Bien = float.TryParse(lado2s, out float lado2);
+            bool lado3Bien = float.TryParse(lado3s, out float lado3);
+            bool ladosBien = lado1Bien && lado2Bien && lado3Bien;
+            if (!ladosBien) Console.WriteLine("Revisa los datos introducidos");
+            else Console.WriteLine(TipoTriangulo(lado1, lado2, lado3));
+        }
+
         /// <summary>
         /// Devuelve un String con el tipo de triángulo correspondiente dados sus lados (en cualquier orden), 
         /// o "No es un triángulo" si no es posible formar un triángulo con esas longitudes.
@@ -80,9 +88,22 @@ namespace Casa
         }
 
         //Ejercicio 3
+        static void Ejercicio3()
+        {
+            Console.WriteLine("Introduce qué número de la serie de Fibonnaci quieres");
+            String introducido = Console.ReadLine();
+            bool intento = int.TryParse(introducido, out int num);
+            if (!intento) Console.WriteLine("No es un número");
+            else
+            {
+                Console.WriteLine($"Recursivo:{FibonacciRecursivo(num)}");
+                Console.WriteLine("Serie hasta ese número: ");
+                Fibonacci(num);
+            }
+        }
 
         /// <summary>
-        /// Escribe en consola todos los números de la serie de Fibonacci hasta la posición <c>index</c>
+        /// Escribe en consola todos los números de la serie de Fibonacci hasta la posición <c><paramref name="index"/></c>
         /// </summary>
         /// <param name="index"></param>
         /// <exception cref="ArgumentException"></exception>
@@ -106,11 +127,11 @@ namespace Casa
         }
 
         /// <summary>
-        /// Devuelve el número en la posición <c>index</c> de la serie de Fibonacci
+        /// Devuelve el número en la posición <c><paramref name="index"/></c> de la serie de Fibonacci
         /// </summary>
         /// <param name="index">El puesto del número que se quiere calcular</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException">Si <c><paramref name="index"/></c> < 0</exception>
         static int FibonacciRecursivo(int index)
         {
             if (index < 1) throw new ArgumentException("index no puede ser menor que 1");
@@ -122,13 +143,18 @@ namespace Casa
 
         //Ejercicio 4
 
+        static void Ejercicio4()
+        {
+
+        }
         /// <summary>
-        /// Devuelve un array unidimensional con los datos de la submatriz más grande cuya esquina superior izquierda viene especificada por <c>a/c> y <c>b</c>.
-        /// La matriz devuelta puede no ser cuadrada, esto dependerá de <c>matriz</c>
+        /// Devuelve un array unidimensional con los datos de la submatriz más grande cuya esquina superior izquierda viene 
+        /// especificada por <c><paramref name="a"/></c> y <c><paramref name="b"/></c>.
+        /// La matriz devuelta puede ser cuadrada o rectangular
         /// </summary>
         /// <param name="matriz">La matriz de la que se quiere sacar una submatriz</param>
-        /// <param name="a">Primera coordenada de la submatriz, es decir, primera posición de <c>matriz</c></param>
-        /// <param name="b">Segunda coordenada de la submatriz, es decir, Segunda posición de <c>matriz</c></param>
+        /// <param name="a">Primera coordenada de la submatriz, es decir, primera posición de <c><paramref name="matriz"/></c></param>
+        /// <param name="b">Segunda coordenada de la submatriz, es decir, Segunda posición de <c><paramref name="matriz"/></c></param>
         /// <returns></returns>
         static int[] GetSubMatriz(int[,] matriz, int a, int b)
         {
@@ -147,9 +173,12 @@ namespace Casa
         }
 
         //Ejercicio 5
+        static void Ejercicio5()
+        {
 
+        }
         /// <summary>
-        /// Devuelve <c>s</c> pero sin cualquier caracter de espacio
+        /// Devuelve <c><paramref name="s"/></c> pero sin cualquier caracter de espacio (" ")
         /// </summary>
         /// <param name="s">El String al que se le quieren quitar los espacios</param>
         /// <returns>Un String idéntico a <c>s</c> pero sin espacios</returns>
@@ -168,8 +197,14 @@ namespace Casa
             return stringBuilder.ToString();
         }
 
+        //Ejercicio 6
+        static void Ejercicio6()
+        {
+
+        }
+
         /// <summary>
-        /// Convierte el número binario de <c>array</c> a decimal.
+        /// Convierte el número binario de <c><paramref name="array"/></c> a decimal.
         /// <example>
         /// Por ejemplo, 
         /// <c>BinToDec(new int[1,0])</c>
@@ -177,7 +212,7 @@ namespace Casa
         /// </example>
         /// </summary>
         /// <param name="array">El número a convertir, cada cifra en una posición del array</param>
-        /// <returns>El número convertido a decimal. Si <c>array</c> está vacío, devuelve 0</returns>
+        /// <returns>El número convertido a decimal. Si <c><paramref name="array"/></c> está vacío, devuelve 0</returns>
         /// <exception cref="ArgumentException">Si <c>array</c> contiene números que no sean 0 o 1.</exception>
         static int BinToDec(int[] array)
         {
@@ -198,33 +233,71 @@ namespace Casa
             }
             return num;
         }
+
+        /// <summary>
+        /// Convierte el número binario de <c><paramref name="numBinario"/></c> a decimal.
+        /// <example>
+        /// Por ejemplo, 
+        /// <c>BinToDec(new int[1,0])</c>
+        /// devolverá <c>2</c>
+        /// </example>
+        /// </summary>
+        /// <param name="numBinario">El número a convertir, cada cifra en una posición del array</param>
+        /// <returns>El número convertido a decimal. Si <c><paramref name="numBinario"/></c> está vacío, devuelve 0</returns>
+        /// <exception cref="ArgumentException">Si <c><paramref name="numBinario"/></c> contiene caracteres que no sean '0' o '1'.</exception>
+        static int BinToDec(String numBinario)
+        {
+            //Variable donde iremos sumando para tener el resultado final
+            int num = 0;
+            //Recorremos el String de final a principio para que sea como al hacerlo a mano, de derecha a izquierda
+            for (int i = numBinario.Length - 1; i >= 0; i--)
+            {
+                //Si es 1, hay que sumar
+                if (numBinario[i].Equals("1"))
+                {
+                    //array.Length - 1 - i da el resultado al que queremos elevar. 0 para la primera cifra, 1 para la segunda, array.Length - 1 para la primera
+                    num += (int)Math.Pow(2, numBinario.Length - 1 - i);
+
+                    //Si no es 1 y tampoco es 0, lanzar ArgumentException
+                }
+                else if (numBinario[i].Equals("0")) throw new ArgumentException("numBinario solo puede contener 0 y 1");
+            }
+            return num;
+        }
         //Ejercicio 7
 
+        static void Ejercicio7()
+        {
+
+        }
         static bool EsPalindromo(String s1, String s2)
         {
             return Reverse(s1).Equals(s2);
         }
         /// <summary>
-        /// Da la vuelta de manera
+        /// Da la vuelta a <c><paramref name="s"/></c> de manera recursiva
         /// </summary>
-        /// <param name="s1"></param>
+        /// <param name="s"></param>
         /// <returns></returns>
-        static String Reverse(String s1)
+        static String Reverse(String s)
         {
-            if (s1.Length == 0 || s1.Length == 1) return s1;
-            char primero = s1[0];
-            char ultimo = s1[s1.Length - 1];
-            return ultimo + Reverse(s1.Substring(1, s1.Length - 2)) + primero;
+            if (s.Length == 0 || s.Length == 1) return s;
+            char primero = s[0];
+            char ultimo = s[s.Length - 1];
+            return ultimo + Reverse(s.Substring(1, s.Length - 2)) + primero;
         }
 
         //Ejercicio 8
+        static void Ejercicio8()
+        {
 
+        }
         /// <summary>
         /// Imprime en consola la cantidad de monedas de cada tipo a dar para el resto, o "Error" si <c><paramref name="cantidad"/></c> < <c><paramref name="precio"/></c>
         /// </summary>
         /// <param name="precio">Precio de la lata, en euros</param>
         /// <param name="cantidad">Cantidad introducida, en euros</param>
-        static void ShowCambio(float precio, float cantidad)
+        static void GetCambio(float precio, float cantidad)
         {
             //Convertir los euros a céntimos para facilitar el trabajo, y calcular el resto
             int resto = (int)(100 * (cantidad - precio));
@@ -266,7 +339,10 @@ namespace Casa
         }
 
         //Ejercicio 9
+        static void Ejercicio9()
+        {
 
+        }
         /// <summary>
         /// Desplaza cada elemento de <c><paramref name="matriz"/></c> veces en el eje vertical y 
         /// <c><paramref name="moveSegundaDim"/></c> en el eje horizontal
@@ -277,18 +353,19 @@ namespace Casa
         /// <returns></returns>
         static int[,] Toroide(int[,] matriz, int movePrimeraDim, int moveSegundaDim)
         {
+            //Crear una nueva matriz para devolver
             int[,] toroide = new int[matriz.GetLength(0), matriz.GetLength(1)];
 
             for (int i = 0; i < matriz.GetLength(0); i++)
             {
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    
+                    //Calcular las nuevas posiciones
                     int newI = getNuevaCoord(matriz, movePrimeraDim, 0, i);
                     int newJ = getNuevaCoord(matriz, moveSegundaDim, 1, j);
-                    toroide[newI, newJ] = matriz[i, j];
 
-                    
+                    //Guardar en la nueva matriz el dato en la nueva posición
+                    toroide[newI, newJ] = matriz[i, j];
                 }
             }
             return toroide;
@@ -332,7 +409,65 @@ namespace Casa
             pos += movimientosRestantes;
 
             return pos;
+        }
 
+        //Ejercicio 10
+        static void Ejercicio10()
+        {
+            switch (Menu())
+            {
+                case 1:
+                    Ejercicio1();
+                    break;
+                case 2:
+                    Ejercicio2();
+                    break;
+                case 3:
+                    Ejercicio3();
+                    break;
+                case 4:
+                    Ejercicio4();
+                    break;
+                case 5:
+                    Ejercicio5();
+                    break;
+                case 6:
+                    Ejercicio6();
+                    break;
+                case 7:
+                    Ejercicio7();
+                    break;
+                case 8:
+                    Ejercicio8();
+                    break;
+                case 9:
+                    Ejercicio9();
+                    break;
+                default:
+                    Console.WriteLine("No es un número válido");
+                    break;
+            }
+        }
+        /// <summary>
+        /// Pide por consola qué ejercicio se quiere hacer, y devuelve el índice del ejercicio, o -1 si no se ha introducido un número
+        /// </summary>
+        /// <returns>El índice del ejercicio, o -1 si no se ha introducido un número</returns>
+        static int Menu()
+        {
+            Console.WriteLine("Elige un ejercicio:\n" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "" +
+                              "");
+            String seleccion = Console.ReadLine();
+            bool intento = int.TryParse(seleccion, out int num);
+            return intento ? num : -1;
         }
     }
 }
