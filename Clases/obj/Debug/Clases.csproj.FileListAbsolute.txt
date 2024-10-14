@@ -1,0 +1,7 @@
+C:\Users\diurno\workspace_di\Clases\bin\Debug\Clases.exe.config
+C:\Users\diurno\workspace_di\Clases\bin\Debug\Clases.exe
+C:\Users\diurno\workspace_di\Clases\bin\Debug\Clases.pdb
+C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.exe
+C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.pdb

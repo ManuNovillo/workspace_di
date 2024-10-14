@@ -1,4 +1,58 @@
-﻿
+﻿using Clases.ejercicios;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Clases
+{
+    internal class Menu
+    {
+        private List<Ejercicio> ejercicios;
+
+        public Menu() 
+        {
+            ejercicios = new List<Ejercicio>();
+            ejercicios.Add(new Ejercicio1());
+            ejercicios.Add(new Ejercicio2());
+            ejercicios.Add(new Ejercicio3());
+            ejercicios.Add(new Ejercicio4());
+            ejercicios.Add(new Ejercicio5());
+            ejercicios.Add(new Ejercicio6());
+            ejercicios.Add(new Ejercicio7());
+            ejercicios.Add(new Ejercicio8());
+            ejercicios.Add(new Ejercicio9());
+            ejercicios.Add(new Ejercicio10());
+        }
+
+        public void iniciar()
+        {
+            ejercicios[Seleccion() - 1].ejecutar();
+        }
+
+        private int Seleccion()
+        {
+            Console.WriteLine("Elige un ejercicio:\n" +
+                         "1. Numero primo\n" +
+                         "2. Triangulo\n" +
+                         "3. Fibonacci\n" +
+                         "4. Submatriz\n" +
+                         "5. Quitar espacios\n" +
+                         "6. Binario a decimal\n" +
+                         "7. Palindromo\n" +
+                         "8. Cambio\n" +
+                         "9. Toroide\n" +
+                         "10. Numero perfecto"
+                         );
+            String seleccion = Console.ReadLine();
+            bool intento = int.TryParse(seleccion, out int num);
+            return intento ? num : -1;
+        }
+    }
+
+    /*
+     * 
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -295,6 +349,7 @@ namespace Casa
             }
             return num;
         }
+
         //Ejercicio 7
 
         static void Ejercicio7()
@@ -579,4 +634,6 @@ namespace Casa
             return suma == num;
         }
     }
+}
+     */
 }
