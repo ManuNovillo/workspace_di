@@ -8,6 +8,20 @@ namespace Clases.ejercicios
 {
     internal abstract class Ejercicio
     {
+        private Cosa cosa;
         public abstract void ejecutar();
+    }
+
+    interface Cosa
+    {
+        void hola();
+    }
+
+    class Prueba : Cosa
+    {
+        public void hola()
+        {
+            Console.WriteLine("hola");
+        }
     }
 }

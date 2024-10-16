@@ -54,6 +54,7 @@
     <Compile Include="ejercicios\Ejercicio7.cs" />
     <Compile Include="ejercicios\Ejercicio8.cs" />
     <Compile Include="ejercicios\Ejercicio9.cs" />
+    <Compile Include="LeerDato.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

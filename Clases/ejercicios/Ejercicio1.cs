@@ -13,8 +13,11 @@ namespace Clases.ejercicios
             Console.WriteLine("Ejercicio 1");
             Console.WriteLine("Introduce un número para ver si es primo");
             String introducido = Console.ReadLine();
-            bool intento = int.TryParse(introducido, out int num);
-            if (!intento) Console.WriteLine("No es un número");
+            int num = LeerDato.LeerEntero();
+            if (num < 0)
+            {
+                Console.WriteLine("No se puede saber si es número primo o no porque es incorrecto");
+            }
             else Console.WriteLine(EsPrimo(num) ? "Es primo" : "No es primo");
         }
         /// <summary>
