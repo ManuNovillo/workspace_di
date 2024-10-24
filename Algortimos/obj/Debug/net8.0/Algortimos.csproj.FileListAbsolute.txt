@@ -1,0 +1,28 @@
+D:\Nacho\Visual Studio\Algortimos\bin\Debug\net8.0\Algortimos.exe
+D:\Nacho\Visual Studio\Algortimos\bin\Debug\net8.0\Algortimos.deps.json
+D:\Nacho\Visual Studio\Algortimos\bin\Debug\net8.0\Algortimos.runtimeconfig.json
+D:\Nacho\Visual Studio\Algortimos\bin\Debug\net8.0\Algortimos.dll
+D:\Nacho\Visual Studio\Algortimos\bin\Debug\net8.0\Algortimos.pdb
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.AssemblyInfoInputs.cache
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.AssemblyInfo.cs
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.csproj.CoreCompileInputs.cache
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.dll
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\refint\Algortimos.dll
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.pdb
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\Algortimos.genruntimeconfig.cache
+D:\Nacho\Visual Studio\Algortimos\obj\Debug\net8.0\ref\Algortimos.dll
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\bin\Debug\net8.0\Algortimos.exe
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\bin\Debug\net8.0\Algortimos.deps.json
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\bin\Debug\net8.0\Algortimos.runtimeconfig.json
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\bin\Debug\net8.0\Algortimos.dll
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\bin\Debug\net8.0\Algortimos.pdb
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.AssemblyInfoInputs.cache
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.AssemblyInfo.cs
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.csproj.CoreCompileInputs.cache
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.dll
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\refint\Algortimos.dll
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.pdb
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\Algortimos.genruntimeconfig.cache
+C:\Users\diurno\Documents\Visual Studio 2022\Proyectos Nacho\Algortimos\obj\Debug\net8.0\ref\Algortimos.dll

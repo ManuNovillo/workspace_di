@@ -5,3 +5,7 @@ C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.csproj.AssemblyReference.ca
 C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
 C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.exe
 C:\Users\diurno\workspace_di\Clases\obj\Debug\Clases.pdb
+C:\visual_studio_workspaces\workspace_di\Clases\obj\Debug\Clases.csproj.AssemblyReference.cache
+C:\visual_studio_workspaces\workspace_di\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+C:\visual_studio_workspaces\workspace_di\Clases\obj\Debug\Clases.exe
+C:\visual_studio_workspaces\workspace_di\Clases\obj\Debug\Clases.pdb

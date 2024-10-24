@@ -24,7 +24,7 @@ namespace Clases.ejercicios
             else Console.WriteLine("Revisa los datos introducidos");
         }
         /// <summary>
-        /// Imprime en consola la cantidad de monedas de cada tipo a dar para el resto, o "Error" si <c><paramref name="cantidad"/></c> < <c><paramref name="precio"/></c>
+        /// Imprime en consola la cantidad de monedas de cada tipo a dar para el resto, o "Error" si <c><paramref name="cantidad"/></c><c><paramref name="precio"/></c>
         /// </summary>
         /// <param name="precio">Precio de la lata, en euros</param>
         /// <param name="cantidad">Cantidad introducida, en euros</param>

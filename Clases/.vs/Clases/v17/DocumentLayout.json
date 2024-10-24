@@ -1,62 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Clases\\",
+  "WorkspaceRootPath": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|c:\\users\\diurno\\workspace_di\\clases\\leerdato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:leerdato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|c:\\visual_studio_workspaces\\workspace_di\\clases\\ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|c:\\users\\diurno\\workspace_di\\clases\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\ejercicio0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\Ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:ejercicios\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|C:\\visual_studio_workspaces\\workspace_di\\Clases\\LeerDato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D5E00-C5AF-46A5-8282-E7B742748388}|Clases.csproj|solutionrelative:LeerDato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,77 +70,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LeerDato.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\LeerDato.cs",
-              "RelativeDocumentMoniker": "LeerDato.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\LeerDato.cs",
-              "RelativeToolTip": "LeerDato.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:44:27.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Ejercicio10.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio10.cs",
-              "RelativeDocumentMoniker": "ejercicios\\Ejercicio10.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio10.cs",
-              "RelativeToolTip": "ejercicios\\Ejercicio10.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:09:45.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ejercicio9.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio9.cs",
-              "RelativeDocumentMoniker": "ejercicios\\Ejercicio9.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio9.cs",
-              "RelativeToolTip": "ejercicios\\Ejercicio9.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:09:35.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Ejercicio8.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio8.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio8.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio8.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio8.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio8.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio8.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T10:09:27.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Ejercicio7.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio7.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio7.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio7.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio7.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio7.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio7.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T10:09:17.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "Ejercicio6.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio6.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio6.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio6.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio6.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio6.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio6.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAYwFAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,24 +111,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Ejercicio5.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio5.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio5.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio5.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio5.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio5.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio5.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:07:44.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T10:07:44.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Ejercicio4.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio4.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio4.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio4.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio4.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio4.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio4.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Ejercicio3.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio3.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio3.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio3.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio3.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio3.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio3.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -181,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Ejercicio2.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio2.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio2.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio2.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio2.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio2.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,26 +159,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Ejercicio1.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio1.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio1.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio1.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio1.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio1.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:06:22.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T10:06:22.909Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Ejercicio.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio.cs",
               "RelativeDocumentMoniker": "ejercicios\\Ejercicio.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\ejercicios\\Ejercicio.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio.cs",
               "RelativeToolTip": "ejercicios\\Ejercicio.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T10:03:53.11Z"
             },
@@ -220,26 +185,73 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\Menu.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\Menu.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:54:37.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T09:54:37.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:51:53.817Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Clases\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Clases\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Title": "Ejercicio10.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio10.cs",
+              "RelativeDocumentMoniker": "ejercicios\\Ejercicio10.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio10.cs",
+              "RelativeToolTip": "ejercicios\\Ejercicio10.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:51:53.817Z"
+              "WhenOpened": "2024-10-14T10:09:45.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ejercicio0.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio0.cs",
+              "RelativeDocumentMoniker": "ejercicios\\Ejercicio0.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio0.cs",
+              "RelativeToolTip": "ejercicios\\Ejercicio0.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T16:27:31.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ejercicio9.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio9.cs",
+              "RelativeDocumentMoniker": "ejercicios\\Ejercicio9.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\ejercicios\\Ejercicio9.cs",
+              "RelativeToolTip": "ejercicios\\Ejercicio9.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T10:09:35.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LeerDato.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\LeerDato.cs",
+              "RelativeDocumentMoniker": "LeerDato.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Clases\\LeerDato.cs",
+              "RelativeToolTip": "LeerDato.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:44:27.15Z"
             }
           ]
         }
