@@ -22,8 +22,15 @@ namespace Algoritmos.Ejercicios
             int n;
             Console.Write("\n\nDame el número de elementos de la Serie de Fibonacii que quieres ver: ");
             n = LeerDato.LeerEntero();
-            // Muestra por pantalla la cadena que me devuelve la función Fibo
-            Console.WriteLine(Fibo(1, n, 0, 0));
+            // Si el número introducido es menor o igual que 0, mostrar mensaje de error
+            if (n <= 0)
+            {
+                Console.WriteLine("Dato introducido no válido");
+            }
+            else // Si no, muestra por pantalla la cadena que me devuelve la función Fibo
+            {
+                Console.WriteLine(Fibo(1, n, 0, 0));
+            }
             Console.WriteLine("Pulsa INTRO para continuar");
             Console.ReadLine();
         }

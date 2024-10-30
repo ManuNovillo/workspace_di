@@ -37,14 +37,20 @@ namespace Algoritmos.Ejercicios
         /// <returns>Un String idéntico a <c>s</c> pero sin espacios</returns>
         String EliminarEspacios(String s)
         {
-            //Crear un StringBuilder para ir metiendo los caracteres para luego construir un String
+            // Crear un StringBuilder para ir metiendo los caracteres para luego construir un String
             StringBuilder stringBuilder = new StringBuilder();
             foreach (char c in s)
             {
-                //Si el caracter no es un espacio, añadirlo al StringBuilder
+                // Si el caracter no es un espacio, añadirlo al StringBuilder
                 if (c != ' ') stringBuilder.Append(c);
             }
-            //Convertir el StringBuilder a String
+            /* Imprimir cuántos espacios se han quitado
+             * Para ello restamos a la longitud de la cadena original la longitud de la nueva
+             * cadena, la diferencia será el número de espacios quitados
+             */
+            Console.WriteLine($"Espacios quitados: {s.Length - stringBuilder.Length}");
+            Console.WriteLine($"Nueva longitud: {stringBuilder.Length}");
+            // Convertir el StringBuilder a String
             return stringBuilder.ToString();
         }
     }

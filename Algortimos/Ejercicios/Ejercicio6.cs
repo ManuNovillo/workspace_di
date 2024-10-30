@@ -6,16 +6,26 @@ namespace Algoritmos.Ejercicios
     {
         public override void ejecutar()
         {
+            Console.Clear();
             Console.WriteLine("Ejercicio 6");
             Console.WriteLine("Introduce el número en binario");
             String num = Console.ReadLine();
+            // Pasar el String a un array para el método que recibe un array
             int[] numArray = new int[num.Length];
+            bool correcto = true;
             for (int i = 0; i < num.Length; i++)
             {
-                numArray[i] = int.Parse(num[i].ToString());
+                // Si el carácter no es ni 1 ni 0, dejar de llenar el array y decir que hay un error
+                if (num[i] != '0' && num[i] != '1') correcto = false;
+                else numArray[i] = int.Parse(num[i].ToString());
             }
-            Console.WriteLine($"Como array: {BinToDec(numArray)}");
-            Console.WriteLine($"Como String: {BinToDec(num)}");
+            if (correcto)
+            {
+                Console.WriteLine($"Como array: {BinToDec(numArray)}");
+                Console.WriteLine($"Como String: {BinToDec(num)}");
+            }
+            else Console.WriteLine("Un número binario solo puede tener 1s y 0s, por lo que no se puede pasar a decimal");
+
             Console.WriteLine("Pulsa INTRO para continuar");
             Console.ReadLine();
         }
@@ -57,7 +67,6 @@ namespace Algoritmos.Ejercicios
         /// </summary>
         /// <param name="numBinario">El número a convertir, cada cifra en una posición del array</param>
         /// <returns>El número convertido a decimal. Si <c><paramref name="numBinario"/></c> está vacío, devuelve 0</returns>
-        /// <exception cref="ArgumentException">Si <c><paramref name="numBinario"/></c> contiene caracteres que no sean '0' o '1'.</exception>
         int BinToDec(String numBinario)
         {
             //Variable donde iremos sumando para tener el resultado final
@@ -70,10 +79,7 @@ namespace Algoritmos.Ejercicios
                 {
                     //array.Length - 1 - i da el resultado al que queremos elevar. 0 para la primera cifra, 1 para la segunda, array.Length - 1 para la primera
                     num += (int)Math.Pow(2, numBinario.Length - 1 - i);
-
-                    //Si no es 1 y tampoco es 0, lanzar ArgumentException
                 }
-                else if (numBinario[i].Equals("0")) throw new ArgumentException("numBinario solo puede contener 0 y 1");
             }
             return num;
         }

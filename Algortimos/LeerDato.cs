@@ -40,7 +40,7 @@ namespace Algoritmos
             try
             {
                 fallo = false;
-                return float.Parse(Console.ReadLine());
+                return float.Parse(Console.ReadLine().Replace('.', ','));
             }
             catch (ArgumentNullException)
             {

@@ -1,62 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\smurf\\Downloads\\Algortimos\\",
+  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Algortimos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\leerdato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:leerdato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\smurf\\downloads\\algortimos\\ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,78 +74,87 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Ejercicio7.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio7.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio7.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio7.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio7.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowC4AAAAUAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Ejercicio3.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio3.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio3.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio3.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:43.025Z",
+              "WhenOpened": "2024-10-25T09:42:35.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio2.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio2.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio2.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio2.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio2.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:47:10.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ejercicio1.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio1.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio1.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio1.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:46:10.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ejercicio0.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio0.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio0.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio0.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio0.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T10:11:14.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:51:30.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EjercicioExamen.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\EjercicioExamen.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\EjercicioExamen.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\EjercicioExamen.cs",
+              "RelativeToolTip": "Ejercicios\\EjercicioExamen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:23:20.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ejercicio4.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio4.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio4.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio4.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio4.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wCkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:23.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ejercicio5.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio5.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio5.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio5.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio5.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswCUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:31.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ejercicio6.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio6.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio6.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio6.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio6.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:36.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Ejercicio8.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio8.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio8.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio8.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio8.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:38.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Ejercicio9.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio9.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio9.cs",
               "RelativeDocumentMoniker": "Ejercicios\\Ejercicio9.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio9.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio9.cs",
               "RelativeToolTip": "Ejercicios\\Ejercicio9.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T09:47:45.873Z",
               "EditorCaption": ""
@@ -149,103 +162,98 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Menu.cs",
-              "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAkwBcAAAApAAAAAAAAAA==",
+              "Title": "Ejercicio8.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio8.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio8.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio8.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio8.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:42:16.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T09:47:38.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Ejercicio11.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio11.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio11.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio11.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio11.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Ejercicio7.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio7.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio7.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio7.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio7.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:55.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ejercicio2.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio2.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio2.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio2.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:10.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ejercicio1.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio1.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio1.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio1.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:46:10.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T09:47:43.025Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Title": "Ejercicio4.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio4.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio4.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio4.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T15:23:32.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T09:47:23.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ejercicio5.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio5.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio5.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio5.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:47:31.866Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "LeerDato.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\LeerDato.cs",
-              "RelativeDocumentMoniker": "LeerDato.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\LeerDato.cs",
-              "RelativeToolTip": "LeerDato.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAhAAAAAAAAAA==",
+              "Title": "Ejercicio6.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio6.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio6.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio6.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio6.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:42:41.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Ejercicio0.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio0.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio0.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio0.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio0.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T10:11:14.946Z"
+              "WhenOpened": "2024-10-14T09:47:36.377Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Ejercicio.cs",
-              "DocumentMoniker": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio.cs",
-              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio.cs",
-              "ToolTip": "C:\\Users\\smurf\\Downloads\\Algortimos\\Ejercicios\\Ejercicio.cs",
-              "RelativeToolTip": "Ejercicios\\Ejercicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwBgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:51:30.191Z"
+              "WhenOpened": "2024-10-14T09:42:16.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:30:24.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ejercicio10.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio10.cs",
+              "RelativeDocumentMoniker": "Ejercicios\\Ejercicio10.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio10.cs",
+              "RelativeToolTip": "Ejercicios\\Ejercicio10.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwB8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:47:55.384Z"
             }
           ]
         }

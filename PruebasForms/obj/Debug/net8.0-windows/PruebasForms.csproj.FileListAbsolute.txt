@@ -1,0 +1,17 @@
+C:\Users\diurno\workspace_di\PruebasForms\bin\Debug\net8.0-windows\PruebasForms.exe
+C:\Users\diurno\workspace_di\PruebasForms\bin\Debug\net8.0-windows\PruebasForms.deps.json
+C:\Users\diurno\workspace_di\PruebasForms\bin\Debug\net8.0-windows\PruebasForms.runtimeconfig.json
+C:\Users\diurno\workspace_di\PruebasForms\bin\Debug\net8.0-windows\PruebasForms.dll
+C:\Users\diurno\workspace_di\PruebasForms\bin\Debug\net8.0-windows\PruebasForms.pdb
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.Form1.resources
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.AssemblyInfoInputs.cache
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.AssemblyInfo.cs
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.sourcelink.json
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.dll
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\refint\PruebasForms.dll
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.pdb
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\PruebasForms.genruntimeconfig.cache
+C:\Users\diurno\workspace_di\PruebasForms\obj\Debug\net8.0-windows\ref\PruebasForms.dll

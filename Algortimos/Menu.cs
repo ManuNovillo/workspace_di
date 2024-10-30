@@ -22,6 +22,7 @@ namespace Algoritmos
             ejer[8] = new Ejercicio8();
             ejer[9] = new Ejercicio9();
             ejer[10] = new Ejercicio10();
+            ejer[11] = new EjercicioExamen();
         }
 
         /*
@@ -65,6 +66,7 @@ namespace Algoritmos
                 Console.WriteLine("8.- Dame el cambio");
                 Console.WriteLine("9.- Movimiento de Matriz toroide");
                 Console.WriteLine("10.- ¿El número es perfecto?");
+                Console.WriteLine("11.- Pirámide de asteriscos");
                 Console.Write("Dime la opción que quieres probar: ");
 
                 // Leo la opción deseada y la convierto a entero

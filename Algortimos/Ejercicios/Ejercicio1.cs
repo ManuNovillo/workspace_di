@@ -6,13 +6,16 @@ namespace Algoritmos.Ejercicios
     {
         public override void ejecutar()
         {
+            Console.Clear();
             Console.WriteLine("Ejercicio 1");
             Console.WriteLine("Introduce un número para ver si es primo");
             int num = LeerDato.LeerEntero();
+            // Si es menor que 0, mostrar mensaje de error
             if (num < 0)
             {
                 Console.WriteLine("No se puede saber si es número primo o no porque es incorrecto");
             }
+            // Si no, mostrar si es primo o no
             else Console.WriteLine(EsPrimo(num) ? "Es primo" : "No es primo");
             Console.WriteLine("Pulsa INTRO para continuar");
             Console.ReadLine();
@@ -27,8 +30,8 @@ namespace Algoritmos.Ejercicios
         {
             //Casos especiales
 
-            //El 1 no es primo
-            if (num == 1) return false;
+            //El 1 y el 0 no son primos
+            if (num == 1 || num == 0) return false;
             //El 2 es el primer número primo
             if (num == 2) return true;
 

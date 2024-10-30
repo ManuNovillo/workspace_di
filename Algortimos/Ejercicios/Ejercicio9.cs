@@ -1,7 +1,4 @@
-﻿using Algoritmos.Ejercicios;
-using Algoritmos;
-using System;
-using System.Drawing;
+﻿using System;
 
 namespace Algoritmos.Ejercicios
 {
@@ -9,6 +6,7 @@ namespace Algoritmos.Ejercicios
     {
         public override void ejecutar()
         {
+            Console.Clear();
             Console.WriteLine("Ejercicio 9");
             Console.Write("\n\nDime el número de filas que quieres en la Matriz de origen: ");
             int filas = LeerDato.LeerEntero();

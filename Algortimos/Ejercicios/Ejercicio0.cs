@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algoritmos.Ejercicios
 {
@@ -12,6 +8,7 @@ namespace Algoritmos.Ejercicios
 
         public override void ejecutar()
         {
+            Console.Clear();
             Console.WriteLine("\n\nMuchas gracias por usar nuestro programa de Algoritmos");
             Console.WriteLine("\n¡¡VUELVA PRONTO!!");
         }
