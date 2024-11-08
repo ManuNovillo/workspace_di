@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Algortimos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicio9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|solutionrelative:ejercicios\\ejercicioexamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5B51802-9C1B-438C-BCE8-1A66055EFD05}|Algoritmos.csproj|c:\\users\\diurno\\workspace_di\\algortimos\\ejercicios\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -86,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Ejercicio2.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio2.cs",
               "RelativeDocumentMoniker": "Ejercicios\\Ejercicio2.cs",
               "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio2.cs",
               "RelativeToolTip": "Ejercicios\\Ejercicio2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T09:47:10.881Z",
               "EditorCaption": ""
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "EjercicioExamen.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\EjercicioExamen.cs",
               "RelativeDocumentMoniker": "Ejercicios\\EjercicioExamen.cs",
@@ -143,23 +143,25 @@
               "RelativeToolTip": "Ejercicios\\EjercicioExamen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T10:23:20.65Z"
+              "WhenOpened": "2024-10-25T10:23:20.65Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Ejercicio9.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio9.cs",
               "RelativeDocumentMoniker": "Ejercicios\\Ejercicio9.cs",
               "ToolTip": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio9.cs",
               "RelativeToolTip": "Ejercicios\\Ejercicio9.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:45.873Z"
+              "WhenOpened": "2024-10-14T09:47:45.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Ejercicio8.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio8.cs",
               "RelativeDocumentMoniker": "Ejercicios\\Ejercicio8.cs",
@@ -171,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Ejercicio7.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Algortimos\\Ejercicios\\Ejercicio7.cs",
               "RelativeDocumentMoniker": "Ejercicios\\Ejercicio7.cs",
