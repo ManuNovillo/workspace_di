@@ -10,6 +10,7 @@ namespace Safari.model.seres
         /// </summary>
         protected static int periodoReproduccion;
 
+        protected bool debeReproducirse;
 
         protected Position position;
 
