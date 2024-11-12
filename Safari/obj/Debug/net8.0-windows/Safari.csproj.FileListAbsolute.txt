@@ -1,0 +1,17 @@
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.Form1.resources
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.AssemblyInfoInputs.cache
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.AssemblyInfo.cs
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.sourcelink.json
+C:\Users\diurno\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.exe
+C:\Users\diurno\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.deps.json
+C:\Users\diurno\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.runtimeconfig.json
+C:\Users\diurno\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.dll
+C:\Users\diurno\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.pdb
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.dll
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\refint\Safari.dll
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.pdb
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.genruntimeconfig.cache
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\ref\Safari.dll
