@@ -17,7 +17,7 @@ namespace Safari.model.seres
         protected bool checkReproduccion()
         {
             position.X = 0;
-            return position.getEmptySurroundingPos().Count() != 0;
+            return true;
         }
     }
 }

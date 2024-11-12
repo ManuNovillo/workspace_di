@@ -22,10 +22,8 @@ namespace Safari.model.position
         /// </summary>
         public int Y { get; set; }
 
-        internal List<Position> getEmptySurroundingPos()
-        {
-            return new List<Position>();
-
+        public Position(int x, int y) {
+            X = x; Y = y; 
         }
     }
 }

@@ -39,33 +39,37 @@
             // 
             // confirmarButton
             // 
-            confirmarButton.Location = new Point(349, 379);
+            confirmarButton.Location = new Point(305, 284);
+            confirmarButton.Margin = new Padding(3, 2, 3, 2);
             confirmarButton.Name = "confirmarButton";
-            confirmarButton.Size = new Size(94, 29);
+            confirmarButton.Size = new Size(82, 22);
             confirmarButton.TabIndex = 2;
             confirmarButton.Text = "Confirmar";
             confirmarButton.UseVisualStyleBackColor = true;
+            confirmarButton.Click += confirmarButton_Click;
             // 
             // filasNumField
             // 
-            filasNumField.Location = new Point(324, 81);
+            filasNumField.Location = new Point(284, 61);
+            filasNumField.Margin = new Padding(3, 2, 3, 2);
             filasNumField.Name = "filasNumField";
-            filasNumField.Size = new Size(150, 27);
+            filasNumField.Size = new Size(131, 23);
             filasNumField.TabIndex = 3;
             // 
             // columnasNumField
             // 
-            columnasNumField.Location = new Point(325, 212);
+            columnasNumField.Location = new Point(284, 159);
+            columnasNumField.Margin = new Padding(3, 2, 3, 2);
             columnasNumField.Name = "columnasNumField";
-            columnasNumField.Size = new Size(150, 27);
+            columnasNumField.Size = new Size(131, 23);
             columnasNumField.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(301, 28);
+            label1.Location = new Point(263, 21);
             label1.Name = "label1";
-            label1.Size = new Size(195, 20);
+            label1.Size = new Size(155, 15);
             label1.TabIndex = 5;
             label1.Text = "Introduce el número de filas";
             label1.Click += label1_Click;
@@ -73,24 +77,26 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(281, 161);
+            label2.Location = new Point(246, 121);
             label2.Name = "label2";
-            label2.Size = new Size(231, 20);
+            label2.Size = new Size(186, 15);
             label2.TabIndex = 6;
             label2.Text = "Introduce el número de columnas";
             label2.Click += label2_Click;
             // 
             // VentanaInicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(columnasNumField);
             Controls.Add(filasNumField);
             Controls.Add(confirmarButton);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "VentanaInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "VentanaInicio";
             ((System.ComponentModel.ISupportInitialize)filasNumField).EndInit();
             ((System.ComponentModel.ISupportInitialize)columnasNumField).EndInit();
