@@ -14,16 +14,17 @@ namespace Safari.model.position
         /// Coordenada x, siendo 0 el borde izquierdo de la pantalla y cada vez más grande
         /// al desplazarnos hacia la derecha
         /// </summary>
-        public int X { get; set; }
+        public int Fila { get; set; }
 
         /// <summary>
         /// Coordenada y, siendo 0 el borde superior de la pantalla y cada vez más grande
         /// al desplazarnos hacia abajo
         /// </summary>
-        public int Y { get; set; }
+        public int Columna { get; set; }
 
-        public Position(int x, int y) {
-            X = x; Y = y; 
+        public Position(int fila, int columna) {
+            Fila = fila;
+            Columna = columna; 
         }
     }
 }

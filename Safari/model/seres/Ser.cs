@@ -1,5 +1,4 @@
 ﻿using Safari.model.position;
-using System;
 
 namespace Safari.model.seres
 {
@@ -12,12 +11,32 @@ namespace Safari.model.seres
 
         protected bool debeReproducirse;
 
-        protected Position position;
+        /// <summary>
+        /// Días que han pasado desde la última reproducción
+        /// </summary>
+        protected int diasDesdeReproduccion;
 
-        protected bool checkReproduccion()
+        protected int diasVividos;
+
+        public void checkReproduccion()
         {
-            position.X = 0;
-            return true;
+            if (diasVividos == periodoReproduccion ||
+                diasDesdeReproduccion == periodoReproduccion)
+                debeReproducirse = true;
         }
+
+        public void reproducirse()
+        {
+            debeReproducirse = false;
+            diasDesdeReproduccion = 0;
+        }
+
+        public Ser()
+        {
+            diasDesdeReproduccion = 0;
+            diasVividos = 0;
+            debeReproducirse = false;
+        }
+
     }
 }

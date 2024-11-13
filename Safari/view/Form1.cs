@@ -13,47 +13,39 @@ namespace Safari
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void paintSeres(Graphics g)
         {
             Dictionary<Position, Ser?> seres = Controller.Safari.getSeres();
             Font font = new Font("Arial", 8);
 
-             foreach (var entry in seres)
-             {
-
-                using (Brush brush = new SolidBrush(Color.Black))
+            foreach (var entry in seres)
+            {
+                //String texto = entry.Value != null ? entry.Value.ToString() : "";
+                //g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );
+                Ser? ser = entry.Value;
+                if (ser != null)
                 {
-                    String texto = entry.Value != null ? entry.Value.ToString() : "";
-                    g.DrawString(texto, font, brush, entry.Key.X * 50, entry.Key.Y * 30);
+                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
+                    
+                    var bitmap = new Bitmap(40, 40);
+                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    g.DrawImage(image, entry.Key.Columna * 50, entry.Key.Fila * 50, 40, 40);
                 }
-             }
+            }
             Update();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             paintSeres(e.Graphics);
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) {}
+
+        private void button4_Click(object sender, EventArgs e) {}
+
+        private void groupBox1_Enter(object sender, EventArgs e) {}
+
+        private void button5_Click(object sender, EventArgs e) {}
     }
 }
