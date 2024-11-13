@@ -3,7 +3,7 @@ using System;
 
 namespace Safari.model.seres
 {
-    internal abstract class Ser
+    public abstract class Ser
     {
         /// <summary>
         /// Número de días que tienen que pasar para que se pueda reproducir

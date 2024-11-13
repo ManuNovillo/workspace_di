@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Safari.model.position
 {
-    internal class Position
+    public class Position
     {
 
         /// <summary>

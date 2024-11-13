@@ -6,12 +6,11 @@ namespace Safari
 {
     public partial class Form1 : Form
     {
-        private Controller Controller {  get; set; }
+        private Controller Controller { get; set; }
         public Form1(Controller controller)
         {
             this.Controller = controller;
             InitializeComponent();
-            paintSeres();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -24,22 +23,37 @@ namespace Safari
 
         }
 
-        private void paintSeres()
+        private void paintSeres(Graphics g)
         {
             Dictionary<Position, Ser?> seres = Controller.Safari.getSeres();
-            foreach (var entry in seres)
-            {
-                Console.WriteLine("DADAD");
-                Label ser = new Label();
-                String texto = entry.Value.GetType().Name;
-                ser.AutoSize = true;
-                Position pos = entry.Key;
-                ser.Location = new Point(pos.X * 30, pos.Y * 30);
-                ser.Size = new Size(186, 15);
-                ser.TabIndex = 6;
-                ser.Text = texto == null ? "" : texto;
+            Font font = new Font("Arial", 8);
 
-            }
+             foreach (var entry in seres)
+             {
+
+                using (Brush brush = new SolidBrush(Color.Black))
+                {
+                    String texto = entry.Value != null ? entry.Value.ToString() : "";
+                    g.DrawString(texto, font, brush, entry.Key.X * 50, entry.Key.Y * 30);
+                }
+             }
+            Update();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            paintSeres(e.Graphics);
         }
     }
 }

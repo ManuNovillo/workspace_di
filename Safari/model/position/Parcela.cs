@@ -3,12 +3,13 @@ using Safari.model.seres;
 
 namespace Safari.model.position
 {
-    internal class Parcela
+    public class Parcela
     {
         /// <summary>
         /// Diccionario donde se almacena cada posición y el ser que hay en ella (puede no haber ninguno)
         /// </summary>
-        internal Dictionary<Position, Ser?> Posiciones { get; set; }
+
+        public Dictionary<Position, Ser?> Posiciones { get; set; }
         public Parcela()
         {
             Posiciones = new Dictionary<Position, Ser?>();

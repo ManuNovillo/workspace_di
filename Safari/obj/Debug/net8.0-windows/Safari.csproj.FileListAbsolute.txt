@@ -33,3 +33,4 @@ C:\visual_studio_workspaces\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.
 C:\visual_studio_workspaces\workspace_di\Safari\bin\Debug\net8.0-windows\Safari.pdb
 C:\visual_studio_workspaces\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.genruntimeconfig.cache
 C:\visual_studio_workspaces\workspace_di\Safari\obj\Debug\net8.0-windows\ref\Safari.dll
+C:\Users\diurno\workspace_di\Safari\obj\Debug\net8.0-windows\Safari.view.VentanaInicio.resources

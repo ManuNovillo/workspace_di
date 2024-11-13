@@ -8,6 +8,9 @@ namespace Safari.model.seres
 {
     internal class Leon : Carnivoro
     {
-
+        public override String ToString()
+        {
+            return "Leon";
+        }
     }
 }

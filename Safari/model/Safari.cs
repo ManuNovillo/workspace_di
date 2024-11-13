@@ -19,7 +19,12 @@ namespace Safari.model
             Parcela.Columnas = columnas;
         }
 
-        internal Dictionary<Position, Ser?> getSeres()
+        public void fillParcela()
+        {
+            Parcela.fillParcela();
+        }
+
+        public Dictionary<Position, Ser?> getSeres()
         {
             return Parcela.Posiciones;
         }
