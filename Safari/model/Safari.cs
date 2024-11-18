@@ -55,6 +55,14 @@ namespace Safari.model
             {
                 var posicion = entry.Key;
                 var posicionesDisponibles = parcela.getSurroundingPositions(posicion);
+                foreach (var pos in posicionesDisponibles)
+                {
+                    Ser ser;
+                    if (parcela.posiciones.TryGetValue(pos, out ser))
+                    {
+                       if ()
+                    }
+                }
             }
         }
     }

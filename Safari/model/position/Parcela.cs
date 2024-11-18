@@ -62,10 +62,23 @@ namespace Safari.model.position
             List<Position> posiciones = new List<Position>();
 
             var fila = pos.fila;
+            int filaNueva;
+            int columnaNueva;
             var columna = pos.columna;
-            for (int i = 0; i < 4; i++)
+            for (int i = -1; i <= 1; i++)
             {
-
+                filaNueva = fila + i;
+                if (filaNueva < 0) filaNueva = this.filas;
+                else if (filaNueva >= this.filas) filaNueva = 0;
+                for (int j = -1; j <= 1; j++)
+                {
+                    columnaNueva = columna + j;
+                    if (columnaNueva < 0) columnaNueva = this.columnas;
+                    else if (columnaNueva >= this.columnas) columnaNueva = 0;
+                    if (filaNueva == fila && columnaNueva == columna) continue;
+                    Position position = new Position(filaNueva, columnaNueva);
+                    posiciones.Add(position);
+                }
             }
             
             return posiciones;

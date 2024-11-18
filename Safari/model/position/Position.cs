@@ -1,11 +1,4 @@
-﻿using Safari.model.seres;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Safari.model.position
+﻿namespace Safari.model.position
 {
     /*public class Position
     {
