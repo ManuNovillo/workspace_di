@@ -146,12 +146,14 @@
             flowLayoutPanel1.SetFlowBreak(flowLayoutPanel2, true);
             flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Padding = new Padding(0, 5, 0, 0);
             flowLayoutPanel2.Size = new Size(498, 42);
             flowLayoutPanel2.TabIndex = 0;
+            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
             // button5
             // 
-            button5.Location = new Point(3, 2);
+            button5.Location = new Point(3, 7);
             button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
             button5.Size = new Size(82, 22);
@@ -162,7 +164,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(91, 2);
+            button2.Location = new Point(91, 7);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(82, 22);
@@ -172,7 +174,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(179, 2);
+            button4.Location = new Point(179, 7);
             button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
             button4.Size = new Size(82, 22);
@@ -183,7 +185,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(267, 2);
+            button1.Location = new Point(267, 7);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(82, 22);
@@ -193,7 +195,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(355, 2);
+            button3.Location = new Point(355, 7);
             button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
             button3.Size = new Size(82, 22);

@@ -6,27 +6,56 @@ namespace Safari.model
 {
     public class MiSafari
     {
-        private Parcela Parcela { get; set; }
+        private Parcela parcela { get; set; }
         
         public MiSafari() 
         {
-            Parcela = new Parcela();
+            parcela = new Parcela();
         }
 
         public void setDimensiones(int filas, int columnas)
         {
-            Parcela.Filas = filas;
-            Parcela.Columnas = columnas;
+            parcela.filas = filas;
+            parcela.columnas = columnas;
         }
 
         public void fillParcela()
         {
-            Parcela.fillParcela();
+            parcela.fillParcela();
         }
 
         public Dictionary<Position, Ser?> getSeres()
         {
-            return Parcela.Posiciones;
+            return parcela.posiciones;
+        }
+
+        public int getFilasMaximas()
+        {
+            return Parcela.filasMaximas;
+        }
+
+        public int getColumnasMaximas()
+        {
+            return Parcela.columnasMaximas;
+        }
+
+        public int getFilasMinimas()
+        {
+            return Parcela.filasMinimas;
+        }
+
+        public int getColumnasMinimas()
+        {
+            return Parcela.columnasMinimas;
+        }
+
+        public void nextDia()
+        {
+            foreach (var entry in parcela.posiciones)
+            {
+                var posicion = entry.Key;
+                var posicionesDisponibles = parcela.getSurroundingPositions(posicion);
+            }
         }
     }
 }

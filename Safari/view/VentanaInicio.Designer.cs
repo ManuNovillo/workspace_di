@@ -33,6 +33,7 @@
             columnasNumField = new NumericUpDown();
             label1 = new Label();
             label2 = new Label();
+            errorLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)filasNumField).BeginInit();
             ((System.ComponentModel.ISupportInitialize)columnasNumField).BeginInit();
             SuspendLayout();
@@ -84,11 +85,24 @@
             label2.Text = "Introduce el número de columnas";
             label2.Click += label2_Click;
             // 
+            // errorLabel
+            // 
+            errorLabel.ForeColor = Color.Red;
+            errorLabel.Location = new Point(57, 237);
+            errorLabel.Name = "errorLabel";
+            errorLabel.Size = new Size(577, 15);
+            errorLabel.TabIndex = 7;
+            errorLabel.Text = "label3";
+            errorLabel.TextAlign = ContentAlignment.MiddleCenter;
+            errorLabel.Visible = false;
+            errorLabel.Click += label3_Click;
+            // 
             // VentanaInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
+            Controls.Add(errorLabel);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(columnasNumField);
@@ -111,5 +125,6 @@
         private NumericUpDown columnasNumField;
         private Label label1;
         private Label label2;
+        private Label errorLabel;
     }
 }

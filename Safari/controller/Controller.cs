@@ -4,17 +4,39 @@ namespace Safari.controller
 {
     public class Controller
     {
-        internal MiSafari Safari { get;  set; }
+        public MiSafari safari;
+
         public Controller(MiSafari safari) 
         { 
-            this.Safari = safari;
+            this.safari = safari;
         }
+
         public void startSafari(int filas, int columnas)
         {
-            Safari.setDimensiones(filas, columnas);
-            Safari.fillParcela();
+            safari.setDimensiones(filas, columnas);
+            safari.fillParcela();
             Form1 form = new Form1(this);
             form.ShowDialog();
+        }
+
+        public int getFilasMaximas()
+        {
+            return safari.getFilasMaximas();
+        }
+
+        public int getColumnasMaximas()
+        {
+            return safari.getColumnasMaximas();
+        }
+
+        public int getFilasMinimas()
+        {
+            return safari.getFilasMinimas();
+        }
+
+        public int getColumnasMinimas()
+        {
+            return safari.getColumnasMinimas();
         }
     }
 }

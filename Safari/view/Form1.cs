@@ -15,7 +15,7 @@ namespace Safari
 
         private void paintSeres(Graphics g)
         {
-            Dictionary<Position, Ser?> seres = Controller.Safari.getSeres();
+            Dictionary<Position, Ser?> seres = Controller.safari.getSeres();
             Font font = new Font("Arial", 8);
 
             foreach (var entry in seres)
@@ -26,10 +26,9 @@ namespace Safari
                 if (ser != null)
                 {
                     var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
-                    
                     var bitmap = new Bitmap(40, 40);
                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    g.DrawImage(image, entry.Key.Columna * 50, entry.Key.Fila * 50, 40, 40);
+                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
                 }
             }
             Update();
@@ -40,12 +39,17 @@ namespace Safari
             paintSeres(e.Graphics);
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) {}
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-        private void button4_Click(object sender, EventArgs e) {}
+        private void button4_Click(object sender, EventArgs e) { }
 
-        private void groupBox1_Enter(object sender, EventArgs e) {}
+        private void groupBox1_Enter(object sender, EventArgs e) { }
 
-        private void button5_Click(object sender, EventArgs e) {}
+        private void button5_Click(object sender, EventArgs e) { }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
