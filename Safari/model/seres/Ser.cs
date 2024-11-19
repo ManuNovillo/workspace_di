@@ -36,6 +36,8 @@ namespace Safari.model.seres
             diasDesdeReproduccion = 0;
             diasVividos = 0;
             puedeReproducirse = false;
+            num = numStatic;
+            numStatic++;
         }
 
         public bool debeReproducirse()
@@ -43,5 +45,7 @@ namespace Safari.model.seres
             return puedeReproducirse;
         }
 
+        static int numStatic = 0;
+        public int num;
     }
 }

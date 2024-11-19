@@ -1,54 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Safari\\",
+  "WorkspaceRootPath": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|C:\\Users\\diurno\\workspace_di\\Safari\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|C:\\Users\\diurno\\workspace_di\\Safari\\view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\gacela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\gacela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\position\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\seres\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\seres\\herbivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\herbivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\leon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\leon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\planta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\carnivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\carnivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\position\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\herbivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\herbivoro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,128 +62,140 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Ser.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Ser.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Ser.cs",
               "RelativeDocumentMoniker": "model\\seres\\Ser.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Ser.cs",
-              "RelativeToolTip": "model\\seres\\Ser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Ser.cs*",
+              "RelativeToolTip": "model\\seres\\Ser.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T09:47:58.998Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gacela.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Gacela.cs",
+              "RelativeDocumentMoniker": "model\\seres\\Gacela.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Gacela.cs",
+              "RelativeToolTip": "model\\seres\\Gacela.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T20:45:37.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Leon.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Leon.cs",
+              "RelativeDocumentMoniker": "model\\seres\\Leon.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Leon.cs",
+              "RelativeToolTip": "model\\seres\\Leon.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T20:45:35.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\Form1.cs",
+              "RelativeDocumentMoniker": "view\\Form1.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "view\\Form1.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T17:56:56.373Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Carnivoro.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Carnivoro.cs",
+              "RelativeDocumentMoniker": "model\\seres\\Carnivoro.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Carnivoro.cs",
+              "RelativeToolTip": "model\\seres\\Carnivoro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:55:33.102Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Herbivoro.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Herbivoro.cs",
-              "RelativeDocumentMoniker": "model\\seres\\Herbivoro.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Herbivoro.cs",
-              "RelativeToolTip": "model\\seres\\Herbivoro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Parcela.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Parcela.cs",
+              "RelativeDocumentMoniker": "model\\position\\Parcela.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Parcela.cs",
+              "RelativeToolTip": "model\\position\\Parcela.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAD4v0sAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T09:38:31.062Z"
+              "WhenOpened": "2024-11-19T16:53:53.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\Form1.cs",
               "RelativeDocumentMoniker": "view\\Form1.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.cs",
-              "RelativeToolTip": "view\\Form1.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAlwBoAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\Form1.cs*",
+              "RelativeToolTip": "view\\Form1.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T14:46:48.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "VentanaInicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaInicio.cs",
               "RelativeDocumentMoniker": "view\\VentanaInicio.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaInicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "view\\VentanaInicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:17:09.246Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-14T19:17:09.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "view\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.Designer.cs",
-              "RelativeToolTip": "view\\Form1.Designer.cs",
-              "ViewState": "AgIAAAABAAAAAAAAAAAQwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T19:24:54.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.cs",
-              "RelativeDocumentMoniker": "view\\Form1.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "view\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:57:55.789Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Parcela.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Parcela.cs",
-              "RelativeDocumentMoniker": "model\\position\\Parcela.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Parcela.cs",
-              "RelativeToolTip": "model\\position\\Parcela.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowEMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:44:36.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Position.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Position.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Position.cs",
               "RelativeDocumentMoniker": "model\\position\\Position.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Position.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Position.cs",
               "RelativeToolTip": "model\\position\\Position.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T11:26:12.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Safari.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\Safari.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\Safari.cs",
               "RelativeDocumentMoniker": "model\\Safari.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\Safari.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\Safari.cs",
               "RelativeToolTip": "model\\Safari.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA8wD4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwDcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T19:39:37.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Planta.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Planta.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Planta.cs",
               "RelativeDocumentMoniker": "model\\seres\\Planta.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Planta.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Planta.cs",
               "RelativeToolTip": "model\\seres\\Planta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,25 +203,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\controller\\Controller.cs",
-              "RelativeDocumentMoniker": "controller\\Controller.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\controller\\Controller.cs",
-              "RelativeToolTip": "controller\\Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Herbivoro.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Herbivoro.cs",
+              "RelativeDocumentMoniker": "model\\seres\\Herbivoro.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Herbivoro.cs",
+              "RelativeToolTip": "model\\seres\\Herbivoro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T19:54:40.626Z"
+              "WhenOpened": "2024-11-19T16:55:30.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "VentanaInicio.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaInicio.cs",
               "RelativeDocumentMoniker": "view\\VentanaInicio.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaInicio.cs",
               "RelativeToolTip": "view\\VentanaInicio.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAnwDUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T19:33:10.766Z"
             }

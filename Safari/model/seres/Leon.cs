@@ -8,6 +8,10 @@ namespace Safari.model.seres
 {
     internal class Leon : Carnivoro
     {
+        static Leon()
+        {
+            tipoComida = typeof(Gacela);
+        }
         public override String ToString()
         {
             return "Leon";

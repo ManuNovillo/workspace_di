@@ -51,15 +51,20 @@ namespace Safari.view
             else
             {
                 Hide();
-                controller.startSafari((int) filasNumField.Value, (int) columnasNumField.Value);
-                Close(); 
+                controller.startSafari((int)filasNumField.Value, (int)columnasNumField.Value);
+                Close();
 
             }
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void VentanaInicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

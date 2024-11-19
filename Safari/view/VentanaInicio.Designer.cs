@@ -112,6 +112,7 @@
             Name = "VentanaInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VentanaInicio";
+            Load += VentanaInicio_Load;
             ((System.ComponentModel.ISupportInitialize)filasNumField).EndInit();
             ((System.ComponentModel.ISupportInitialize)columnasNumField).EndInit();
             ResumeLayout(false);

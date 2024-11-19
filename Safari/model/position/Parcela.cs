@@ -14,9 +14,9 @@ namespace Safari.model.position
 
         public const int columnasMaximas = 15;
 
-        public const int filasMinimas = 2;
+        public const int filasMinimas = 3;
 
-        public const int columnasMinimas = 2;
+        public const int columnasMinimas = 3;
         public Parcela()
         {
             posiciones = new Dictionary<Position, Ser?>();
@@ -68,12 +68,12 @@ namespace Safari.model.position
             for (int i = -1; i <= 1; i++)
             {
                 filaNueva = fila + i;
-                if (filaNueva < 0) filaNueva = this.filas;
+                if (filaNueva < 0) filaNueva = this.filas - 1;
                 else if (filaNueva >= this.filas) filaNueva = 0;
                 for (int j = -1; j <= 1; j++)
                 {
                     columnaNueva = columna + j;
-                    if (columnaNueva < 0) columnaNueva = this.columnas;
+                    if (columnaNueva < 0) columnaNueva = this.columnas - 1;
                     else if (columnaNueva >= this.columnas) columnaNueva = 0;
                     if (filaNueva == fila && columnaNueva == columna) continue;
                     Position position = new Position(filaNueva, columnaNueva);

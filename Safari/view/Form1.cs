@@ -6,29 +6,33 @@ namespace Safari
 {
     public partial class Form1 : Form
     {
-        private Controller Controller { get; set; }
+        private Controller controller { get; set; }
         public Form1(Controller controller)
         {
-            this.Controller = controller;
+            this.controller = controller;
             InitializeComponent();
         }
 
         private void paintSeres(Graphics g)
         {
-            Dictionary<Position, Ser?> seres = Controller.safari.getSeres();
+            Dictionary<Position, Ser?> seres = controller.safari.getSeres();
+            
             Font font = new Font("Arial", 8);
-
+            var contador = 0;
             foreach (var entry in seres)
             {
                 //String texto = entry.Value != null ? entry.Value.ToString() : "";
                 //g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );
                 Ser? ser = entry.Value;
+                
                 if (ser != null)
                 {
-                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
+                    /*var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
                     var bitmap = new Bitmap(40, 40);
                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
+                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);*/
+                    g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 50, entry.Key.fila * 50);
+                    contador++;
                 }
             }
             Update();
@@ -41,15 +45,42 @@ namespace Safari
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-        private void button4_Click(object sender, EventArgs e) { }
+        private void button4_Click(object sender, EventArgs e) {
+            step();
+        }
 
         private void groupBox1_Enter(object sender, EventArgs e) { }
 
-        private void button5_Click(object sender, EventArgs e) { }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            autoplay();
+        }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void autoplay()
+        {
+            Thread thread = new(() =>
+            {
+                while (true)
+                {
+                    step();
+                    Thread.Sleep(2000);
+                }
+
+            });
+            thread.IsBackground = true;
+            thread.Start();
+            
+        }
+
+        private void step()
+        {
+            controller.step();
+            Refresh();
         }
     }
 }

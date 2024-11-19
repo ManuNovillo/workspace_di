@@ -41,11 +41,11 @@
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
             flowLayoutPanel1 = new FlowLayoutPanel();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            button5 = new Button();
-            button2 = new Button();
-            button4 = new Button();
-            button1 = new Button();
-            button3 = new Button();
+            autoplayButton = new Button();
+            stopButton = new Button();
+            stepButton = new Button();
+            pauseButton = new Button();
+            resetButton = new Button();
             panel1 = new Panel();
             menuStrip1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -58,8 +58,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { funcionesPrincipalesToolStripMenuItem, ayudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(6, 3, 0, 3);
-            menuStrip1.Size = new Size(913, 30);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(799, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -67,156 +67,163 @@
             // 
             funcionesPrincipalesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { stepToolStripMenuItem, resetToolStripMenuItem, playToolStripMenuItem, pauseToolStripMenuItem, stopToolStripMenuItem, exitToolStripMenuItem });
             funcionesPrincipalesToolStripMenuItem.Name = "funcionesPrincipalesToolStripMenuItem";
-            funcionesPrincipalesToolStripMenuItem.Size = new Size(163, 24);
+            funcionesPrincipalesToolStripMenuItem.Size = new Size(133, 20);
             funcionesPrincipalesToolStripMenuItem.Text = "Funciones Principales";
             // 
             // stepToolStripMenuItem
             // 
             stepToolStripMenuItem.Name = "stepToolStripMenuItem";
-            stepToolStripMenuItem.Size = new Size(129, 26);
+            stepToolStripMenuItem.Size = new Size(105, 22);
             stepToolStripMenuItem.Text = "Step";
             // 
             // resetToolStripMenuItem
             // 
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            resetToolStripMenuItem.Size = new Size(129, 26);
+            resetToolStripMenuItem.Size = new Size(105, 22);
             resetToolStripMenuItem.Text = "Reset";
             // 
             // playToolStripMenuItem
             // 
             playToolStripMenuItem.Name = "playToolStripMenuItem";
-            playToolStripMenuItem.Size = new Size(129, 26);
+            playToolStripMenuItem.Size = new Size(105, 22);
             playToolStripMenuItem.Text = "Play";
             // 
             // pauseToolStripMenuItem
             // 
             pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            pauseToolStripMenuItem.Size = new Size(129, 26);
+            pauseToolStripMenuItem.Size = new Size(105, 22);
             pauseToolStripMenuItem.Text = "Pause";
             // 
             // stopToolStripMenuItem
             // 
             stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            stopToolStripMenuItem.Size = new Size(129, 26);
+            stopToolStripMenuItem.Size = new Size(105, 22);
             stopToolStripMenuItem.Text = "Stop";
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(129, 26);
+            exitToolStripMenuItem.Size = new Size(105, 22);
             exitToolStripMenuItem.Text = "Exit";
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ayudaToolStripMenuItem1, acercaDeToolStripMenuItem });
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(65, 24);
+            ayudaToolStripMenuItem.Size = new Size(53, 20);
             ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // ayudaToolStripMenuItem1
             // 
             ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            ayudaToolStripMenuItem1.Size = new Size(158, 26);
+            ayudaToolStripMenuItem1.Size = new Size(126, 22);
             ayudaToolStripMenuItem1.Text = "Ayuda";
             // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(158, 26);
+            acercaDeToolStripMenuItem.Size = new Size(126, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = SystemColors.ActiveCaption;
             flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
-            flowLayoutPanel1.Location = new Point(11, 27);
+            flowLayoutPanel1.Location = new Point(10, 20);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(888, 60);
+            flowLayoutPanel1.Size = new Size(777, 45);
             flowLayoutPanel1.TabIndex = 1;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(button5);
-            flowLayoutPanel2.Controls.Add(button2);
-            flowLayoutPanel2.Controls.Add(button4);
-            flowLayoutPanel2.Controls.Add(button1);
-            flowLayoutPanel2.Controls.Add(button3);
+            flowLayoutPanel2.Controls.Add(autoplayButton);
+            flowLayoutPanel2.Controls.Add(stopButton);
+            flowLayoutPanel2.Controls.Add(stepButton);
+            flowLayoutPanel2.Controls.Add(pauseButton);
+            flowLayoutPanel2.Controls.Add(resetButton);
             flowLayoutPanel1.SetFlowBreak(flowLayoutPanel2, true);
-            flowLayoutPanel2.Location = new Point(3, 4);
-            flowLayoutPanel2.Margin = new Padding(3, 4, 3, 4);
+            flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Padding = new Padding(0, 7, 0, 0);
-            flowLayoutPanel2.Size = new Size(569, 56);
+            flowLayoutPanel2.Padding = new Padding(0, 5, 0, 0);
+            flowLayoutPanel2.Size = new Size(498, 42);
             flowLayoutPanel2.TabIndex = 0;
             flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
-            // button5
+            // autoplayButton
             // 
-            button5.Location = new Point(3, 10);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 0;
-            button5.Text = "PLAY";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            autoplayButton.Location = new Point(3, 7);
+            autoplayButton.Margin = new Padding(3, 2, 3, 2);
+            autoplayButton.Name = "autoplayButton";
+            autoplayButton.Size = new Size(82, 22);
+            autoplayButton.TabIndex = 0;
+            autoplayButton.Text = "AUTOPLAY";
+            autoplayButton.UseVisualStyleBackColor = true;
+            autoplayButton.Click += button5_Click;
             // 
-            // button2
+            // stopButton
             // 
-            button2.Location = new Point(103, 10);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "STOP";
-            button2.UseVisualStyleBackColor = true;
+            stopButton.Location = new Point(91, 7);
+            stopButton.Margin = new Padding(3, 2, 3, 2);
+            stopButton.Name = "stopButton";
+            stopButton.Size = new Size(82, 22);
+            stopButton.TabIndex = 1;
+            stopButton.Text = "STOP";
+            stopButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // stepButton
             // 
-            button4.Location = new Point(203, 10);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 2;
-            button4.Text = "STEP";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            stepButton.Location = new Point(179, 7);
+            stepButton.Margin = new Padding(3, 2, 3, 2);
+            stepButton.Name = "stepButton";
+            stepButton.Size = new Size(82, 22);
+            stepButton.TabIndex = 2;
+            stepButton.Text = "STEP";
+            stepButton.UseVisualStyleBackColor = true;
+            stepButton.Click += button4_Click;
             // 
-            // button1
+            // pauseButton
             // 
-            button1.Location = new Point(303, 10);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "PAUSE";
-            button1.UseVisualStyleBackColor = true;
+            pauseButton.Location = new Point(267, 7);
+            pauseButton.Margin = new Padding(3, 2, 3, 2);
+            pauseButton.Name = "pauseButton";
+            pauseButton.Size = new Size(82, 22);
+            pauseButton.TabIndex = 3;
+            pauseButton.Text = "PAUSE";
+            pauseButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // resetButton
             // 
-            button3.Location = new Point(403, 10);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 4;
-            button3.Text = "RESET";
-            button3.UseVisualStyleBackColor = true;
+            resetButton.Location = new Point(355, 7);
+            resetButton.Margin = new Padding(3, 2, 3, 2);
+            resetButton.Name = "resetButton";
+            resetButton.Size = new Size(82, 22);
+            resetButton.TabIndex = 4;
+            resetButton.Text = "RESET";
+            resetButton.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Location = new Point(11, 93);
+            panel1.Location = new Point(10, 70);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(888, 528);
+            panel1.Size = new Size(777, 396);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(913, 636);
+            ClientSize = new Size(799, 477);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Safari";
@@ -242,12 +249,12 @@
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button4;
+        private Button resetButton;
+        private Button stopButton;
+        private Button pauseButton;
+        private Button stepButton;
         private FlowLayoutPanel flowLayoutPanel2;
-        private Button button5;
+        private Button autoplayButton;
     }
 }
                       

@@ -38,5 +38,10 @@ namespace Safari.controller
         {
             return safari.getColumnasMinimas();
         }
+
+        public void step()
+        {
+            safari.step();
+        }
     }
 }
