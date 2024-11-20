@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Safari
-build_property.ProjectDir = C:\visual_studio_workspaces\workspace_di\Safari\
+build_property.ProjectDir = C:\Users\diurno\workspace_di\Safari\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
