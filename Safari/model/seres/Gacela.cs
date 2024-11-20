@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Safari.model.seres
+﻿namespace Safari.model.seres
 {
-    internal class Gacela : Herbivoro
+    internal class Gacela : Animal
     {
-        static Gacela()
-        {
-            tipoComida = typeof(Planta);
-        }
         public override String ToString()
         {
             return "Gacela";
+        }
+
+        public override Type getTipoComida()
+        {
+            return typeof(Planta);
         }
     }
 }

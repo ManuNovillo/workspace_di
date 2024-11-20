@@ -55,10 +55,11 @@ namespace Safari.model
             var seresRecorridos = new List<Ser>();
             foreach (var key in keys)
             {
-                Console.WriteLine(key);
                 var ser = parcela.posiciones[key];
                 if (ser == null) continue;
                 if (seresRecorridos.Contains(ser)) continue;
+                Console.WriteLine($"SER: {ser.ToString() + ser.num}");
+                Console.WriteLine($"POSICION INICIAL: {key}");
                 seresRecorridos.Add(ser);
                 var posicionesAlrededor = parcela.getSurroundingPositions(key);
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
@@ -67,36 +68,54 @@ namespace Safari.model
                 if (ser is Animal)
                 {
                     Animal animal = (Animal) ser;
-                    posicionesConComida.AddRange(getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor));
+                    Type tipoComida = animal.getTipoComida();
+                    posicionesConComida.AddRange(getPosicionesConComida(tipoComida, posicionesAlrededor));
+                    var nuevaPosicion = key;
                     if (posicionesConComida.Count != 0)
                     {
                         int numAleatorio = random.Next(posicionesConComida.Count);
                         var posicionElegida = posicionesConComida[numAleatorio];
-                        mover(key, posicionElegida);
+                        comer(key, posicionElegida);
+                        nuevaPosicion = posicionElegida;
+                        Console.WriteLine("COMIDA");
                     }
                     else if (posicionesVacias.Count != 0)
                     {
                         int numAleatorio = random.Next(posicionesVacias.Count);
                         var posicionElegida = posicionesVacias[numAleatorio];
                         mover(key, posicionElegida);
+                        nuevaPosicion = posicionElegida;
+                        Console.WriteLine("MOVER");
                     }
+                    if (animal.debeMorirDeInanicion())
+                    {
+                        matarSerEnPosicion(nuevaPosicion);
+                    }
+                    animal.sumarDiasSinComer();
                 }
             }
         }
 
-        private void eliminarSerEnPosicion(Position posicionElegida)
+        private void comer(Position key, Position posicionElegida)
+        {
+            var animal = (Animal) parcela.posiciones[key];
+            animal.comer();
+            mover(key, posicionElegida);
+        }
+
+        private void matarSerEnPosicion(Position posicionElegida)
         {
             parcela.posiciones[posicionElegida] = null;
         }
 
         private void mover(Position origen, Position destino)
         {
-            Console.WriteLine($"ORIGEN: {origen}");
             Ser ser = parcela.posiciones[origen];
-            eliminarSerEnPosicion(origen);
+            matarSerEnPosicion(origen);
+            Ser? serEnDestino = parcela.posiciones[destino];
             parcela.posiciones[destino] = ser;
             Console.WriteLine($"DESTINO: {destino}");
-            Console.WriteLine($"SER: {ser?.ToString() + ser?.num}");
+            Console.WriteLine($"SER QUE HABIA EN DESTINO: {serEnDestino?.ToString() + serEnDestino?.num}");
         }
 
         private List<Position> getPosicionesConComida(Type tipoComida, List<Position> posiciones)
@@ -114,8 +133,7 @@ namespace Safari.model
             var posicionesVacias = new List<Position>();
             posiciones.ForEach(pos =>
             {
-                Ser? ser;
-                parcela.posiciones.TryGetValue(pos, out ser);
+                Ser? ser = parcela.posiciones[pos];
                 if (ser == null) posicionesVacias.Add(pos);
                
             });

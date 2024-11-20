@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Safari.model.seres
 {
-    internal class Leon : Carnivoro
+    internal class Leon : Animal
     {
-        static Leon()
-        {
-            tipoComida = typeof(Gacela);
-        }
         public override String ToString()
         {
             return "Leon";
+        }
+
+        public override Type getTipoComida()
+        {
+            return typeof(Gacela);
         }
     }
 }

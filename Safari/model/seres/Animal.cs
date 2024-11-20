@@ -2,12 +2,32 @@
 
 namespace Safari.model.seres
 {
-    internal class Animal : Ser
+    internal abstract class Animal : Ser
     {
-        protected static Type tipoComida { get; set; }
+        public abstract Type getTipoComida();
 
-        public Type getTipoComida() { 
-            return tipoComida; 
+        protected int diasSinComer;
+
+        protected int periodoMuerteInanicion = 3;
+
+        public int getDiasSinComer()
+        {
+            return diasSinComer;
+        }
+
+        public void comer()
+        {
+            diasSinComer = 0;
+        }
+
+        public bool debeMorirDeInanicion()
+        {
+            return diasSinComer >= periodoMuerteInanicion;
+        }
+
+        internal void sumarDiasSinComer()
+        {
+            diasSinComer++;
         }
     }
 }
