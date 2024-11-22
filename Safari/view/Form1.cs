@@ -6,6 +6,7 @@ namespace Safari
 {
     public partial class Form1 : Form
     {
+        Thread hiloSafari;
         private Controller controller { get; set; }
         public Form1(Controller controller)
         {
@@ -15,8 +16,8 @@ namespace Safari
 
         private void paintSeres(Graphics g)
         {
-            Dictionary<Position, Ser?> seres = controller.safari.getSeres();
-            
+            Dictionary<Position, Ser?> seres = controller.getSeres();
+
             Font font = new Font("Arial", 8);
             var contador = 0;
             foreach (var entry in seres)
@@ -24,7 +25,7 @@ namespace Safari
                 //String texto = entry.Value != null ? entry.Value.ToString() : "";
                 //g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );
                 Ser? ser = entry.Value;
-                
+
                 if (ser != null)
                 {
                     /*var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
@@ -38,25 +39,32 @@ namespace Safari
             Update();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelSfari_Paint(object sender, PaintEventArgs e)
         {
             paintSeres(e.Graphics);
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-        private void button4_Click(object sender, EventArgs e) {
+        private void stepButton_Click(object sender, EventArgs e)
+        {
             step();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e) { }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void autoPlayButton_Click(object sender, EventArgs e)
         {
             autoplay();
         }
 
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pauseButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
         {
 
         }
@@ -74,7 +82,7 @@ namespace Safari
             });
             thread.IsBackground = true;
             thread.Start();
-            
+
         }
 
         private void step()
@@ -82,5 +90,6 @@ namespace Safari
             controller.step();
             Refresh();
         }
+
     }
 }

@@ -6,11 +6,65 @@ namespace Safari.model
 {
     public class MiSafari
     {
-        private Parcela parcela { get; set; }
-        
+        private Parcela parcela;
+
+        private int numeroPlantas;
+
+        private int numeroGacelas;
+
+        private int numeroLeones;
+
+        private int numeroSeres;
+
+        private int pasos;
+
+        public int NumeroPlantas { get => numeroPlantas; }
+
+        public int NumeroGacelas { get => numeroGacelas; }
+
+        public int NumeroLeones { get => numeroLeones; }
+
+        public int NumeroSeres { get => numeroSeres; }
+
+        public int Pasos { get => pasos; }
+
         public MiSafari() 
         {
             parcela = new Parcela();
+            setNumeroPlantas();
+            setNumeroGacelas();
+            setNumeroLeones();
+            setNumeroSeres();
+        }
+
+        private void setNumeroPlantas()
+        {
+            setNumero(typeof(Planta), out numeroPlantas);
+        }
+
+        private void setNumeroGacelas()
+        {
+            setNumero(typeof(Gacela), out numeroGacelas);
+        }
+
+        private void setNumeroLeones()
+        {
+            setNumero(typeof(Leon), out numeroLeones);
+        }
+
+        private void setNumeroSeres()
+        {
+            numeroSeres = numeroGacelas + numeroLeones + numeroPlantas;
+        }
+
+        private void setNumero(Type type, out int numOut)
+        {
+            var num = 0;
+            foreach (var ser in parcela.posiciones.Values)
+            {
+                if (ser.GetType() == type) num++;
+            }
+            numOut = num;
         }
 
         public void setDimensiones(int filas, int columnas)
@@ -101,6 +155,11 @@ namespace Safari.model
             var animal = (Animal) parcela.posiciones[key];
             animal.comer();
             mover(key, posicionElegida);
+        }
+
+        public int getNumeroPlantas()
+        {
+
         }
 
         private void matarSerEnPosicion(Position posicionElegida)

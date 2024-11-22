@@ -1,10 +1,12 @@
 ﻿using Safari.model;
+using Safari.model.position;
+using Safari.model.seres;
 
 namespace Safari.controller
 {
     public class Controller
     {
-        public MiSafari safari;
+        private MiSafari safari;
 
         public Controller(MiSafari safari) 
         { 
@@ -42,6 +44,11 @@ namespace Safari.controller
         public void step()
         {
             safari.step();
+        }
+
+        public Dictionary<Position, Ser?> getSeres()
+        {
+            return safari.getSeres();
         }
     }
 }
