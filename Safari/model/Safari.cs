@@ -157,10 +157,10 @@ namespace Safari.model
             mover(key, posicionElegida);
         }
 
-        public int getNumeroPlantas()
+        /*public int getNumeroPlantas()
         {
-
-        }
+            return 0;
+        }*/
 
         private void matarSerEnPosicion(Position posicionElegida)
         {

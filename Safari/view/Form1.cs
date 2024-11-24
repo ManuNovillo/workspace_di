@@ -19,21 +19,21 @@ namespace Safari
             Dictionary<Position, Ser?> seres = controller.getSeres();
 
             Font font = new Font("Arial", 8);
-            var contador = 0;
+            //var contador = 0;
             foreach (var entry in seres)
             {
-                //String texto = entry.Value != null ? entry.Value.ToString() : "";
-                //g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );
+                /*String texto = entry.Value != null ? entry.Value.ToString() : "";
+                g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );*/
                 Ser? ser = entry.Value;
 
                 if (ser != null)
                 {
-                    /*var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
+                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser.ToString()}.png");
                     var bitmap = new Bitmap(40, 40);
                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);*/
-                    g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
-                    contador++;
+                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
+                    /*g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
+                    contador++;*/
                 }
             }
             Update();
