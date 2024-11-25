@@ -25,7 +25,7 @@ namespace Safari.model.seres
             return diasSinComer >= periodoMuerteInanicion;
         }
 
-        internal void sumarDiasSinComer()
+        internal void incrementarDiasSinComer()
         {
             diasSinComer++;
         }

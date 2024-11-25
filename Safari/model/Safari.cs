@@ -1,6 +1,8 @@
 ﻿using Safari.model.position;
 using Safari.model.seres;
 using System;
+using System.Reflection;
+using System.Windows.Forms;
 
 namespace Safari.model
 {
@@ -28,7 +30,7 @@ namespace Safari.model
 
         public int Pasos { get => pasos; }
 
-        public MiSafari() 
+        public MiSafari()
         {
             parcela = new Parcela();
             setNumeroPlantas();
@@ -104,57 +106,76 @@ namespace Safari.model
         }
 
         public void step()
-        {   
+        {
             var keys = parcela.posiciones.Keys.ToList();
             var seresRecorridos = new List<Ser>();
-            foreach (var key in keys)
+            foreach (var posicionActual in keys)
             {
-                var ser = parcela.posiciones[key];
+                var ser = parcela.posiciones[posicionActual];
                 if (ser == null) continue;
                 if (seresRecorridos.Contains(ser)) continue;
                 Console.WriteLine($"SER: {ser.ToString() + ser.num}");
-                Console.WriteLine($"POSICION INICIAL: {key}");
+                Console.WriteLine($"POSICION INICIAL: {posicionActual}");
                 seresRecorridos.Add(ser);
-                var posicionesAlrededor = parcela.getSurroundingPositions(key);
+                var posicionesAlrededor = parcela.getSurroundingPositions(posicionActual);
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
-                var posicionesConComida = new List<Position>();
                 var random = new Random();
+                if (ser.debeReproducirse() && posicionesVacias.Count != 0)
+                {
+                    int numAleatorio = random.Next(posicionesVacias.Count);
+                    var posicionElegida = posicionesVacias[numAleatorio];
+                    reproducir(ser, posicionElegida);
+                   
+
+                }
+               
+                var posicionesConComida = new List<Position>();
+                
                 if (ser is Animal)
                 {
-                    Animal animal = (Animal) ser;
+                    Animal animal = (Animal)ser;
                     Type tipoComida = animal.getTipoComida();
                     posicionesConComida.AddRange(getPosicionesConComida(tipoComida, posicionesAlrededor));
-                    var nuevaPosicion = key;
+                    var nuevaPosicion = posicionActual;
                     if (posicionesConComida.Count != 0)
                     {
                         int numAleatorio = random.Next(posicionesConComida.Count);
                         var posicionElegida = posicionesConComida[numAleatorio];
-                        comer(key, posicionElegida);
+                        comer(posicionActual, posicionElegida);
                         nuevaPosicion = posicionElegida;
-                        Console.WriteLine("COMIDA");
+
                     }
                     else if (posicionesVacias.Count != 0)
                     {
                         int numAleatorio = random.Next(posicionesVacias.Count);
                         var posicionElegida = posicionesVacias[numAleatorio];
-                        mover(key, posicionElegida);
                         nuevaPosicion = posicionElegida;
-                        Console.WriteLine("MOVER");
                     }
+
+                    mover(posicionActual, nuevaPosicion);
+
                     if (animal.debeMorirDeInanicion())
                     {
-                        matarSerEnPosicion(nuevaPosicion);
+                        matarSerEnPosicion(nuevaPosicion); //nuevaPosicion porque ya se ha movido (si ha podido)
                     }
-                    animal.sumarDiasSinComer();
+                    animal.incrementarDiasSinComer();
                 }
             }
         }
 
-        private void comer(Position key, Position posicionElegida)
+        private void reproducir(Ser ser, Position posicionElegida)
         {
-            var animal = (Animal) parcela.posiciones[key];
+            Ser hijo = (Ser)ser.GetType().GetConstructor(Array.Empty<Type>()).Invoke(Array.Empty<Type>());
+            ser.reproducirse();
+            parcela.posiciones[posicionElegida] = hijo;
+        }
+
+        private Position comer(Position posicionActual, Position posicionElegida)
+        {
+            var animal = (Animal)parcela.posiciones[posicionActual];
             animal.comer();
-            mover(key, posicionElegida);
+            Console.WriteLine("COMIDA");
+            return posicionElegida;
         }
 
         /*public int getNumeroPlantas()
@@ -180,7 +201,8 @@ namespace Safari.model
         private List<Position> getPosicionesConComida(Type tipoComida, List<Position> posiciones)
         {
             var posicionesConComida = new List<Position>();
-            posiciones.ForEach (pos => {
+            posiciones.ForEach(pos =>
+            {
                 Ser? ser = parcela.posiciones[pos];
                 if (ser != null && ser.GetType().Equals(tipoComida)) posicionesConComida.Add(pos);
             });
@@ -194,7 +216,7 @@ namespace Safari.model
             {
                 Ser? ser = parcela.posiciones[pos];
                 if (ser == null) posicionesVacias.Add(pos);
-               
+
             });
             return posicionesVacias;
         }

@@ -17,5 +17,6 @@ namespace Safari.model.seres
         {
             return typeof(Gacela);
         }
+
     }
 }
