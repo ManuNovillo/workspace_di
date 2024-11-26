@@ -17,7 +17,7 @@ namespace Safari.controller
         {
             safari.setDimensiones(filas, columnas);
             safari.fillParcela();
-            Form1 form = new Form1(this);
+            VentanaSafari form = new VentanaSafari(this);
             form.ShowDialog();
         }
 

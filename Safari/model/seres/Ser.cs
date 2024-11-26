@@ -7,7 +7,7 @@ namespace Safari.model.seres
         /// <summary>
         /// Número de días que tienen que pasar para que se pueda reproducir
         /// </summary>
-        protected static int periodoReproduccion;
+        protected int periodoReproduccion;
 
         protected bool puedeReproducirse;
 
@@ -21,12 +21,7 @@ namespace Safari.model.seres
 
         protected int diasVividos;
 
-        public void checkReproduccion()
-        {
-            if (diasVividos == periodoReproduccion ||
-                diasDesdeUltimaReproduccion == periodoReproduccion)
-                puedeReproducirse = true;
-        }
+        
 
         public void reproducirse()
         {
@@ -45,13 +40,18 @@ namespace Safari.model.seres
 
         public bool debeReproducirse()
         {
-            return puedeReproducirse;
+            return diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion == periodoReproduccion);
         }
 
-        public void aumentarDiasVividos()
+        public void incrementarDiasVividos()
         {
             diasVividos++;
 
+        }
+
+        public void incrementarDiasDesdeUltimaReproduccion()
+        {
+            diasDesdeUltimaReproduccion++;
         }
 
     }

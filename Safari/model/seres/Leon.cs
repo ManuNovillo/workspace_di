@@ -8,6 +8,11 @@ namespace Safari.model.seres
 {
     internal class Leon : Animal
     {
+        public Leon()
+        {
+            this.periodoReproduccion = 6;
+        }
+
         public override String ToString()
         {
             return "Leon";

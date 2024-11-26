@@ -2,6 +2,12 @@
 {
     internal class Gacela : Animal
     {
+        public Gacela()
+        {
+            this.periodoReproduccion = 4;
+        }
+
+
         public override String ToString()
         {
             return "Gacela";

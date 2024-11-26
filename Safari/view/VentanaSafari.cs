@@ -4,11 +4,11 @@ using Safari.model.seres;
 
 namespace Safari
 {
-    public partial class Form1 : Form
+    public partial class VentanaSafari : Form
     {
         Thread hiloSafari;
         private Controller controller { get; set; }
-        public Form1(Controller controller)
+        public VentanaSafari(Controller controller)
         {
             this.controller = controller;
             InitializeComponent();
@@ -28,10 +28,10 @@ namespace Safari
 
                 if (ser != null)
                 {
-                   /* var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
-                    var bitmap = new Bitmap(40, 40);
-                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);*/
+                    /* var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
+                     var bitmap = new Bitmap(40, 40);
+                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                     g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);*/
                     g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
                     contador++;
                 }
@@ -91,5 +91,6 @@ namespace Safari
             Refresh();
         }
 
+        
     }
 }
