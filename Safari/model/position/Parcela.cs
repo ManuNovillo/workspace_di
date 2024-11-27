@@ -17,6 +17,7 @@ namespace Safari.model.position
         public const int filasMinimas = 3;
 
         public const int columnasMinimas = 3;
+        
         public Parcela()
         {
             posiciones = new Dictionary<Position, Ser?>();
@@ -29,6 +30,8 @@ namespace Safari.model.position
         {
             // Variable con la que determinar aleatoriamente qué ser poner en cada posición
             Random random = new Random();
+            posiciones.Clear();
+            
             for (int i = 0; i < filas; i++)
             {
                 for (int j = 0; j < columnas; j++)

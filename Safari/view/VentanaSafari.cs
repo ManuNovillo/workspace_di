@@ -6,20 +6,37 @@ namespace Safari
 {
     public partial class VentanaSafari : Form
     {
-        Thread hiloSafari;
+        private Thread hiloSafari;
+
+        private bool autoplayActivado;
         private Controller controller { get; set; }
         public VentanaSafari(Controller controller)
         {
             this.controller = controller;
             InitializeComponent();
+            hiloSafari = new(() =>
+            {
+                while (true)
+                {
+                    if (autoplayActivado)
+                    {
+                        step();
+                        Thread.Sleep(2000);
+                    }
+                }
+            });
+            hiloSafari.IsBackground = true;
+            hiloSafari.Start();
         }
 
-        private void paintSeres(Graphics g)
+        private void paintSafari(Graphics g)
         {
             Dictionary<Position, Ser?> seres = controller.getSeres();
 
             Font font = new Font("Arial", 8);
             var contador = 0;
+           
+            updateLabels();
             foreach (var entry in seres)
             {
                 /*String texto = entry.Value != null ? entry.Value.ToString() : "";
@@ -39,9 +56,18 @@ namespace Safari
             Update();
         }
 
+        private void updateLabels()
+        {
+            plantasLabel.Text = $"PLANTAS: {controller.getNumeroPlantas()}";
+            leonesLabel.Text = $"LEONES: {controller.getNumeroLeones()}";
+            gacelasLabel.Text = $"LEONES: {controller.getNumeroGacelas()}";
+            totalLabel.Text = $"TOTAL: {controller.getNumeroSeres()}";
+            diasLabel.Text = $"DÍAS: {controller.getNumeroDias()}";
+        }
+
         private void panelSfari_Paint(object sender, PaintEventArgs e)
         {
-            paintSeres(e.Graphics);
+            paintSafari(e.Graphics);
         }
 
 
@@ -56,33 +82,23 @@ namespace Safari
 
         private void resetButton_Click(object sender, EventArgs e)
         {
-
+            controller.restartSafari();
+            Refresh();
         }
 
         private void pauseButton_Click(object sender, EventArgs e)
         {
-
+            autoplayActivado = false;
         }
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void autoplay()
         {
-            Thread thread = new(() =>
-            {
-                while (true)
-                {
-                    step();
-                    Thread.Sleep(2000);
-                }
-
-            });
-            thread.IsBackground = true;
-            thread.Start();
-
+            autoplayActivado = true;
         }
 
         private void step()
@@ -90,7 +106,5 @@ namespace Safari
             controller.step();
             Refresh();
         }
-
-        
     }
 }

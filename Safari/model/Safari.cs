@@ -1,8 +1,6 @@
 ﻿using Safari.model.position;
 using Safari.model.seres;
-using System;
-using System.Reflection;
-using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Safari.model
 {
@@ -18,7 +16,13 @@ namespace Safari.model
 
         private int numeroSeres;
 
-        private int pasos;
+        private int dias;
+
+        /*
+         * leones: 1/9
+         * gacelas: 2/9
+         * plantas: 6/9
+         */
 
         public int NumeroPlantas { get => numeroPlantas; }
 
@@ -28,20 +32,18 @@ namespace Safari.model
 
         public int NumeroSeres { get => numeroSeres; }
 
-        public int Pasos { get => pasos; }
+        public int Dias { get => dias; }
 
         public MiSafari()
         {
             parcela = new Parcela();
-            setNumeroPlantas();
-            setNumeroGacelas();
-            setNumeroLeones();
-            setNumeroSeres();
         }
 
         private void setNumeroPlantas()
         {
             setNumero(typeof(Planta), out numeroPlantas);
+
+            Console.WriteLine($"NUMPLANT {numeroPlantas}");
         }
 
         private void setNumeroGacelas()
@@ -64,9 +66,10 @@ namespace Safari.model
             var num = 0;
             foreach (var ser in parcela.posiciones.Values)
             {
-                if (ser.GetType() == type) num++;
+                if (ser?.GetType() == type) num++;
             }
             numOut = num;
+            Console.WriteLine($"NUMOUT {numOut}");
         }
 
         public void setDimensiones(int filas, int columnas)
@@ -117,7 +120,7 @@ namespace Safari.model
                 Console.WriteLine();
                 Console.WriteLine("======================");
                 Console.WriteLine($"SER: {ser.ToString() + ser.num}");
-                Console.WriteLine($"POSICION INICIAL: {posicionActual}");
+                //Console.WriteLine($"POSICION INICIAL: {posicionActual}");
                 seresRecorridos.Add(ser);
                 var posicionesAlrededor = parcela.getSurroundingPositions(posicionActual);
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
@@ -191,6 +194,7 @@ namespace Safari.model
                 ser.incrementarDiasVividos();
                 if (seHaReproducido) ser.incrementarDiasDesdeUltimaReproduccion();
             }
+            dias++;
         }
 
         /*private void handleLeon(Leon leon, Position posicionActual, List<Position> posicionesAlrededor)
@@ -263,8 +267,8 @@ namespace Safari.model
             }
             ser.reproducirse();
             parcela.posiciones[posicionElegida] = hijo;
-            Console.WriteLine($"REPRODUCCION DE {ser.ToString() + ser.num}, GENERANDO A {hijo.ToString() + hijo.num}");
-            Console.WriteLine($"POSICION HIJO: {posicionElegida}");
+           // Console.WriteLine($"REPRODUCCION DE {ser.ToString() + ser.num}, GENERANDO A {hijo.ToString() + hijo.num}");
+           // Console.WriteLine($"POSICION HIJO: {posicionElegida}");
             for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine();
@@ -277,9 +281,9 @@ namespace Safari.model
             var random = new Random();
             int numAleatorio = random.Next(posicionesConComida.Count);
             var posicionElegida = posicionesConComida[numAleatorio];
-            var animal = (Animal)parcela.posiciones[posicionActual];
+            var animal = (Animal) parcela.posiciones[posicionActual];
             animal.comer();
-            Console.WriteLine("COMIDA");
+            Debug.WriteLine("manu");
             return posicionElegida;
 
         }
@@ -295,8 +299,8 @@ namespace Safari.model
             matarSerEnPosicion(origen);
             Ser? serEnDestino = parcela.posiciones[destino];
             parcela.posiciones[destino] = ser;
-            Console.WriteLine($"DESTINO: {destino}");
-            Console.WriteLine($"SER QUE HABIA EN DESTINO: {serEnDestino?.ToString() + serEnDestino?.num}");
+            /*Console.WriteLine($"DESTINO: {destino}");
+            Console.WriteLine($"SER QUE HABIA EN DESTINO: {serEnDestino?.ToString() + serEnDestino?.num}");*/
         }
 
         private List<Position> getPosicionesConComida(Type tipoComida, List<Position> posiciones)
@@ -316,10 +320,23 @@ namespace Safari.model
             posiciones.ForEach(pos =>
             {
                 Ser? ser = parcela.posiciones[pos];
-                if (ser == null) posicionesVacias.Add(pos);
+                if (ser == null)
+                {
+                    posicionesVacias.Add(pos);
+                    Console.WriteLine(pos);
+                }
 
             });
             return posicionesVacias;
+        }
+
+        internal void startSafari()
+        {
+            fillParcela();
+            setNumeroPlantas();
+            setNumeroGacelas();
+            setNumeroLeones();
+            setNumeroSeres();
         }
     }
 }

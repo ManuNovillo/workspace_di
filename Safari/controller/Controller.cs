@@ -8,6 +8,9 @@ namespace Safari.controller
     {
         private MiSafari safari;
 
+        private int filas;
+        private int columnas;
+
         public Controller(MiSafari safari) 
         { 
             this.safari = safari;
@@ -15,8 +18,11 @@ namespace Safari.controller
 
         public void startSafari(int filas, int columnas)
         {
+            this.filas = filas;
+            this.columnas = columnas;
             safari.setDimensiones(filas, columnas);
-            safari.fillParcela();
+            safari.startSafari();
+
             VentanaSafari form = new VentanaSafari(this);
             form.ShowDialog();
         }
@@ -49,6 +55,36 @@ namespace Safari.controller
         public Dictionary<Position, Ser?> getSeres()
         {
             return safari.getSeres();
+        }
+
+        internal void restartSafari()
+        {
+            safari.fillParcela();
+        }
+
+        public int getNumeroPlantas()
+        {
+            return safari.NumeroPlantas;
+        }
+
+        public int getNumeroLeones()
+        {
+            return safari.NumeroLeones;
+        }
+
+        public int getNumeroGacelas()
+        {
+            return safari.NumeroGacelas;
+        }
+
+        public int getNumeroSeres()
+        {
+            return safari.NumeroSeres;
+        }
+
+        public int getNumeroDias()
+        {
+            return safari.Dias;
         }
     }
 }
