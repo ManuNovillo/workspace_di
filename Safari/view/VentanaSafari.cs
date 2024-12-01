@@ -60,7 +60,7 @@ namespace Safari
             leonesLabel.Text = $"LEONES: {controller.getNumeroLeones()}";
             gacelasLabel.Text = $"GACELAS: {controller.getNumeroGacelas()}";
             totalLabel.Text = $"TOTAL: {controller.getNumeroSeres()}";
-            diasLabel.Text = $"DÍAS: {controller.getNumeroDias()}";
+            diasLabel.Text = $"PASOS: {controller.getNumeroPasos()}";
         }
 
         private void panelSfari_Paint(object sender, PaintEventArgs e)

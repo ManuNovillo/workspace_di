@@ -66,7 +66,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(1082, 24);
+            menuStrip1.Size = new Size(1022, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -140,7 +140,7 @@
             flowLayoutPanel1.Location = new Point(10, 20);
             flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1061, 86);
+            flowLayoutPanel1.Size = new Size(1003, 86);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // panelBotones
@@ -271,7 +271,7 @@
             panelSafari.Location = new Point(10, 110);
             panelSafari.Margin = new Padding(3, 2, 3, 2);
             panelSafari.Name = "panelSafari";
-            panelSafari.Size = new Size(1061, 468);
+            panelSafari.Size = new Size(1003, 491);
             panelSafari.TabIndex = 2;
             panelSafari.Paint += panelSfari_Paint;
             // 
@@ -280,7 +280,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1082, 587);
+            ClientSize = new Size(1022, 612);
             Controls.Add(panelSafari);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(menuStrip1);

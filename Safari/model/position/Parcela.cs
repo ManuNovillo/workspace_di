@@ -3,20 +3,20 @@ using Safari.model.seres;
 
 namespace Safari.model.position
 {
-    public class Parcela
+    internal class Parcela
     {
         /// <summary>
         /// Diccionario donde se almacena cada posición y el ser que hay en ella (puede no haber ninguno)
         /// </summary>
         public Dictionary<Position, Ser?> posiciones { get; set; }
 
-        public const int filasMaximas = 8;
+        public const int filasMaximas = 10;
 
-        public const int columnasMaximas = 15;
+        public const int columnasMaximas = 20;
 
-        public const int filasMinimas = 3;
+        public const int filasMinimas = 5;
 
-        public const int columnasMinimas = 3;
+        public const int columnasMinimas = 5;
         
         public Parcela()
         {
@@ -28,76 +28,50 @@ namespace Safari.model.position
 
         public void fillParcela()
         {
-            // Variable con la que determinar aleatoriamente qué ser poner en cada posición
-            Random random = new Random();
+            
             posiciones.Clear();
-            int numPlantas = filas * columnas / 3;
-            int numGacelas = 2 * filas * columnas / 9;
-            int numLeones =  filas * columnas / 9;
-            int numVacios = filas * columnas / 3;
-            Console.WriteLine($"numPlantas {numPlantas}");
-            Console.WriteLine($"numGacelas {numGacelas}");
-            Console.WriteLine($"numLeones {numLeones}");
-            Console.WriteLine($"numVacios {numVacios}");
-            int leonesPuestos = 0;
-            int gacelasPuestas = 0;
-            int plantasPuestas = 0;
-            int vaciosPuestos = 0;
+           
+            // LLenar la parcela con nulos
             for (int i = 0; i < filas; i++)
             {
                 for (int j = 0; j < columnas; j++)
                 {
-                    // Decidir aleatoriamente qué ser añadir a la posición, o si no añadir ninguno
-                    Ser? ser = null;
-                    var hayQueRepetir = true;
-                    while (hayQueRepetir)
-                    {
-                        var num = random.Next(4);
-                        switch (num)
-                        {
-                            case 0:
-                                if (gacelasPuestas < numGacelas)
-                                {
-                                    Console.WriteLine("DENTRO GACELAS");
-                                    ser = new Gacela();
-                                    gacelasPuestas++;
-                                    hayQueRepetir = false;
-                                }
-                                break;
-                            case 1:
-                                if (plantasPuestas < numPlantas)
-                                {
-                                    Console.WriteLine("DENTRO PLANTAS");
-                                    ser = new Planta();
-                                    plantasPuestas++;
-                                    hayQueRepetir = false;
-                                }
-                                break;
-                            case 2:
-                                if (leonesPuestos < numLeones)
-                                {
-                                    Console.WriteLine("DENTRO LEONES");
-                                    ser = new Leon();
-                                    leonesPuestos++;
-                                    hayQueRepetir = false;
-                                }
-                                break;
-                            case 3:
-                                if (vaciosPuestos < numVacios)
-                                {
-                                    Console.WriteLine("DENTRO VACIOS");
-                                    ser = null;
-                                    vaciosPuestos++;
-                                    hayQueRepetir = false;
-                                }
-                                break;
-                        }
-                    }
-                    
                     Position pos = new Position(i, j);
-                    posiciones.Add(pos, ser);
+                    posiciones.Add(pos, null);
                 }
-                Console.WriteLine("FUERA DE TODO");
+            }
+
+            int numPlantas = filas * columnas / 3;
+            int numGacelas = 2 * filas * columnas / 9;
+            int numLeones = filas * columnas / 9;
+            int numVacios = filas * columnas / 3;
+
+            Console.WriteLine($"numPlantas {numPlantas}");
+            Console.WriteLine($"numGacelas {numGacelas}");
+            Console.WriteLine($"numLeones {numLeones}");
+            Console.WriteLine($"numVacios {numVacios}");
+
+
+            List<Position> posicionesConSer = new List<Position>();
+            llenarConTipoDeSer(typeof(Leon), numLeones);
+            llenarConTipoDeSer(typeof(Gacela), numGacelas);
+            llenarConTipoDeSer(typeof(Planta), numPlantas);
+
+        }
+
+        private void llenarConTipoDeSer(Type type, int numObjetivo)
+        {
+            var random = new Random();
+            for (var i = 0; i < numObjetivo; i++)
+            {
+                Position? pos = null;
+                do
+                {
+                    var filaRandom = random.Next(filas);
+                    var columnaRandom = random.Next(columnas);
+                    pos = new Position(filaRandom, columnaRandom);
+                } while (posiciones[pos] is not null);
+                posiciones[pos] = (Ser) type.GetConstructor([]).Invoke([]);
             }
         }
 

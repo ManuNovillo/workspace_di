@@ -82,9 +82,9 @@ namespace Safari.controller
             return safari.NumeroSeres;
         }
 
-        public int getNumeroDias()
+        public int getNumeroPasos()
         {
-            return safari.Dias;
+            return safari.Pasos;
         }
     }
 }

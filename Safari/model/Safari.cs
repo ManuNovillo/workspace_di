@@ -16,7 +16,7 @@ namespace Safari.model
 
         private int numeroSeres;
 
-        private int dias;
+        private int pasos;
 
         /*
          * leones: 1/9
@@ -32,7 +32,7 @@ namespace Safari.model
 
         public int NumeroSeres { get => numeroSeres; }
 
-        public int Dias { get => dias; }
+        public int Pasos { get => pasos; }
 
         public MiSafari()
         {
@@ -114,7 +114,7 @@ namespace Safari.model
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("==================================");
-            Console.WriteLine("NUEVO PASO");
+            Console.WriteLine($"PASO {pasos}");
             var keys = parcela.posiciones.Keys.ToList();
             var seresRecorridos = new List<Ser>();
             foreach (var posicionActual in keys)
@@ -149,7 +149,6 @@ namespace Safari.model
                         seresRecorridos.Add(hijo); // Evitar que el hijo haga algo en este turno
                         
                     }
-                    
                 }
                 if (ser is Animal)
                 {
@@ -222,10 +221,10 @@ namespace Safari.model
                     }
                     if (!posicionActual.Equals(nuevaPosicion)) mover(posicionActual, nuevaPosicion);*/
                 }
-                ser.incrementarDiasVividos();
-                if (!seHaReproducido) ser.incrementarDiasDesdeUltimaReproduccion();
+                ser.incrementarPasosVividos();
+                if (!seHaReproducido) ser.incrementarPasosDesdeUltimaReproduccion();
             }
-            dias++;
+            pasos++;
         }
 
         /*private void handleLeon(Leon leon, Position posicionActual, List<Position> posicionesAlrededor)

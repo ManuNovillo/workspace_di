@@ -17,23 +17,21 @@ namespace Safari.model.seres
         /// <summary>
         /// Días que han pasado desde la última reproducción
         /// </summary>
-        protected int diasDesdeUltimaReproduccion;
+        protected int pasosDesdeUltimaReproduccion;
 
-        protected int diasVividos;
-
-        
+        protected int pasosVividos;
 
         public void reproducirse()
         {
             Console.WriteLine($"EL SER {this} {num} SE HA REPRODUCIDO");
             //puedeReproducirse = false;
-            diasDesdeUltimaReproduccion = 0;
+            pasosDesdeUltimaReproduccion = 1;
         }
 
         public Ser()
         {
-            diasDesdeUltimaReproduccion = 0;
-            diasVividos = 0;
+            pasosDesdeUltimaReproduccion = 1;
+            pasosVividos = 0;
            // puedeReproducirse = false;
             num = numStatic;
             numStatic++;
@@ -44,20 +42,20 @@ namespace Safari.model.seres
             //Console.WriteLine($"{this} {num} comprobando reproduccion, diasDesdeUltimaReproduccion = {diasDesdeUltimaReproduccion}");
             //Console.WriteLine(diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion >= periodoReproduccion));
             //Console.WriteLine(diasDesdeUltimaReproduccion >= periodoReproduccion);
-            Console.WriteLine($"diasDesdeUltimaReproduccion = {diasDesdeUltimaReproduccion}");
+            Console.WriteLine($"diasDesdeUltimaReproduccion = {pasosDesdeUltimaReproduccion}");
             Console.WriteLine($"periodoReproduccion {periodoReproduccion}");
-            return diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion >= periodoReproduccion);
+            return pasosVividos > 0 && (pasosDesdeUltimaReproduccion >= periodoReproduccion);
         }
 
-        public void incrementarDiasVividos()
+        public void incrementarPasosVividos()
         {
-            diasVividos++;
+            pasosVividos++;
 
         }
 
-        public void incrementarDiasDesdeUltimaReproduccion()
+        public void incrementarPasosDesdeUltimaReproduccion()
         {
-            diasDesdeUltimaReproduccion++;
+            pasosDesdeUltimaReproduccion++;
         }
 
     }
