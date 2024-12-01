@@ -65,8 +65,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { funcionesPrincipalesToolStripMenuItem, ayudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(6, 3, 0, 3);
-            menuStrip1.Size = new Size(1236, 30);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(1082, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -74,62 +74,62 @@
             // 
             funcionesPrincipalesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { stepToolStripMenuItem, resetToolStripMenuItem, playToolStripMenuItem, pauseToolStripMenuItem, stopToolStripMenuItem, exitToolStripMenuItem });
             funcionesPrincipalesToolStripMenuItem.Name = "funcionesPrincipalesToolStripMenuItem";
-            funcionesPrincipalesToolStripMenuItem.Size = new Size(163, 24);
+            funcionesPrincipalesToolStripMenuItem.Size = new Size(133, 20);
             funcionesPrincipalesToolStripMenuItem.Text = "Funciones Principales";
             // 
             // stepToolStripMenuItem
             // 
             stepToolStripMenuItem.Name = "stepToolStripMenuItem";
-            stepToolStripMenuItem.Size = new Size(129, 26);
+            stepToolStripMenuItem.Size = new Size(105, 22);
             stepToolStripMenuItem.Text = "Step";
             // 
             // resetToolStripMenuItem
             // 
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            resetToolStripMenuItem.Size = new Size(129, 26);
+            resetToolStripMenuItem.Size = new Size(105, 22);
             resetToolStripMenuItem.Text = "Reset";
             // 
             // playToolStripMenuItem
             // 
             playToolStripMenuItem.Name = "playToolStripMenuItem";
-            playToolStripMenuItem.Size = new Size(129, 26);
+            playToolStripMenuItem.Size = new Size(105, 22);
             playToolStripMenuItem.Text = "Play";
             // 
             // pauseToolStripMenuItem
             // 
             pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            pauseToolStripMenuItem.Size = new Size(129, 26);
+            pauseToolStripMenuItem.Size = new Size(105, 22);
             pauseToolStripMenuItem.Text = "Pause";
             // 
             // stopToolStripMenuItem
             // 
             stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            stopToolStripMenuItem.Size = new Size(129, 26);
+            stopToolStripMenuItem.Size = new Size(105, 22);
             stopToolStripMenuItem.Text = "Stop";
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(129, 26);
+            exitToolStripMenuItem.Size = new Size(105, 22);
             exitToolStripMenuItem.Text = "Exit";
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ayudaToolStripMenuItem1, acercaDeToolStripMenuItem });
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(65, 24);
+            ayudaToolStripMenuItem.Size = new Size(53, 20);
             ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // ayudaToolStripMenuItem1
             // 
             ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            ayudaToolStripMenuItem1.Size = new Size(158, 26);
+            ayudaToolStripMenuItem1.Size = new Size(126, 22);
             ayudaToolStripMenuItem1.Text = "Ayuda";
             // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(158, 26);
+            acercaDeToolStripMenuItem.Size = new Size(126, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // flowLayoutPanel1
@@ -137,9 +137,10 @@
             flowLayoutPanel1.BackColor = SystemColors.ActiveCaption;
             flowLayoutPanel1.Controls.Add(panelBotones);
             flowLayoutPanel1.Controls.Add(panelInfo);
-            flowLayoutPanel1.Location = new Point(11, 27);
+            flowLayoutPanel1.Location = new Point(10, 20);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1213, 115);
+            flowLayoutPanel1.Size = new Size(1061, 86);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // panelBotones
@@ -150,18 +151,18 @@
             panelBotones.Controls.Add(pauseButton);
             panelBotones.Controls.Add(resetButton);
             flowLayoutPanel1.SetFlowBreak(panelBotones, true);
-            panelBotones.Location = new Point(3, 4);
-            panelBotones.Margin = new Padding(3, 4, 3, 4);
+            panelBotones.Location = new Point(3, 3);
             panelBotones.Name = "panelBotones";
-            panelBotones.Padding = new Padding(0, 7, 0, 0);
-            panelBotones.Size = new Size(569, 56);
+            panelBotones.Padding = new Padding(0, 5, 0, 0);
+            panelBotones.Size = new Size(498, 42);
             panelBotones.TabIndex = 0;
             // 
             // autoplayButton
             // 
-            autoplayButton.Location = new Point(3, 10);
+            autoplayButton.Location = new Point(3, 7);
+            autoplayButton.Margin = new Padding(3, 2, 3, 2);
             autoplayButton.Name = "autoplayButton";
-            autoplayButton.Size = new Size(94, 29);
+            autoplayButton.Size = new Size(82, 22);
             autoplayButton.TabIndex = 0;
             autoplayButton.Text = "AUTOPLAY";
             autoplayButton.UseVisualStyleBackColor = true;
@@ -169,9 +170,10 @@
             // 
             // stopButton
             // 
-            stopButton.Location = new Point(103, 10);
+            stopButton.Location = new Point(91, 7);
+            stopButton.Margin = new Padding(3, 2, 3, 2);
             stopButton.Name = "stopButton";
-            stopButton.Size = new Size(94, 29);
+            stopButton.Size = new Size(82, 22);
             stopButton.TabIndex = 1;
             stopButton.Text = "STOP";
             stopButton.UseVisualStyleBackColor = true;
@@ -179,9 +181,10 @@
             // 
             // stepButton
             // 
-            stepButton.Location = new Point(203, 10);
+            stepButton.Location = new Point(179, 7);
+            stepButton.Margin = new Padding(3, 2, 3, 2);
             stepButton.Name = "stepButton";
-            stepButton.Size = new Size(94, 29);
+            stepButton.Size = new Size(82, 22);
             stepButton.TabIndex = 2;
             stepButton.Text = "STEP";
             stepButton.UseVisualStyleBackColor = true;
@@ -189,9 +192,10 @@
             // 
             // pauseButton
             // 
-            pauseButton.Location = new Point(303, 10);
+            pauseButton.Location = new Point(267, 7);
+            pauseButton.Margin = new Padding(3, 2, 3, 2);
             pauseButton.Name = "pauseButton";
-            pauseButton.Size = new Size(94, 29);
+            pauseButton.Size = new Size(82, 22);
             pauseButton.TabIndex = 3;
             pauseButton.Text = "PAUSE";
             pauseButton.UseVisualStyleBackColor = true;
@@ -199,9 +203,10 @@
             // 
             // resetButton
             // 
-            resetButton.Location = new Point(403, 10);
+            resetButton.Location = new Point(355, 7);
+            resetButton.Margin = new Padding(3, 2, 3, 2);
             resetButton.Name = "resetButton";
-            resetButton.Size = new Size(94, 29);
+            resetButton.Size = new Size(82, 22);
             resetButton.TabIndex = 4;
             resetButton.Text = "RESET";
             resetButton.UseVisualStyleBackColor = true;
@@ -214,40 +219,41 @@
             panelInfo.Controls.Add(gacelasLabel);
             panelInfo.Controls.Add(leonesLabel);
             panelInfo.Controls.Add(plantasLabel);
-            panelInfo.Location = new Point(3, 67);
+            panelInfo.Location = new Point(3, 50);
+            panelInfo.Margin = new Padding(3, 2, 3, 2);
             panelInfo.Name = "panelInfo";
-            panelInfo.Size = new Size(1143, 29);
+            panelInfo.Size = new Size(1000, 22);
             panelInfo.TabIndex = 1;
             // 
             // diasLabel
             // 
-            diasLabel.Location = new Point(843, 0);
+            diasLabel.Location = new Point(738, 0);
             diasLabel.Name = "diasLabel";
-            diasLabel.Size = new Size(238, 29);
+            diasLabel.Size = new Size(208, 22);
             diasLabel.TabIndex = 4;
             diasLabel.Text = "label1";
             // 
             // totalLabel
             // 
-            totalLabel.Location = new Point(627, 0);
+            totalLabel.Location = new Point(549, 0);
             totalLabel.Name = "totalLabel";
-            totalLabel.Size = new Size(238, 29);
+            totalLabel.Size = new Size(208, 22);
             totalLabel.TabIndex = 3;
             totalLabel.Text = "label1";
             // 
             // gacelasLabel
             // 
-            gacelasLabel.Location = new Point(417, 0);
+            gacelasLabel.Location = new Point(365, 0);
             gacelasLabel.Name = "gacelasLabel";
-            gacelasLabel.Size = new Size(238, 29);
+            gacelasLabel.Size = new Size(208, 22);
             gacelasLabel.TabIndex = 2;
             gacelasLabel.Text = "label1";
             // 
             // leonesLabel
             // 
-            leonesLabel.Location = new Point(203, 0);
+            leonesLabel.Location = new Point(178, 0);
             leonesLabel.Name = "leonesLabel";
-            leonesLabel.Size = new Size(238, 29);
+            leonesLabel.Size = new Size(208, 22);
             leonesLabel.TabIndex = 1;
             leonesLabel.Text = "label1";
             // 
@@ -255,29 +261,31 @@
             // 
             plantasLabel.Location = new Point(3, 0);
             plantasLabel.Name = "plantasLabel";
-            plantasLabel.Size = new Size(238, 29);
+            plantasLabel.Size = new Size(208, 22);
             plantasLabel.TabIndex = 0;
             plantasLabel.Text = "label1";
             // 
             // panelSafari
             // 
             panelSafari.BackColor = Color.White;
-            panelSafari.Location = new Point(11, 147);
+            panelSafari.Location = new Point(10, 110);
+            panelSafari.Margin = new Padding(3, 2, 3, 2);
             panelSafari.Name = "panelSafari";
-            panelSafari.Size = new Size(1213, 624);
+            panelSafari.Size = new Size(1061, 468);
             panelSafari.TabIndex = 2;
             panelSafari.Paint += panelSfari_Paint;
             // 
             // VentanaSafari
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1236, 783);
+            ClientSize = new Size(1082, 587);
             Controls.Add(panelSafari);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "VentanaSafari";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Safari";

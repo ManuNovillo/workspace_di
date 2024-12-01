@@ -9,7 +9,7 @@ namespace Safari.model.seres
         /// </summary>
         protected int periodoReproduccion;
 
-        protected bool puedeReproducirse;
+        //protected bool puedeReproducirse;
 
         static int numStatic = 0;
         public int num;
@@ -25,7 +25,8 @@ namespace Safari.model.seres
 
         public void reproducirse()
         {
-            puedeReproducirse = false;
+            Console.WriteLine($"EL SER {this} {num} SE HA REPRODUCIDO");
+            //puedeReproducirse = false;
             diasDesdeUltimaReproduccion = 0;
         }
 
@@ -33,14 +34,19 @@ namespace Safari.model.seres
         {
             diasDesdeUltimaReproduccion = 0;
             diasVividos = 0;
-            puedeReproducirse = false;
+           // puedeReproducirse = false;
             num = numStatic;
             numStatic++;
         }
 
         public bool debeReproducirse()
         {
-            return diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion == periodoReproduccion);
+            //Console.WriteLine($"{this} {num} comprobando reproduccion, diasDesdeUltimaReproduccion = {diasDesdeUltimaReproduccion}");
+            //Console.WriteLine(diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion >= periodoReproduccion));
+            //Console.WriteLine(diasDesdeUltimaReproduccion >= periodoReproduccion);
+            Console.WriteLine($"diasDesdeUltimaReproduccion = {diasDesdeUltimaReproduccion}");
+            Console.WriteLine($"periodoReproduccion {periodoReproduccion}");
+            return diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion >= periodoReproduccion);
         }
 
         public void incrementarDiasVividos()

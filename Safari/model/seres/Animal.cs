@@ -8,7 +8,13 @@ namespace Safari.model.seres
 
         protected int diasSinComer;
 
-        protected int periodoMuerteInanicion = 3;
+        protected int periodoMuerteInanicion;
+
+        public Animal()
+        {
+            diasSinComer = 0;
+            periodoMuerteInanicion = 3;
+        }
 
         public int getDiasSinComer()
         {

@@ -34,8 +34,7 @@ namespace Safari
             Dictionary<Position, Ser?> seres = controller.getSeres();
 
             Font font = new Font("Arial", 8);
-            var contador = 0;
-           
+
             updateLabels();
             foreach (var entry in seres)
             {
@@ -45,12 +44,11 @@ namespace Safari
 
                 if (ser != null)
                 {
-                    /* var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
-                     var bitmap = new Bitmap(40, 40);
-                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                     g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);*/
-                    g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
-                    contador++;
+                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
+                    var bitmap = new Bitmap(40, 40);
+                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
+                    //g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
                 }
             }
             Update();
@@ -60,7 +58,7 @@ namespace Safari
         {
             plantasLabel.Text = $"PLANTAS: {controller.getNumeroPlantas()}";
             leonesLabel.Text = $"LEONES: {controller.getNumeroLeones()}";
-            gacelasLabel.Text = $"LEONES: {controller.getNumeroGacelas()}";
+            gacelasLabel.Text = $"GACELAS: {controller.getNumeroGacelas()}";
             totalLabel.Text = $"TOTAL: {controller.getNumeroSeres()}";
             diasLabel.Text = $"DÍAS: {controller.getNumeroDias()}";
         }
@@ -93,7 +91,7 @@ namespace Safari
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void autoplay()

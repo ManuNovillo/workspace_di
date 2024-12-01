@@ -31,32 +31,73 @@ namespace Safari.model.position
             // Variable con la que determinar aleatoriamente qué ser poner en cada posición
             Random random = new Random();
             posiciones.Clear();
-            
+            int numPlantas = filas * columnas / 3;
+            int numGacelas = 2 * filas * columnas / 9;
+            int numLeones =  filas * columnas / 9;
+            int numVacios = filas * columnas / 3;
+            Console.WriteLine($"numPlantas {numPlantas}");
+            Console.WriteLine($"numGacelas {numGacelas}");
+            Console.WriteLine($"numLeones {numLeones}");
+            Console.WriteLine($"numVacios {numVacios}");
+            int leonesPuestos = 0;
+            int gacelasPuestas = 0;
+            int plantasPuestas = 0;
+            int vaciosPuestos = 0;
             for (int i = 0; i < filas; i++)
             {
                 for (int j = 0; j < columnas; j++)
                 {
                     // Decidir aleatoriamente qué ser añadir a la posición, o si no añadir ninguno
-                    long num = random.NextInt64(0, 4);
-                    Ser? ser;
-                    switch (num)
+                    Ser? ser = null;
+                    var hayQueRepetir = true;
+                    while (hayQueRepetir)
                     {
-                        case 0:
-                            ser = new Gacela();
-                            break;
-                        case 1:
-                            ser = new Leon();
-                            break;
-                        case 2:
-                            ser = new Planta();
-                            break;
-                        default:
-                            ser = null;
-                            break;
+                        var num = random.Next(4);
+                        switch (num)
+                        {
+                            case 0:
+                                if (gacelasPuestas < numGacelas)
+                                {
+                                    Console.WriteLine("DENTRO GACELAS");
+                                    ser = new Gacela();
+                                    gacelasPuestas++;
+                                    hayQueRepetir = false;
+                                }
+                                break;
+                            case 1:
+                                if (plantasPuestas < numPlantas)
+                                {
+                                    Console.WriteLine("DENTRO PLANTAS");
+                                    ser = new Planta();
+                                    plantasPuestas++;
+                                    hayQueRepetir = false;
+                                }
+                                break;
+                            case 2:
+                                if (leonesPuestos < numLeones)
+                                {
+                                    Console.WriteLine("DENTRO LEONES");
+                                    ser = new Leon();
+                                    leonesPuestos++;
+                                    hayQueRepetir = false;
+                                }
+                                break;
+                            case 3:
+                                if (vaciosPuestos < numVacios)
+                                {
+                                    Console.WriteLine("DENTRO VACIOS");
+                                    ser = null;
+                                    vaciosPuestos++;
+                                    hayQueRepetir = false;
+                                }
+                                break;
+                        }
                     }
+                    
                     Position pos = new Position(i, j);
                     posiciones.Add(pos, ser);
                 }
+                Console.WriteLine("FUERA DE TODO");
             }
         }
 

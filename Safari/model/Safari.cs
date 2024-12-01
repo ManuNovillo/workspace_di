@@ -69,7 +69,6 @@ namespace Safari.model
                 if (ser?.GetType() == type) num++;
             }
             numOut = num;
-            Console.WriteLine($"NUMOUT {numOut}");
         }
 
         public void setDimensiones(int filas, int columnas)
@@ -110,6 +109,12 @@ namespace Safari.model
 
         public void step()
         {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("==================================");
+            Console.WriteLine("NUEVO PASO");
             var keys = parcela.posiciones.Keys.ToList();
             var seresRecorridos = new List<Ser>();
             foreach (var posicionActual in keys)
@@ -118,30 +123,56 @@ namespace Safari.model
                 if (ser == null) continue;
                 if (seresRecorridos.Contains(ser)) continue;
                 Console.WriteLine();
-                Console.WriteLine("======================");
+                Console.WriteLine("***************************");
                 Console.WriteLine($"SER: {ser.ToString() + ser.num}");
                 //Console.WriteLine($"POSICION INICIAL: {posicionActual}");
                 seresRecorridos.Add(ser);
                 var posicionesAlrededor = parcela.getSurroundingPositions(posicionActual);
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
                 var seHaReproducido = false;
+
+                // Comprobar si se debe reproducir
+                Console.WriteLine($"POSICIONES VACIAS == {posicionesVacias.Count != 0}");
+                Console.WriteLine(ser.debeReproducirse());
+                Console.WriteLine($"CONDICION IF: {ser.debeReproducirse() && posicionesVacias.Count != 0} ");
                 if (ser.debeReproducirse() && posicionesVacias.Count != 0)
                 {
+                    Console.WriteLine("SE DEBE REPRODUCIR");
                     Position? posicionHijo = reproducir(ser, posicionesVacias);
-                    if (posicionHijo != null) posicionesVacias.Remove(posicionHijo); // ELIMINAR POSICIÓN DEL HIJO DE LA LISTA PARA EVITAR QUE PUEDAN HABER CONFLICTOS
-                    seHaReproducido = true;
+                    // Eliminar posición del hijo de la lista para que el ser, en caso de poder moverse, no se ponga encima del hijo
+                    if (posicionHijo != null)
+                    {
+                        Console.WriteLine("SE HA REPRODUCIDO");
+                        posicionesVacias.Remove(posicionHijo);
+                        seHaReproducido = true;
+                        Ser hijo = parcela.posiciones[posicionHijo];
+                        seresRecorridos.Add(hijo); // Evitar que el hijo haga algo en este turno
+                        
+                    }
+                    
                 }
                 if (ser is Animal)
                 {
                     Animal animal = (Animal)ser;
                     if (animal.debeMorirDeInanicion())
                     {
+                        //Console.WriteLine("DEBE MORIR DE INANCICION");
                         matarSerEnPosicion(posicionActual);
+                        if (animal.GetType() == typeof(Gacela))
+                        {
+                            //Console.WriteLine("GACELA MUERTA");
+                            numeroGacelas--;
+                        }
+                        else if (animal.GetType() == typeof(Leon))
+                        {
+                            //Console.WriteLine("LEON MUERTO");
+                            numeroLeones--;
+                        }
                     }
                     else
                     {
                         var posicionesConComida = getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor);
-                        var nuevaPosicion = handleAnimal((Animal) ser, posicionActual, posicionesConComida, posicionesVacias);
+                        handleAnimal((Animal) ser, posicionActual, posicionesConComida, posicionesVacias);
                     }
 
                     /*var random = new Random();
@@ -192,7 +223,7 @@ namespace Safari.model
                     if (!posicionActual.Equals(nuevaPosicion)) mover(posicionActual, nuevaPosicion);*/
                 }
                 ser.incrementarDiasVividos();
-                if (seHaReproducido) ser.incrementarDiasDesdeUltimaReproduccion();
+                if (!seHaReproducido) ser.incrementarDiasDesdeUltimaReproduccion();
             }
             dias++;
         }
@@ -207,14 +238,20 @@ namespace Safari.model
             handleAnimal(gacela, posicionActual, posicionesAlrededor);
         }*/
 
-        private Position? handleAnimal(Animal animal, Position posicionActual, List<Position> posicionesConComida, List<Position> posicionesVacias)
+        /// <summary>
+        /// Hace todo el comportamiento del animal (comer y moverse)
+        /// </summary>
+        /// <param name="animal"></param>
+        /// <param name="posicionActual"></param>
+        /// <param name="posicionesConComida"></param>
+        /// <param name="posicionesVacias"></param>
+        private void handleAnimal(Animal animal, Position posicionActual, List<Position> posicionesConComida, List<Position> posicionesVacias)
         {
             Position? nuevaPosicion = null;
             bool haComido = false;
            
             if (posicionesConComida.Count != 0)
             {
-               
                 nuevaPosicion = comer(posicionActual, posicionesConComida);
                 haComido = true;
             }
@@ -229,46 +266,45 @@ namespace Safari.model
             if (nuevaPosicion != null)
             {
                 mover(posicionActual, nuevaPosicion);
-                return nuevaPosicion;
             }
-            return null;
         }
 
+        /// <summary>
+        /// Hace que <paramref name="ser"/> se intente reproducir, y devuelve la posición del hijo en caso de reproducirse, o null si no tiene hueco para ello
+        /// </summary>
+        /// <param name="ser">El ser que se va a reproducir</param>
+        /// <param name="posicionesVacias">Las posiciones alrededor de <paramref name="ser"/> que están vacías, donde se puede poner al hijo</param>
+        /// <returns>La posición del hijo en caso de reproducirse, o null si no tiene hueco para ello</returns>
         private Position? reproducir(Ser ser, List<Position> posicionesVacias)
         {
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine();
-            }
-            Console.WriteLine("EN REPRODUCIR");
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine();
-            }
+            Console.WriteLine($"{ser} {ser.num} SE VA A REPRODUCIR");
             if (posicionesVacias.Count == 0) return null;
             var random = new Random();
             var numAleatorio = random.Next(posicionesVacias.Count);
             var posicionElegida = posicionesVacias[numAleatorio];
-            Ser hijo = null;
+            Ser? hijo = null;
             if (ser is Planta)
             {
                 hijo = new Planta();
+                Console.WriteLine("AUMENTADO PLANTAS");
                 numeroPlantas++;
             }
             else if (ser is Leon)
             {
                 hijo = new Leon();
+                Console.WriteLine("AUMENTADO LEONES");
                 numeroLeones++;
             }
             else if (ser is Gacela)
             {
+                Console.WriteLine("AUMENTADO GACELAS");
                 hijo = new Gacela();
                 numeroGacelas++;
             }
             ser.reproducirse();
             parcela.posiciones[posicionElegida] = hijo;
-           // Console.WriteLine($"REPRODUCCION DE {ser.ToString() + ser.num}, GENERANDO A {hijo.ToString() + hijo.num}");
-           // Console.WriteLine($"POSICION HIJO: {posicionElegida}");
+            Console.WriteLine($"REPRODUCCION DE {ser.ToString() + ser.num}, GENERANDO A {hijo.ToString() + hijo.num}");
+            Console.WriteLine($"POSICION HIJO: {posicionElegida}");
             for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine();
@@ -283,7 +319,18 @@ namespace Safari.model
             var posicionElegida = posicionesConComida[numAleatorio];
             var animal = (Animal) parcela.posiciones[posicionActual];
             animal.comer();
-            Debug.WriteLine("manu");
+            //Console.WriteLine($"SE HA COMIDO A {parcela.posiciones[posicionElegida]} {parcela.posiciones[posicionElegida].num}");
+            parcela.posiciones[posicionElegida] = null;
+            Type tipoComida = animal.getTipoComida();
+            if (tipoComida == typeof(Gacela))
+            {
+
+                numeroGacelas--;
+            }
+            else if (tipoComida == typeof (Planta))
+            {
+                numeroPlantas--;
+            }
             return posicionElegida;
 
         }
@@ -299,8 +346,8 @@ namespace Safari.model
             matarSerEnPosicion(origen);
             Ser? serEnDestino = parcela.posiciones[destino];
             parcela.posiciones[destino] = ser;
-            /*Console.WriteLine($"DESTINO: {destino}");
-            Console.WriteLine($"SER QUE HABIA EN DESTINO: {serEnDestino?.ToString() + serEnDestino?.num}");*/
+            //Console.WriteLine($"DESTINO: {destino}");
+            //Console.WriteLine($"SER QUE HABIA EN DESTINO: {serEnDestino?.ToString() + serEnDestino?.num}");
         }
 
         private List<Position> getPosicionesConComida(Type tipoComida, List<Position> posiciones)
@@ -323,7 +370,7 @@ namespace Safari.model
                 if (ser == null)
                 {
                     posicionesVacias.Add(pos);
-                    Console.WriteLine(pos);
+                    //Console.WriteLine(pos);
                 }
 
             });
