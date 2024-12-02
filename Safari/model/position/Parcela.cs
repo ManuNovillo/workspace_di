@@ -6,45 +6,50 @@ namespace Safari.model.position
     internal class Parcela
     {
         /// <summary>
-        /// Diccionario donde se almacena cada posición y el ser que hay en ella (puede no haber ninguno)
+        /// Diccionario donde se almacena cada posición y el ser que hay en ella (puede ser null)
         /// </summary>
-        public Dictionary<Position, Ser?> posiciones { get; set; }
+        private Dictionary<Posicion, Ser?> posiciones;
 
-        public const int filasMaximas = 10;
+        public Dictionary<Posicion, Ser?> Posiciones { get; }
 
-        public const int columnasMaximas = 20;
+        public const int FilasMaximas = 10;
 
-        public const int filasMinimas = 5;
+        public const int ColumnasMaximas = 20;
 
-        public const int columnasMinimas = 5;
+        public const int FilasMinimas = 5;
+
+        public const int ColumnasMinimas = 5;
         
         public Parcela()
         {
-            posiciones = new Dictionary<Position, Ser?>();
+            Posiciones = new Dictionary<Posicion, Ser?>();
         }
 
-        public int filas { get; set; }
-        public int columnas { get; set; }
+        public int Filas { get; set; }
+        public int Columnas { get; set; }
 
+
+        internal void limpiarParcela()
+        {
+            Posiciones.Clear();
+        }
         public void fillParcela()
         {
-            
-            posiciones.Clear();
-           
             // LLenar la parcela con nulos
-            for (int i = 0; i < filas; i++)
+            for (int i = 0; i < Filas; i++)
             {
-                for (int j = 0; j < columnas; j++)
+                for (int j = 0; j < Columnas; j++)
                 {
-                    Position pos = new Position(i, j);
-                    posiciones.Add(pos, null);
+                    Posicion pos = new Posicion(i, j);
+                    Posiciones.Add(pos, null);
                 }
             }
 
-            int numPlantas = filas * columnas / 3;
-            int numGacelas = 2 * filas * columnas / 9;
-            int numLeones = filas * columnas / 9;
-            int numVacios = filas * columnas / 3;
+            // Proporciones que debe haber de cada ser y de huecos vacíos
+            int numPlantas = Filas * Columnas / 3;
+            int numGacelas = 2 * Filas * Columnas / 9;
+            int numLeones = Filas * Columnas / 9;
+            int numVacios = Filas * Columnas / 3;
 
             Console.WriteLine($"numPlantas {numPlantas}");
             Console.WriteLine($"numGacelas {numGacelas}");
@@ -52,7 +57,7 @@ namespace Safari.model.position
             Console.WriteLine($"numVacios {numVacios}");
 
 
-            List<Position> posicionesConSer = new List<Position>();
+            List<Posicion> posicionesConSer = new List<Posicion>();
             llenarConTipoDeSer(typeof(Leon), numLeones);
             llenarConTipoDeSer(typeof(Gacela), numGacelas);
             llenarConTipoDeSer(typeof(Planta), numPlantas);
@@ -64,20 +69,20 @@ namespace Safari.model.position
             var random = new Random();
             for (var i = 0; i < numObjetivo; i++)
             {
-                Position? pos = null;
+                Posicion? pos = null;
                 do
                 {
-                    var filaRandom = random.Next(filas);
-                    var columnaRandom = random.Next(columnas);
-                    pos = new Position(filaRandom, columnaRandom);
-                } while (posiciones[pos] is not null);
-                posiciones[pos] = (Ser) type.GetConstructor([]).Invoke([]);
+                    var filaRandom = random.Next(Filas);
+                    var columnaRandom = random.Next(Columnas);
+                    pos = new Posicion(filaRandom, columnaRandom);
+                } while (Posiciones[pos] is not null);
+                Posiciones[pos] = (Ser) type.GetConstructor([]).Invoke([]);
             }
         }
 
-        public List<Position> getSurroundingPositions(Position pos)
+        public List<Posicion> getSurroundingPositions(Posicion pos)
         {
-            List<Position> posiciones = new List<Position>();
+            List<Posicion> posiciones = new List<Posicion>();
 
             var fila = pos.fila;
             int filaNueva;
@@ -86,15 +91,15 @@ namespace Safari.model.position
             for (int i = -1; i <= 1; i++)
             {
                 filaNueva = fila + i;
-                if (filaNueva < 0) filaNueva = this.filas - 1;
-                else if (filaNueva >= this.filas) filaNueva = 0;
+                if (filaNueva < 0) filaNueva = this.Filas - 1;
+                else if (filaNueva >= this.Filas) filaNueva = 0;
                 for (int j = -1; j <= 1; j++)
                 {
                     columnaNueva = columna + j;
-                    if (columnaNueva < 0) columnaNueva = this.columnas - 1;
-                    else if (columnaNueva >= this.columnas) columnaNueva = 0;
+                    if (columnaNueva < 0) columnaNueva = this.Columnas - 1;
+                    else if (columnaNueva >= this.Columnas) columnaNueva = 0;
                     if (filaNueva == fila && columnaNueva == columna) continue;
-                    Position position = new Position(filaNueva, columnaNueva);
+                    Posicion position = new Posicion(filaNueva, columnaNueva);
                     posiciones.Add(position);
                 }
             }

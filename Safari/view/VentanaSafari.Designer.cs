@@ -47,7 +47,7 @@
             pauseButton = new Button();
             resetButton = new Button();
             panelInfo = new Panel();
-            diasLabel = new Label();
+            pasosLabel = new Label();
             totalLabel = new Label();
             gacelasLabel = new Label();
             leonesLabel = new Label();
@@ -214,7 +214,7 @@
             // 
             // panelInfo
             // 
-            panelInfo.Controls.Add(diasLabel);
+            panelInfo.Controls.Add(pasosLabel);
             panelInfo.Controls.Add(totalLabel);
             panelInfo.Controls.Add(gacelasLabel);
             panelInfo.Controls.Add(leonesLabel);
@@ -227,11 +227,11 @@
             // 
             // diasLabel
             // 
-            diasLabel.Location = new Point(738, 0);
-            diasLabel.Name = "diasLabel";
-            diasLabel.Size = new Size(208, 22);
-            diasLabel.TabIndex = 4;
-            diasLabel.Text = "label1";
+            pasosLabel.Location = new Point(738, 0);
+            pasosLabel.Name = "diasLabel";
+            pasosLabel.Size = new Size(208, 22);
+            pasosLabel.TabIndex = 4;
+            pasosLabel.Text = "label1";
             // 
             // totalLabel
             // 
@@ -323,7 +323,7 @@
         private Label totalLabel;
         private Label gacelasLabel;
         private Label leonesLabel;
-        private Label diasLabel;
+        private Label pasosLabel;
     }
 }
                       

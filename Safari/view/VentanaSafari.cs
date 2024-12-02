@@ -8,30 +8,24 @@ namespace Safari
     {
         private Thread hiloSafari;
 
+        CancellationTokenSource token;
+
         private bool autoplayActivado;
         private Controller controller { get; set; }
         public VentanaSafari(Controller controller)
         {
             this.controller = controller;
+            token = new();
             InitializeComponent();
-            hiloSafari = new(() =>
-            {
-                while (true)
-                {
-                    if (autoplayActivado)
-                    {
-                        step();
-                        Thread.Sleep(2000);
-                    }
-                }
-            });
+            hiloSafari = new(() => autoplay());
+
             hiloSafari.IsBackground = true;
             hiloSafari.Start();
         }
 
         private void paintSafari(Graphics g)
         {
-            Dictionary<Position, Ser?> seres = controller.getSeres();
+            Dictionary<Posicion, Ser?> seres = controller.getSeres();
 
             Font font = new Font("Arial", 8);
 
@@ -60,7 +54,7 @@ namespace Safari
             leonesLabel.Text = $"LEONES: {controller.getNumeroLeones()}";
             gacelasLabel.Text = $"GACELAS: {controller.getNumeroGacelas()}";
             totalLabel.Text = $"TOTAL: {controller.getNumeroSeres()}";
-            diasLabel.Text = $"PASOS: {controller.getNumeroPasos()}";
+            pasosLabel.Text = $"PASOS: {controller.getNumeroPasos()}";
         }
 
         private void panelSfari_Paint(object sender, PaintEventArgs e)
@@ -75,12 +69,16 @@ namespace Safari
         }
         private void autoPlayButton_Click(object sender, EventArgs e)
         {
-            autoplay();
+            autoplayActivado = true;
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
             controller.restartSafari();
+            stopButton.Enabled = true;
+            pauseButton.Enabled = true;
+            autoplayButton.Enabled = true;
+            stepButton.Enabled = true;
             Refresh();
         }
 
@@ -91,18 +89,38 @@ namespace Safari
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-
+            token.Cancel();
+            token.Dispose();
+            stopButton.Enabled = false;
+            pauseButton.Enabled = false;
+            autoplayButton.Enabled = false;
+            stepButton.Enabled = false;
+            resetButton.Enabled = false;
         }
 
         private void autoplay()
         {
-            autoplayActivado = true;
+            while (!token.IsCancellationRequested)
+            {
+                if (autoplayActivado)
+                {
+                    step();
+                    Thread.Sleep(2000);
+                }
+            }
         }
 
         private void step()
         {
             controller.step();
             Refresh();
+            if (controller.debeTerminarSimulacion())
+            {
+                stopButton.Enabled = false;
+                pauseButton.Enabled = false;
+                autoplayButton.Enabled = false;
+                stepButton.Enabled = false;
+            }
         }
     }
 }

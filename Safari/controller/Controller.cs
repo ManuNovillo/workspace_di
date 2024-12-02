@@ -52,14 +52,14 @@ namespace Safari.controller
             safari.step();
         }
 
-        public Dictionary<Position, Ser?> getSeres()
+        public Dictionary<Posicion, Ser?> getSeres()
         {
             return safari.getSeres();
         }
 
         internal void restartSafari()
         {
-            safari.fillParcela();
+            safari.restart();
         }
 
         public int getNumeroPlantas()
@@ -85,6 +85,11 @@ namespace Safari.controller
         public int getNumeroPasos()
         {
             return safari.Pasos;
+        }
+
+        internal bool debeTerminarSimulacion()
+        {
+            return safari.SimulacionTerminada;
         }
     }
 }

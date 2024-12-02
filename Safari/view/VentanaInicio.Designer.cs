@@ -73,7 +73,6 @@
             label1.Size = new Size(155, 15);
             label1.TabIndex = 5;
             label1.Text = "Introduce el número de filas";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -83,7 +82,6 @@
             label2.Size = new Size(186, 15);
             label2.TabIndex = 6;
             label2.Text = "Introduce el número de columnas";
-            label2.Click += label2_Click;
             // 
             // errorLabel
             // 
@@ -95,7 +93,6 @@
             errorLabel.Text = "label3";
             errorLabel.TextAlign = ContentAlignment.MiddleCenter;
             errorLabel.Visible = false;
-            errorLabel.Click += label3_Click;
             // 
             // VentanaInicio
             // 
@@ -112,7 +109,6 @@
             Name = "VentanaInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VentanaInicio";
-            Load += VentanaInicio_Load;
             ((System.ComponentModel.ISupportInitialize)filasNumField).EndInit();
             ((System.ComponentModel.ISupportInitialize)columnasNumField).EndInit();
             ResumeLayout(false);

@@ -21,5 +21,5 @@
         }
     }*/
 
-    public record Position(int fila, int columna);
+    public record Posicion(int fila, int columna);
 }

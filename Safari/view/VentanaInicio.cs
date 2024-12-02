@@ -20,16 +20,6 @@ namespace Safari.view
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void confirmarButton_Click(object sender, EventArgs e)
         {
             int filasMinimas = controller.getFilasMinimas();
@@ -57,14 +47,5 @@ namespace Safari.view
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VentanaInicio_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
