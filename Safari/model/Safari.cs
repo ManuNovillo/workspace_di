@@ -19,12 +19,6 @@ namespace Safari.model
 
         private bool simulacionTerminada;
 
-        /*
-         * leones: 1/9
-         * gacelas: 2/9
-         * plantas: 6/9
-         */
-
         public int NumeroPlantas { get => numeroPlantas; }
 
         public int NumeroGacelas { get => numeroGacelas; }
@@ -135,7 +129,7 @@ namespace Safari.model
 
                 if (ser is Animal)
                 {
-                    Animal animal = (Animal) ser;
+                    Animal animal = (Animal)ser;
                     if (animal.debeMorirDeInanicion())
                     {
                         matarSerEnPosicion(posicionActual);
@@ -155,7 +149,7 @@ namespace Safari.model
                 if (ser.debeReproducirse() && posicionesVacias.Count != 0)
                 {
                     Posicion? posicionHijo = reproducir(ser, posicionesVacias);
-                   
+
                     if (posicionHijo != null)
                     {
                         posicionesVacias.Remove(posicionHijo);  // Eliminar posición del hijo de la lista para que el ser, en caso de poder moverse,
@@ -166,9 +160,11 @@ namespace Safari.model
 
                     }
                 }
+
+
                 if (ser is Animal)
                 {
-                    Animal animal = (Animal)ser;
+                    Animal animal = (Animal) ser;
                     var posicionesConComida = getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor);
                     handleAnimal(animal, posicionActual, posicionesConComida, posicionesVacias);
                 }

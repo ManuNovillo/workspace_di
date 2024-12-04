@@ -55,6 +55,11 @@ namespace Safari.model.position
 
         }
 
+        /// <summary>
+        /// Añade <c><paramref name="numObjetivo"/></c> seres de tipo <c><paramref name="type"/></c> a la parcela
+        /// </summary>
+        /// <param name="type">El tipo de ser a añadir</param>
+        /// <param name="numObjetivo">El número de seres a añadir</param>
         private void llenarConTipoDeSer(Type type, int numObjetivo)
         {
             var random = new Random();
@@ -71,6 +76,11 @@ namespace Safari.model.position
             }
         }
 
+        /// <summary>
+        /// Devuelve las posiciones vacías que hay alrededor de <c><paramref name="pos"/></c>
+        /// </summary>
+        /// <param name="pos"></param>
+        /// <returns></returns>
         public List<Posicion> getSurroundingPositions(Posicion pos)
         {
             List<Posicion> posiciones = new List<Posicion>();
