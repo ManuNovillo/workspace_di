@@ -84,7 +84,7 @@ namespace Safari.controller
 
         public int getNumeroPasos()
         {
-            return safari.Pasos;
+            return safari.NumeroPasos;
         }
 
         internal bool debeTerminarSimulacion()

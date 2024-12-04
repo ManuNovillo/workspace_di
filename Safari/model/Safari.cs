@@ -15,7 +15,7 @@ namespace Safari.model
 
         private int numeroSeres;
 
-        private int pasos;
+        private int numeroPasos;
 
         private bool simulacionTerminada;
 
@@ -33,7 +33,7 @@ namespace Safari.model
 
         public int NumeroSeres { get => numeroSeres; }
 
-        public int Pasos { get => pasos; }
+        public int NumeroPasos { get => numeroPasos; }
 
         public bool SimulacionTerminada { get => simulacionTerminada; }
 
@@ -46,15 +46,16 @@ namespace Safari.model
         public void startSafari()
         {
             parcela.fillParcela();
-            setNumerosDelSafari();
+            setNumerosInicialesDelSafari();
         }
 
-        private void setNumerosDelSafari()
+        private void setNumerosInicialesDelSafari()
         {
             setNumeroGacelas();
             setNumeroPlantas();
             setNumeroLeones();
-            setNumeroSeres();
+            updateNumeroSeres();
+            numeroPasos = 0;
         }
 
         private void setNumeroPlantas()
@@ -72,7 +73,7 @@ namespace Safari.model
             setNumero(typeof(Leon), out numeroLeones);
         }
 
-        private void setNumeroSeres()
+        private void updateNumeroSeres()
         {
             numeroSeres = numeroGacelas + numeroLeones + numeroPlantas;
         }
@@ -125,8 +126,8 @@ namespace Safari.model
             foreach (var posicionActual in keys)
             {
                 var ser = parcela.Posiciones[posicionActual];
-                if (ser == null) continue;
-                if (seresRecorridos.Contains(ser)) continue;
+                if (ser == null) continue; // Si es vacío, pasar al siguiente
+                if (seresRecorridos.Contains(ser)) continue; // Si el ser ya se ha recorrido, pasar al siguiente
                 seresRecorridos.Add(ser);
                 var posicionesAlrededor = parcela.getSurroundingPositions(posicionActual);
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
@@ -134,7 +135,7 @@ namespace Safari.model
 
                 if (ser is Animal)
                 {
-                    Animal animal = (Animal)ser;
+                    Animal animal = (Animal) ser;
                     if (animal.debeMorirDeInanicion())
                     {
                         matarSerEnPosicion(posicionActual);
@@ -154,10 +155,11 @@ namespace Safari.model
                 if (ser.debeReproducirse() && posicionesVacias.Count != 0)
                 {
                     Posicion? posicionHijo = reproducir(ser, posicionesVacias);
-                    // Eliminar posición del hijo de la lista para que el ser, en caso de poder moverse, no se ponga encima del hijo
+                   
                     if (posicionHijo != null)
                     {
-                        posicionesVacias.Remove(posicionHijo);
+                        posicionesVacias.Remove(posicionHijo);  // Eliminar posición del hijo de la lista para que el ser, en caso de poder moverse,
+                                                                // no se ponga encima del hijo
                         seHaReproducido = true;
                         Ser hijo = parcela.Posiciones[posicionHijo];
                         seresRecorridos.Add(hijo); // Evitar que el hijo haga algo en este turno
@@ -168,20 +170,18 @@ namespace Safari.model
                 {
                     Animal animal = (Animal)ser;
                     var posicionesConComida = getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor);
-                    handleAnimal((Animal)ser, posicionActual, posicionesConComida, posicionesVacias);
+                    handleAnimal(animal, posicionActual, posicionesConComida, posicionesVacias);
                 }
                 ser.incrementarPasosVividos();
                 if (!seHaReproducido) ser.incrementarPasosDesdeUltimaReproduccion();
             }
-            pasos++;
-            setNumeroSeres();
+            numeroPasos++;
+            updateNumeroSeres();
             if (simulacionDebeTerminar())
             {
-                finish();
+                terminarSimulacion();
             }
         }
-
-
 
         private bool simulacionDebeTerminar()
         {
@@ -198,7 +198,7 @@ namespace Safari.model
             return true;
         }
 
-        private void finish()
+        private void terminarSimulacion()
         {
             simulacionTerminada = true;
         }
@@ -227,7 +227,7 @@ namespace Safari.model
                 nuevaPosicion = posicionesVacias[numAleatorio];
             }
 
-            if (!haComido) animal.incrementarDiasSinComer();
+            if (!haComido) animal.incrementarPasosSinComer();
             if (nuevaPosicion != null)
             {
                 mover(posicionActual, nuevaPosicion);
@@ -341,7 +341,7 @@ namespace Safari.model
             parcela.limpiarParcela();
             parcela.fillParcela();
             simulacionTerminada = false;
-            setNumerosDelSafari();
+            setNumerosInicialesDelSafari();
         }
     }
 }

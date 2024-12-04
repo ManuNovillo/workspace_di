@@ -9,10 +9,6 @@ namespace Safari.model.seres
         /// </summary>
         protected int periodoReproduccion;
 
-        //protected bool puedeReproducirse;
-
-        static int numStatic = 0;
-        public int num;
 
         /// <summary>
         /// Días que han pasado desde la última reproducción
@@ -23,8 +19,6 @@ namespace Safari.model.seres
 
         public void reproducirse()
         {
-            Console.WriteLine($"EL SER {this} {num} SE HA REPRODUCIDO");
-            //puedeReproducirse = false;
             pasosDesdeUltimaReproduccion = 1;
         }
 
@@ -32,9 +26,6 @@ namespace Safari.model.seres
         {
             pasosDesdeUltimaReproduccion = 1;
             pasosVividos = 0;
-           // puedeReproducirse = false;
-            num = numStatic;
-            numStatic++;
         }
 
         public bool debeReproducirse()

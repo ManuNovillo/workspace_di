@@ -225,10 +225,10 @@
             panelInfo.Size = new Size(1000, 22);
             panelInfo.TabIndex = 1;
             // 
-            // diasLabel
+            // pasosLabel
             // 
             pasosLabel.Location = new Point(738, 0);
-            pasosLabel.Name = "diasLabel";
+            pasosLabel.Name = "pasosLabel";
             pasosLabel.Size = new Size(208, 22);
             pasosLabel.TabIndex = 4;
             pasosLabel.Text = "label1";

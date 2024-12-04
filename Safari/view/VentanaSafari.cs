@@ -6,9 +6,9 @@ namespace Safari
 {
     public partial class VentanaSafari : Form
     {
-        private Thread hiloSafari;
+        private Thread hiloAutoplay;
 
-        CancellationTokenSource token;
+        private CancellationTokenSource token;
 
         private bool autoplayActivado;
         private Controller controller { get; set; }
@@ -17,14 +17,13 @@ namespace Safari
             this.controller = controller;
             token = new();
             InitializeComponent();
-            hiloSafari = new(() => autoplay());
+            hiloAutoplay = new(() => autoplay());
             pauseButton.Enabled = false;
-            hiloSafari.IsBackground = true;
+            hiloAutoplay.IsBackground = true;
         }
         /// <summary>
         /// Pinta todos los elementos del safari, es decir, los seres y las labels
         /// </summary>
-        /// <param name="g"></param>
         private void paintSafari(Graphics g)
         {
             Dictionary<Posicion, Ser?> seres = controller.getSeres();
@@ -35,12 +34,12 @@ namespace Safari
 
                 if (ser != null)
                 {
+                    // Dibujar el icono del ser
                     var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
                     var bitmap = new Bitmap(40, 40);
-                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
+                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40); // Multiplicar por 50 para separación de 50px en ambos ejes
                 }
             }
-            Update();
         }
 
         private void updateLabels()
@@ -68,7 +67,7 @@ namespace Safari
             pauseButton.Enabled = true;
             stepButton.Enabled = false;
             autoplayActivado = true;
-            hiloSafari.Start();
+            if(!hiloAutoplay.IsAlive) hiloAutoplay.Start(); // Empezar solo si es la primera vez que se hace click en autoplay
 
         }
 
@@ -77,26 +76,26 @@ namespace Safari
             autoplayActivado = false;
             token.Cancel();
             token.Dispose();
-            if (hiloSafari.ThreadState == ThreadState.Running)
-            {
-                Console.WriteLine("DENTRO");
-                hiloSafari.Join();
-            }
+            if (hiloAutoplay.IsAlive) hiloAutoplay.Join(); // Si el hilo se está ejecutando, esperar a que termine
+            // Volver a instanciar todo lo relacionado con el hilo de autoplay para evitar choques con la anterior ejecución
             token = new CancellationTokenSource();
             controller.restartSafari();
-            hiloSafari = new(() => autoplay());
-            hiloSafari.IsBackground = true;
+            hiloAutoplay = new(() => autoplay());
+            hiloAutoplay.IsBackground = true;
+
             stopButton.Enabled = true;
-            pauseButton.Enabled = true;
+            pauseButton.Enabled = false;
             autoplayButton.Enabled = true;
             stepButton.Enabled = true;
-            Refresh();
+            Refresh(); // Dibujar otra vez
         }
 
         private void pauseButton_Click(object sender, EventArgs e)
         {
             autoplayActivado = false;
             pauseButton.Enabled = false;
+            autoplayButton.Enabled = true;
+            stepButton.Enabled = true;
         }
 
         private void stopButton_Click(object sender, EventArgs e)

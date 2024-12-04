@@ -1,39 +1,40 @@
-﻿using System;
-
-namespace Safari.model.seres
+﻿namespace Safari.model.seres
 {
     internal abstract class Animal : Ser
     {
-        public abstract Type getTipoComida();
+        protected int pasosSinComer;
 
-        protected int diasSinComer;
-
+        /// <summary>
+        /// Cuántos pasos sin comer tiene que estar para morir
+        /// </summary>
         protected int periodoMuerteInanicion;
 
         public Animal()
         {
-            diasSinComer = 0;
+            pasosSinComer = 0;
             periodoMuerteInanicion = 3;
         }
 
+        public abstract Type getTipoComida();
+
         public int getDiasSinComer()
         {
-            return diasSinComer;
+            return pasosSinComer;
         }
 
         public void comer()
         {
-            diasSinComer = 0;
+            pasosSinComer = 0;
         }
 
         public bool debeMorirDeInanicion()
         {
-            return diasSinComer >= periodoMuerteInanicion;
+            return pasosSinComer >= periodoMuerteInanicion;
         }
 
-        internal void incrementarDiasSinComer()
+        internal void incrementarPasosSinComer()
         {
-            diasSinComer++;
+            pasosSinComer++;
         }
     }
 }
