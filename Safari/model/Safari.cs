@@ -132,6 +132,24 @@ namespace Safari.model
                 var posicionesVacias = getPosicionesVacias(posicionesAlrededor);
                 var seHaReproducido = false;
 
+                if (ser is Animal)
+                {
+                    Animal animal = (Animal)ser;
+                    if (animal.debeMorirDeInanicion())
+                    {
+                        matarSerEnPosicion(posicionActual);
+                        if (animal.GetType() == typeof(Gacela))
+                        {
+                            numeroGacelas--;
+                        }
+                        else if (animal.GetType() == typeof(Leon))
+                        {
+                            numeroLeones--;
+                        }
+                        continue;
+                    }
+                }
+
                 // Comprobar si se debe reproducir
                 if (ser.debeReproducirse() && posicionesVacias.Count != 0)
                 {
@@ -149,23 +167,8 @@ namespace Safari.model
                 if (ser is Animal)
                 {
                     Animal animal = (Animal)ser;
-                    if (animal.debeMorirDeInanicion())
-                    {
-                        matarSerEnPosicion(posicionActual);
-                        if (animal.GetType() == typeof(Gacela))
-                        {
-                            numeroGacelas--;
-                        }
-                        else if (animal.GetType() == typeof(Leon))
-                        {
-                            numeroLeones--;
-                        }
-                    }
-                    else
-                    {
-                        var posicionesConComida = getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor);
-                        handleAnimal((Animal)ser, posicionActual, posicionesConComida, posicionesVacias);
-                    }
+                    var posicionesConComida = getPosicionesConComida(animal.getTipoComida(), posicionesAlrededor);
+                    handleAnimal((Animal)ser, posicionActual, posicionesConComida, posicionesVacias);
                 }
                 ser.incrementarPasosVividos();
                 if (!seHaReproducido) ser.incrementarPasosDesdeUltimaReproduccion();

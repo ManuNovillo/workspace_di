@@ -64,8 +64,9 @@ namespace Safari
         }
         private void autoPlayButton_Click(object sender, EventArgs e)
         {
-
+            autoplayButton.Enabled = false;
             pauseButton.Enabled = true;
+            stepButton.Enabled = false;
             autoplayActivado = true;
             hiloSafari.Start();
 
@@ -73,7 +74,18 @@ namespace Safari
 
         private void resetButton_Click(object sender, EventArgs e)
         {
+            autoplayActivado = false;
+            token.Cancel();
+            token.Dispose();
+            if (hiloSafari.ThreadState == ThreadState.Running)
+            {
+                Console.WriteLine("DENTRO");
+                hiloSafari.Join();
+            }
+            token = new CancellationTokenSource();
             controller.restartSafari();
+            hiloSafari = new(() => autoplay());
+            hiloSafari.IsBackground = true;
             stopButton.Enabled = true;
             pauseButton.Enabled = true;
             autoplayButton.Enabled = true;

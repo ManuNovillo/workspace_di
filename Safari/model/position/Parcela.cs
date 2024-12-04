@@ -7,8 +7,6 @@ namespace Safari.model.position
         /// <summary>
         /// Diccionario donde se almacena cada posición y el ser que hay en ella (puede ser null)
         /// </summary>
-        private Dictionary<Posicion, Ser?> posiciones;
-
         public Dictionary<Posicion, Ser?> Posiciones { get; }
 
         public const int FilasMaximas = 10;

@@ -39,11 +39,6 @@ namespace Safari.model.seres
 
         public bool debeReproducirse()
         {
-            //Console.WriteLine($"{this} {num} comprobando reproduccion, diasDesdeUltimaReproduccion = {diasDesdeUltimaReproduccion}");
-            //Console.WriteLine(diasVividos > 0 && (diasVividos == periodoReproduccion || diasDesdeUltimaReproduccion >= periodoReproduccion));
-            //Console.WriteLine(diasDesdeUltimaReproduccion >= periodoReproduccion);
-            Console.WriteLine($"diasDesdeUltimaReproduccion = {pasosDesdeUltimaReproduccion}");
-            Console.WriteLine($"periodoReproduccion {periodoReproduccion}");
             return pasosVividos > 0 && (pasosDesdeUltimaReproduccion >= periodoReproduccion);
         }
 
