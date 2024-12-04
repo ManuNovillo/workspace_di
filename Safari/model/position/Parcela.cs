@@ -1,5 +1,4 @@
-﻿using System;
-using Safari.model.seres;
+﻿using Safari.model.seres;
 
 namespace Safari.model.position
 {
@@ -58,7 +57,7 @@ namespace Safari.model.position
 
 
             List<Posicion> posicionesConSer = new List<Posicion>();
-            llenarConTipoDeSer(typeof(Leon), numLeones);
+            //llenarConTipoDeSer(typeof(Leon), numLeones);
             llenarConTipoDeSer(typeof(Gacela), numGacelas);
             llenarConTipoDeSer(typeof(Planta), numPlantas);
 

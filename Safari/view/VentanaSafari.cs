@@ -22,7 +22,10 @@ namespace Safari
             hiloSafari.IsBackground = true;
             hiloSafari.Start();
         }
-
+        /// <summary>
+        /// Pinta todos los elementos del safari, es decir, los seres y las labels
+        /// </summary>
+        /// <param name="g"></param>
         private void paintSafari(Graphics g)
         {
             Dictionary<Posicion, Ser?> seres = controller.getSeres();
@@ -40,7 +43,6 @@ namespace Safari
                 {
                     var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
                     var bitmap = new Bitmap(40, 40);
-                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                     g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
                     //g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
                 }

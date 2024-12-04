@@ -1,6 +1,5 @@
 ﻿using Safari.model.position;
 using Safari.model.seres;
-using System.Diagnostics;
 
 namespace Safari.model
 {
@@ -52,8 +51,8 @@ namespace Safari.model
 
         private void setNumerosDelSafari()
         {
-            setNumeroPlantas();
             setNumeroGacelas();
+            setNumeroPlantas();
             setNumeroLeones();
             setNumeroSeres();
         }
@@ -193,7 +192,7 @@ namespace Safari.model
             setNumeroSeres();
             if (simulacionDebeTerminar())
             {
-                finish();
+                //finish();
             }
         }
 
@@ -220,7 +219,7 @@ namespace Safari.model
         }
 
         /// <summary>
-        /// Hace todo el comportamiento del animal (comer y moverse)
+        /// Hace todo el comportamiento especial del animal (comer y moverse)
         /// </summary>
         /// <param name="animal"></param>
         /// <param name="posicionActual"></param>
@@ -313,7 +312,6 @@ namespace Safari.model
                 numeroPlantas--;
             }
             return posicionElegida;
-
         }
 
         private void matarSerEnPosicion(Posicion posicionElegida)
@@ -342,6 +340,12 @@ namespace Safari.model
             return posicionesConComida;
         }
 
+        /// <summary>
+        /// Dada una lista de posiciones, devuelve otra lista con aquellas posiciones que estén vacías
+        /// (que en el diccionario de posiciones, el valor sea null)
+        /// </summary>
+        /// <param name="posiciones"></param>
+        /// <returns></returns>
         private List<Posicion> getPosicionesVacias(List<Posicion> posiciones)
         {
             var posicionesVacias = new List<Posicion>();
@@ -357,10 +361,14 @@ namespace Safari.model
             return posicionesVacias;
         }
 
+        /// <summary>
+        /// Reinicia el safari
+        /// </summary>
         public void restart()
         {
             parcela.limpiarParcela();
             parcela.fillParcela();
+            simulacionTerminada = false;
             setNumerosDelSafari();
         }
     }
