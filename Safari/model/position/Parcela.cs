@@ -50,14 +50,8 @@ namespace Safari.model.position
             int numLeones = Filas * Columnas / 9;
             int numVacios = Filas * Columnas / 3;
 
-            Console.WriteLine($"numPlantas {numPlantas}");
-            Console.WriteLine($"numGacelas {numGacelas}");
-            Console.WriteLine($"numLeones {numLeones}");
-            Console.WriteLine($"numVacios {numVacios}");
-
-
             List<Posicion> posicionesConSer = new List<Posicion>();
-            //llenarConTipoDeSer(typeof(Leon), numLeones);
+            llenarConTipoDeSer(typeof(Leon), numLeones);
             llenarConTipoDeSer(typeof(Gacela), numGacelas);
             llenarConTipoDeSer(typeof(Planta), numPlantas);
 

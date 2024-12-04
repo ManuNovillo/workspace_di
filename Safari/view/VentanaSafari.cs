@@ -18,9 +18,8 @@ namespace Safari
             token = new();
             InitializeComponent();
             hiloSafari = new(() => autoplay());
-
+            pauseButton.Enabled = false;
             hiloSafari.IsBackground = true;
-            hiloSafari.Start();
         }
         /// <summary>
         /// Pinta todos los elementos del safari, es decir, los seres y las labels
@@ -29,14 +28,9 @@ namespace Safari
         private void paintSafari(Graphics g)
         {
             Dictionary<Posicion, Ser?> seres = controller.getSeres();
-
-            Font font = new Font("Arial", 8);
-
             updateLabels();
             foreach (var entry in seres)
             {
-                /*String texto = entry.Value != null ? entry.Value.ToString() : "";
-                g.DrawString(texto, font, brush,entry.Key.X * 50, entry.Key.Y * 50 );*/
                 Ser? ser = entry.Value;
 
                 if (ser != null)
@@ -44,7 +38,6 @@ namespace Safari
                     var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
                     var bitmap = new Bitmap(40, 40);
                     g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40);
-                    //g.DrawString(ser.ToString() + ser.num, new Font("Arial", 10), new SolidBrush(Color.Black), entry.Key.columna * 80, entry.Key.fila * 80);
                 }
             }
             Update();
@@ -71,7 +64,11 @@ namespace Safari
         }
         private void autoPlayButton_Click(object sender, EventArgs e)
         {
+
+            pauseButton.Enabled = true;
             autoplayActivado = true;
+            hiloSafari.Start();
+
         }
 
         private void resetButton_Click(object sender, EventArgs e)
@@ -87,6 +84,7 @@ namespace Safari
         private void pauseButton_Click(object sender, EventArgs e)
         {
             autoplayActivado = false;
+            pauseButton.Enabled = false;
         }
 
         private void stopButton_Click(object sender, EventArgs e)

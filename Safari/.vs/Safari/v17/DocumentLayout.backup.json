@@ -1,41 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Safari\\",
+  "WorkspaceRootPath": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\ventanainicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanainicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|C:\\Users\\diurno\\workspace_di\\Safari\\view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:view\\ventanasafari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\users\\diurno\\workspace_di\\safari\\model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\position\\parcela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\safari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|c:\\visual_studio_workspaces\\workspace_di\\safari\\model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6DDE48-2FA4-4382-88CD-EB9ED5DF4AA5}|Safari.csproj|solutionrelative:model\\seres\\ser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,15 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Ser.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Ser.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Ser.cs",
               "RelativeDocumentMoniker": "model\\seres\\Ser.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\seres\\Ser.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\seres\\Ser.cs",
               "RelativeToolTip": "model\\seres\\Ser.cs",
               "ViewState": "AgIAABcAAAAAAAAAAIAzwCkAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -63,17 +55,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Safari.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\Safari.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\Safari.cs",
               "RelativeDocumentMoniker": "model\\Safari.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\Safari.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\Safari.cs",
               "RelativeToolTip": "model\\Safari.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAIwMIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAawH8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T10:43:43.597Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -83,9 +74,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\controller\\Controller.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\controller\\Controller.cs",
               "RelativeDocumentMoniker": "controller\\Controller.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\controller\\Controller.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\controller\\Controller.cs",
               "RelativeToolTip": "controller\\Controller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -93,77 +84,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "VentanaSafari.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaSafari.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs",
               "RelativeDocumentMoniker": "view\\VentanaSafari.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaSafari.cs",
-              "RelativeToolTip": "view\\VentanaSafari.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAtwCwAAAA0AAAAAAAAAA==",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs*",
+              "RelativeToolTip": "view\\VentanaSafari.cs*",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T13:12:34.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VentanaInicio.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs",
-              "RelativeDocumentMoniker": "view\\VentanaInicio.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.cs",
-              "RelativeToolTip": "view\\VentanaInicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T20:38:35.207Z"
+              "WhenOpened": "2024-12-01T20:37:25.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VentanaInicio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.Designer.cs",
-              "RelativeDocumentMoniker": "view\\VentanaInicio.Designer.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaInicio.Designer.cs",
-              "RelativeToolTip": "view\\VentanaInicio.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Parcela.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Parcela.cs",
+              "RelativeDocumentMoniker": "model\\position\\Parcela.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\model\\position\\Parcela.cs",
+              "RelativeToolTip": "model\\position\\Parcela.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T20:38:23.221Z"
+              "WhenOpened": "2024-11-27T12:38:13.958Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T20:37:25.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Parcela.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Parcela.cs",
-              "RelativeDocumentMoniker": "model\\position\\Parcela.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Safari\\model\\position\\Parcela.cs*",
-              "RelativeToolTip": "model\\position\\Parcela.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswDwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:38:13.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "VentanaSafari.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Safari\\view\\VentanaSafari.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs",
               "RelativeDocumentMoniker": "view\\VentanaSafari.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\Safari\\view\\VentanaSafari.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "view\\VentanaSafari.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T10:56:38.446Z"
+              "WhenOpened": "2024-11-22T10:56:38.446Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
