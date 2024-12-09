@@ -5,12 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PruebaWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Ventana" Height="450" Width="800">
+    <Grid x:Name="ventanaP">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <StackPanel x:Name="Panel" Grid.Row="1" Grid.Column="1" ButtonBase.Click="Panel_Click">
+            <Label Content="HOLAA"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Enviar" Margin="0,10,10,20" Height="70" Width="150" Click="Button_Click"/>
+                <Button Content="NO enviar" Margin="10,10,0,20" Height="70" Width="150" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="15" Grid.Row="2" Grid.Column="1">
+            <Label>Opciones</Label>
+            <CheckBox Name="MarcarTodas" IsThreeState="True" 
+                      Checked="MarcarTodas_Checked" Unchecked="MarcarTodas_Unchecked">
+                Agregar
+            </CheckBox>
+            <StackPanel Margin="15">
+                <CheckBox Name="Op1" Checked="Op_Checked" Unchecked="Op_Unchecked">Opcion 1</CheckBox>
+                <CheckBox Name="Op2" Checked="Op_Checked" Unchecked="Op_Unchecked">Opcion 2</CheckBox>
+                <CheckBox Name="Op3" Checked="Op_Checked" Unchecked="Op_Unchecked">Opcion 3</CheckBox>
+                <CheckBox Name="Op4" Checked="Op_Checked" Unchecked="Op_Unchecked">Opcion 4</CheckBox>
+            </StackPanel>
+        </StackPanel>
 
+        <TextBox Grid.Row="0" Grid.Column="1" Width="100" Name="TextValor" Height="40" Text="{Binding ElementName=SliderValor, Path=Value, Mode=TwoWay}"/>
+        <Slider Name="SliderValor" Grid.Row="3" Grid.Column="1" Minimum="0" Maximum="100" />
     </Grid>
 </Window>

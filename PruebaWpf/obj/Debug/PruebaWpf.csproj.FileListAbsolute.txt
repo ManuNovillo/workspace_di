@@ -1,0 +1,15 @@
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\MainWindow.g.cs
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\App.g.cs
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf_MarkupCompile.cache
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf_MarkupCompile.lref
+C:\Users\diurno\workspace_di\PruebaWpf\bin\Debug\PruebaWpf.exe.config
+C:\Users\diurno\workspace_di\PruebaWpf\bin\Debug\PruebaWpf.exe
+C:\Users\diurno\workspace_di\PruebaWpf\bin\Debug\PruebaWpf.pdb
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\MainWindow.baml
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.g.resources
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.Properties.Resources.resources
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.exe
+C:\Users\diurno\workspace_di\PruebaWpf\obj\Debug\PruebaWpf.pdb
