@@ -45,8 +45,8 @@
             stopButton = new Button();
             stepButton = new Button();
             pauseButton = new Button();
-            resetButton = new Button();
             diezPasosButton = new Button();
+            resetButton = new Button();
             panelInfo = new Panel();
             elefantesLabel = new Label();
             pasosLabel = new Label();
@@ -206,16 +206,6 @@
             pauseButton.UseVisualStyleBackColor = true;
             pauseButton.Click += pauseButton_Click;
             // 
-            // resetButton
-            // 
-            resetButton.Location = new Point(503, 10);
-            resetButton.Name = "resetButton";
-            resetButton.Size = new Size(94, 29);
-            resetButton.TabIndex = 4;
-            resetButton.Text = "RESET";
-            resetButton.UseVisualStyleBackColor = true;
-            resetButton.Click += resetButton_Click;
-            // 
             // diezPasosButton
             // 
             diezPasosButton.Location = new Point(403, 10);
@@ -225,6 +215,16 @@
             diezPasosButton.Text = "10 STEPS";
             diezPasosButton.UseVisualStyleBackColor = true;
             diezPasosButton.Click += diezPasosButton_Click;
+            // 
+            // resetButton
+            // 
+            resetButton.Location = new Point(503, 10);
+            resetButton.Name = "resetButton";
+            resetButton.Size = new Size(94, 29);
+            resetButton.TabIndex = 4;
+            resetButton.Text = "RESET";
+            resetButton.UseVisualStyleBackColor = true;
+            resetButton.Click += resetButton_Click;
             // 
             // panelInfo
             // 
@@ -241,7 +241,7 @@
             // 
             // elefantesLabel
             // 
-            elefantesLabel.Location = new Point(756, 0);
+            elefantesLabel.Location = new Point(470, 0);
             elefantesLabel.Name = "elefantesLabel";
             elefantesLabel.Size = new Size(176, 29);
             elefantesLabel.TabIndex = 5;
@@ -249,7 +249,7 @@
             // 
             // pasosLabel
             // 
-            pasosLabel.Location = new Point(950, 0);
+            pasosLabel.Location = new Point(887, 0);
             pasosLabel.Name = "pasosLabel";
             pasosLabel.Size = new Size(192, 29);
             pasosLabel.TabIndex = 4;
@@ -257,7 +257,7 @@
             // 
             // totalLabel
             // 
-            totalLabel.Location = new Point(559, 0);
+            totalLabel.Location = new Point(686, 0);
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new Size(238, 29);
             totalLabel.TabIndex = 3;
@@ -265,7 +265,7 @@
             // 
             // gacelasLabel
             // 
-            gacelasLabel.Location = new Point(359, 0);
+            gacelasLabel.Location = new Point(303, 0);
             gacelasLabel.Name = "gacelasLabel";
             gacelasLabel.Size = new Size(238, 29);
             gacelasLabel.TabIndex = 2;

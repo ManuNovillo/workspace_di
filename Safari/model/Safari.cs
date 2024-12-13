@@ -107,7 +107,8 @@ namespace Safari.model
 
         private void updateNumeroSeres()
         {
-            numeroSeres = numeroGacelas + numeroLeones + numeroPlantas;
+            // Examen 1: tener en cuenta tambien los elefantes para el número total de seres
+            numeroSeres = numeroGacelas + numeroLeones + numeroPlantas + numeroElefantes;
         }
 
         private void setNumero(Type type, out int numOut)
