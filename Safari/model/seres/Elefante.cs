@@ -1,10 +1,11 @@
 ﻿namespace Safari.model.seres
 {
-    internal class Gacela : Herbivoro
+    // Examen 1
+    internal class Elefante : Herbivoro
     {
         public override String ToString()
         {
-            return "Gacela";
+            return "Elefante";
         }
     }
 }

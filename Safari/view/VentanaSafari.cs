@@ -48,6 +48,7 @@ namespace Safari
         private void updateLabels()
         {
             plantasLabel.Text = $"PLANTAS: {controller.getNumeroPlantas()}";
+            elefantesLabel.Text = $"ELEFANTES: {controller.getNumeroElefantes()}";
             leonesLabel.Text = $"LEONES: {controller.getNumeroLeones()}";
             gacelasLabel.Text = $"GACELAS: {controller.getNumeroGacelas()}";
             totalLabel.Text = $"TOTAL: {controller.getNumeroSeres()}";
@@ -63,18 +64,20 @@ namespace Safari
         private void stepButton_Click(object sender, EventArgs e)
         {
             step();
+            Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
         }
         private void autoPlayButton_Click(object sender, EventArgs e)
         {
-            autoplayButton.Enabled = false;
-            pauseButton.Enabled = true;
-            stepButton.Enabled = false;
-            autoplayActivado = true;
-            if(!hiloAutoplay.IsAlive) hiloAutoplay.Start(); // Empezar solo si es la primera vez que se hace click en autoplay
+            activarAutoplay();
 
         }
 
         private void resetButton_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
+
+        private void reset()
         {
             autoplayActivado = false;
             token.Cancel();
@@ -85,7 +88,7 @@ namespace Safari
             controller.restartSafari();
             hiloAutoplay = new(() => autoplay());
             hiloAutoplay.IsBackground = true;
-
+            diezPasosButton.Enabled = true;
             stopButton.Enabled = true;
             pauseButton.Enabled = false;
             autoplayButton.Enabled = true;
@@ -95,13 +98,93 @@ namespace Safari
 
         private void pauseButton_Click(object sender, EventArgs e)
         {
+            pausar();
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            stop();
+        }
+
+        private void stepToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            step();
+            Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
+
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pausar();
+        }
+
+        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            stop();
+        }
+
+        private void playToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            activarAutoplay();
+        }
+
+        // Examen 2
+        private void pasosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            hacer10Pasos();
+        }
+
+        private void autoplay()
+        {
+            while (!token.IsCancellationRequested)
+            {
+                if (autoplayActivado)
+                {
+                    step();
+                    Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
+                    Thread.Sleep(2000);
+                }
+            }
+        }
+
+        private void step()
+        {
+            controller.step();
+            if (controller.debeTerminarSimulacion())
+            {
+                stopButton.Enabled = false;
+                pauseButton.Enabled = false;
+                autoplayButton.Enabled = false;
+                stepButton.Enabled = false;
+                diezPasosButton.Enabled = false;
+            }
+        }
+
+        private void activarAutoplay()
+        {
+            autoplayButton.Enabled = false;
+            diezPasosButton.Enabled = false;
+            pauseButton.Enabled = true;
+            stepButton.Enabled = false;
+            autoplayActivado = true;
+            // Empezar solo si es la primera vez que se hace click en autoplay
+            if (!hiloAutoplay.IsAlive) hiloAutoplay.Start(); 
+        }
+
+        private void pausar()
+        {
             autoplayActivado = false;
             pauseButton.Enabled = false;
+            diezPasosButton.Enabled = true;
             autoplayButton.Enabled = true;
             stepButton.Enabled = true;
         }
 
-        private void stopButton_Click(object sender, EventArgs e)
+        private void stop()
         {
             token.Cancel();
             token.Dispose();
@@ -112,29 +195,20 @@ namespace Safari
             resetButton.Enabled = false;
         }
 
-        private void autoplay()
+        // Examen 2
+        private void hacer10Pasos()
         {
-            while (!token.IsCancellationRequested)
+            for (int i = 0; i < 10; i++)
             {
-                if (autoplayActivado)
-                {
-                    step();
-                    Thread.Sleep(2000);
-                }
+                step();
             }
+            // Actualizar ventana después de los 10 pasos
+            Refresh();
         }
 
-        private void step()
+        private void diezPasosButton_Click(object sender, EventArgs e)
         {
-            controller.step();
-            Refresh();
-            if (controller.debeTerminarSimulacion())
-            {
-                stopButton.Enabled = false;
-                pauseButton.Enabled = false;
-                autoplayButton.Enabled = false;
-                stepButton.Enabled = false;
-            }
+            hacer10Pasos();
         }
     }
 }

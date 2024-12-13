@@ -44,7 +44,10 @@ namespace Safari.model.position
 
             // Proporciones que debe haber de cada ser y de huecos vacíos
             int numPlantas = Filas * Columnas / 3;
-            int numGacelas = 2 * Filas * Columnas / 9;
+            // Examen 1: he puesto la mjtad de gacelas que antes, y he puesto la misma cantidad de elefantes
+            // que de gacelas
+            int numGacelas = Filas * Columnas / 9;
+            int numElefantes = Filas * Columnas / 9;
             int numLeones = Filas * Columnas / 9;
             int numVacios = Filas * Columnas / 3;
 
@@ -52,6 +55,8 @@ namespace Safari.model.position
             llenarConTipoDeSer(typeof(Leon), numLeones);
             llenarConTipoDeSer(typeof(Gacela), numGacelas);
             llenarConTipoDeSer(typeof(Planta), numPlantas);
+            // Examen 1
+            llenarConTipoDeSer(typeof(Elefante), numElefantes);
 
         }
 

@@ -13,6 +13,9 @@ namespace Safari.model
 
         private int numeroLeones;
 
+        // Examen 1
+        private int numeroElefantes;
+
         private int numeroSeres;
 
         private int numeroPasos;
@@ -28,6 +31,9 @@ namespace Safari.model
         public int NumeroSeres { get => numeroSeres; }
 
         public int NumeroPasos { get => numeroPasos; }
+
+        // Examen 1
+        public int NumeroElefantes { get => numeroElefantes; }
 
         public bool SimulacionTerminada { get => simulacionTerminada; }
 
@@ -48,8 +54,16 @@ namespace Safari.model
             setNumeroGacelas();
             setNumeroPlantas();
             setNumeroLeones();
+            // Examen 1
+            setNumeroElefantes();
             updateNumeroSeres();
             numeroPasos = 0;
+        }
+
+        // Examen 1
+        private void setNumeroElefantes()
+        {
+            setNumero(typeof(Elefante), out numeroElefantes);
         }
 
         private void setNumeroPlantas()
@@ -142,13 +156,18 @@ namespace Safari.model
                     if (animal.debeMorirDeInanicion())
                     {
                         matarSerEnPosicion(posicionActual);
-                        if (animal.GetType() == typeof(Gacela))
+                        if (animal is Gacela)
                         {
                             numeroGacelas--;
                         }
-                        else if (animal.GetType() == typeof(Leon))
+                        else if (animal is Leon)
                         {
                             numeroLeones--;
+                        }
+                        // Examen 1
+                        else if (animal is Elefante)
+                        {
+                            numeroElefantes--;
                         }
                         continue;
                     }
@@ -192,12 +211,8 @@ namespace Safari.model
         {
             foreach (var value in parcela.Posiciones.Values)
             {
-                // Si aún quedan gacelas o leones, no debe terminar.
-                if (value is not null && (
-                            value.GetType() == typeof(Gacela) ||
-                            value.GetType() == typeof(Leon)
-                        )
-                    )
+                // Si aún quedan animales, no debe terminar.
+                if (value is not null && value is Animal)
                     return false;
             }
             return true;
@@ -266,6 +281,12 @@ namespace Safari.model
             {
                 hijo = new Gacela();
                 numeroGacelas++;
+            }
+            // Examen 1
+            else if (ser is Elefante)
+            {
+                hijo = new Elefante();
+                numeroElefantes++;
             }
             ser.reproducirse();
             parcela.Posiciones[posicionElegida] = hijo;

@@ -91,5 +91,10 @@ namespace Safari.controller
         {
             return safari.SimulacionTerminada;
         }
+
+        public int getNumeroElefantes()
+        {
+            return safari.NumeroElefantes;
+        }
     }
 }

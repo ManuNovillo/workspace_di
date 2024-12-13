@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Safari.model.seres
 {
-    internal class Leon : Animal
+    internal class Leon : Carnivoro
     {
-        public Leon()
-        {
-            this.periodoReproduccion = 6;
-        }
+        
 
         public override String ToString()
         {
