@@ -414,8 +414,12 @@ namespace Safari.model
             parcela.limpiarParcela();
             parcela.fillParcela();
             simulacionTerminada = false;
+            // Examen 4
             soloQuedanPlantas = false;
             noQuedanSeres = false;
+            // Examen 3
+            esDeDia = true;
+            contadorDias = 0;
             setNumerosInicialesDelSafari();
         }
     }
