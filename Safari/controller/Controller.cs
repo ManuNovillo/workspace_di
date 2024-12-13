@@ -52,7 +52,7 @@ namespace Safari.controller
             safari.step();
         }
 
-        public Dictionary<Posicion, Ser?> getSeres()
+        public List<String> getSeres()
         {
             return safari.getSeres();
         }

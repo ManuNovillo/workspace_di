@@ -88,9 +88,18 @@ namespace Safari.model
             parcela.Columnas = columnas;
         }
 
-        public Dictionary<Posicion, Ser?> getSeres()
+        public List<String> getSeres()
         {
-            return parcela.Posiciones;
+            List<String> seresTexto = new List<String>();
+            foreach (var entry in parcela.Posiciones)
+            {
+                var ser = entry.Value;
+                var tipoSer = entry.Value is null ? "Vacio" : entry.Value.ToString();
+                var fila = entry.Key.fila;
+                var columna = entry.Key.columna;
+                seresTexto.Add($"{tipoSer} {fila} {columna}");
+            }
+            return seresTexto;
         }
 
         public int getFilasMaximas()

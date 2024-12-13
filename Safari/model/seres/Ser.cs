@@ -1,4 +1,4 @@
-﻿using Safari.model.position;
+﻿
 
 namespace Safari.model.seres
 {
@@ -10,10 +10,8 @@ namespace Safari.model.seres
         protected int periodoReproduccion;
 
 
-        /// <summary>
-        /// Días que han pasado desde la última reproducción
-        /// </summary>
         protected int pasosDesdeUltimaReproduccion;
+
 
         protected int pasosVividos;
 

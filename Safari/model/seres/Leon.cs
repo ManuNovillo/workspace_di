@@ -18,6 +18,10 @@ namespace Safari.model.seres
             return "Leon";
         }
 
+        /// <summary>
+        /// Devuelve el tipoDeComida
+        /// </summary>
+        /// <returns></returns>
         public override Type getTipoComida()
         {
             return typeof(Gacela);

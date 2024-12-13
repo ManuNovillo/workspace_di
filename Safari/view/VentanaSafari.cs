@@ -26,18 +26,21 @@ namespace Safari
         /// </summary>
         private void paintSafari(Graphics g)
         {
-            Dictionary<Posicion, Ser?> seres = controller.getSeres();
+            List<String> seresTexto = controller.getSeres();
             updateLabels();
-            foreach (var entry in seres)
+            foreach (var serTexto in seresTexto)
             {
-                Ser? ser = entry.Value;
+                var partes = serTexto.Split(' ');
+                var tipoSer = partes[0];
 
-                if (ser != null)
+                if (!tipoSer.Contains("Vacio"))
                 {
+                    var fila = int.Parse(partes[1]);
+                    var columna = int.Parse(partes[2]);
                     // Dibujar el icono del ser
-                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{ser}.png");
+                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{tipoSer}.png");
                     var bitmap = new Bitmap(40, 40);
-                    g.DrawImage(image, entry.Key.columna * 50, entry.Key.fila * 50, 40, 40); // Multiplicar por 50 para separación de 50px en ambos ejes
+                    g.DrawImage(image, columna * 50, fila * 50, 40, 40); // Multiplicar por 50 para separación de 50px en ambos ejes
                 }
             }
         }
