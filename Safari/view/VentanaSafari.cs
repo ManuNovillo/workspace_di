@@ -64,7 +64,6 @@ namespace Safari
         private void stepButton_Click(object sender, EventArgs e)
         {
             step();
-            Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
         }
         private void autoPlayButton_Click(object sender, EventArgs e)
         {
@@ -75,25 +74,6 @@ namespace Safari
         private void resetButton_Click(object sender, EventArgs e)
         {
             reset();
-        }
-
-        private void reset()
-        {
-            autoplayActivado = false;
-            token.Cancel();
-            token.Dispose();
-            if (hiloAutoplay.IsAlive) hiloAutoplay.Join(); // Si el hilo se está ejecutando, esperar a que termine
-            // Volver a instanciar todo lo relacionado con el hilo de autoplay para evitar choques con la anterior ejecución
-            token = new CancellationTokenSource();
-            controller.restartSafari();
-            hiloAutoplay = new(() => autoplay());
-            hiloAutoplay.IsBackground = true;
-            diezPasosButton.Enabled = true;
-            stopButton.Enabled = true;
-            pauseButton.Enabled = false;
-            autoplayButton.Enabled = true;
-            stepButton.Enabled = true;
-            Refresh(); // Dibujar otra vez
         }
 
         private void pauseButton_Click(object sender, EventArgs e)
@@ -109,7 +89,11 @@ namespace Safari
         private void stepToolStripMenuItem_Click(object sender, EventArgs e)
         {
             step();
-            Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
+        }
+
+        private void diezPasosButton_Click(object sender, EventArgs e)
+        {
+            hacer10Pasos();
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -145,7 +129,6 @@ namespace Safari
                 if (autoplayActivado)
                 {
                     step();
-                    Refresh(); // Examen 2: he quitado el refresh del metodo step para poder hacer los 10 pasos
                     Thread.Sleep(2000);
                 }
             }
@@ -154,15 +137,11 @@ namespace Safari
         private void step()
         {
             controller.step();
-            if (controller.debeTerminarSimulacion())
-            {
-                stopButton.Enabled = false;
-                pauseButton.Enabled = false;
-                autoplayButton.Enabled = false;
-                stepButton.Enabled = false;
-                diezPasosButton.Enabled = false;
-            }
+            Refresh();
+            checkFinSimulacion();
         }
+
+       
 
         private void activarAutoplay()
         {
@@ -184,6 +163,25 @@ namespace Safari
             stepButton.Enabled = true;
         }
 
+        private void reset()
+        {
+            autoplayActivado = false;
+            token.Cancel();
+            token.Dispose();
+            if (hiloAutoplay.IsAlive) hiloAutoplay.Join(); // Si el hilo se está ejecutando, esperar a que termine
+            // Volver a instanciar todo lo relacionado con el hilo de autoplay para evitar choques con la anterior ejecución
+            token = new CancellationTokenSource();
+            controller.restartSafari();
+            hiloAutoplay = new(() => autoplay());
+            hiloAutoplay.IsBackground = true;
+            diezPasosButton.Enabled = true;
+            stopButton.Enabled = true;
+            pauseButton.Enabled = false;
+            autoplayButton.Enabled = true;
+            stepButton.Enabled = true;
+            Refresh(); // Dibujar otra vez
+        }
+
         private void stop()
         {
             token.Cancel();
@@ -200,15 +198,37 @@ namespace Safari
         {
             for (int i = 0; i < 10; i++)
             {
-                step();
+                controller.step();
             }
             // Actualizar ventana después de los 10 pasos
             Refresh();
+            checkFinSimulacion();
         }
 
-        private void diezPasosButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Si la simulacion debe terminar, muestra un messagebox con un mensaje distinto
+        /// dependiendo si solo quedan plantas o si no queda ningún ser
+        /// </summary>
+        private void checkFinSimulacion()
         {
-            hacer10Pasos();
+            // Ejercicio 4
+            if (controller.simuacionTerminada())
+            {
+                stopButton.Enabled = false;
+                pauseButton.Enabled = false;
+                autoplayButton.Enabled = false;
+                stepButton.Enabled = false;
+                diezPasosButton.Enabled = false;
+
+                if (controller.soloQuedanPlantas())
+                {
+                    MessageBox.Show("Solo las plantas pueden dominar el mundo");
+                }
+                else if (controller.noQuedanSeres())
+                {
+                    MessageBox.Show("Es el Fin del Mundo");
+                }
+            }
         }
     }
 }

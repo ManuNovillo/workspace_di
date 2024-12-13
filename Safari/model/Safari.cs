@@ -22,6 +22,12 @@ namespace Safari.model
 
         private bool simulacionTerminada;
 
+        // Examen 4
+
+        private bool noQuedanSeres;
+
+        private bool soloQuedanPlantas;
+
         public int NumeroPlantas { get => numeroPlantas; }
 
         public int NumeroGacelas { get => numeroGacelas; }
@@ -37,15 +43,33 @@ namespace Safari.model
 
         public bool SimulacionTerminada { get => simulacionTerminada; }
 
+        // Examen 4
+        
+        public bool NoQuedanSeres { get => noQuedanSeres; }
+
+        public bool SoloQuedanPlantas { get => soloQuedanPlantas; }
+
+        // Ejercicio 3
+        /// <summary>
+        /// Cuantos dias seguidos han pasado
+        /// </summary>
+        private int contadorDias;
+
+        private bool esDeDia;
+
         public MiSafari()
         {
             parcela = new Parcela();
-            simulacionTerminada = false;
         }
 
         public void startSafari()
         {
             parcela.fillParcela();
+            contadorDias = 0;
+            esDeDia = true;
+            simulacionTerminada = false;
+            soloQuedanPlantas = false;
+            noQuedanSeres = false;
             setNumerosInicialesDelSafari();
         }
 
@@ -205,17 +229,37 @@ namespace Safari.model
             {
                 terminarSimulacion();
             }
+            // Examen 3
+            if (esDeDia) 
+                contadorDias++;
+            else 
+                esDeDia = true; // Si es de noche, hacer que sea de dia
+
+            if (contadorDias == 2)
+            {
+                contadorDias = 0;
+                esDeDia = false;
+            }
+
         }
 
         private bool simulacionDebeTerminar()
         {
+            soloQuedanPlantas = true;
+            noQuedanSeres = true;
             foreach (var value in parcela.Posiciones.Values)
             {
-                // Si aún quedan animales, no debe terminar.
-                if (value is not null && value is Animal)
-                    return false;
+                if (value is not null)
+                {
+                    noQuedanSeres = false;
+                }
+
+                if (value is not Planta)
+                {
+                    soloQuedanPlantas = false;
+                }
             }
-            return true;
+            return soloQuedanPlantas || noQuedanSeres;
         }
 
         private void terminarSimulacion()
@@ -235,12 +279,14 @@ namespace Safari.model
             Posicion? nuevaPosicion = null;
             bool haComido = false;
 
-            if (posicionesConComida.Count != 0)
+            // Examen 3
+            if (posicionesConComida.Count != 0 && esDeDia)
             {
                 nuevaPosicion = comer(posicionActual, posicionesConComida);
                 haComido = true;
             }
-            else if (posicionesVacias.Count != 0)
+            // Examen 3
+            else if (posicionesVacias.Count != 0 && esDeDia)
             {
                 var random = new Random();
                 int numAleatorio = random.Next(posicionesVacias.Count);
@@ -367,6 +413,8 @@ namespace Safari.model
             parcela.limpiarParcela();
             parcela.fillParcela();
             simulacionTerminada = false;
+            soloQuedanPlantas = false;
+            noQuedanSeres = false;
             setNumerosInicialesDelSafari();
         }
     }

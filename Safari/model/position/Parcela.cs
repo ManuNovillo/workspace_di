@@ -44,8 +44,8 @@ namespace Safari.model.position
 
             // Proporciones que debe haber de cada ser y de huecos vacíos
             int numPlantas = Filas * Columnas / 3;
-            // Examen 1: he puesto la mjtad de gacelas que antes, y he puesto la misma cantidad de elefantes
-            // que de gacelas
+            // Examen 1: he puesto la mjtad de gacelas que antes,
+            // y he puesto la misma cantidad de elefantes que de gacelas
             int numGacelas = Filas * Columnas / 9;
             int numElefantes = Filas * Columnas / 9;
             int numLeones = Filas * Columnas / 9;

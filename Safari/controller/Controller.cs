@@ -87,7 +87,19 @@ namespace Safari.controller
             return safari.NumeroPasos;
         }
 
-        internal bool debeTerminarSimulacion()
+        // Examen 4
+        public bool noQuedanSeres()
+        {
+            return safari.NoQuedanSeres;
+        }
+
+        // Examen 4
+        public bool soloQuedanPlantas()
+        {
+            return safari.SoloQuedanPlantas;
+        }
+
+        public bool simuacionTerminada()
         {
             return safari.SimulacionTerminada;
         }
