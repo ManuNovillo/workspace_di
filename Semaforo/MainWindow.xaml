@@ -1,0 +1,45 @@
+﻿<Window x:Class="Semaforo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semaforo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="SEMÁFORO" Grid.Row="0" Grid.Column="1" Margin="10"
+                   FontSize="45" TextAlignment="Center" Foreground="DarkBlue"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Name="PanelRadio">
+            <RadioButton Name="RBred" Margin="5, 18, 5, 5" Click="RadioButton_Click">
+                <TextBlock Foreground="Red" FontSize="20">Rojo</TextBlock>
+            </RadioButton>
+            <RadioButton Name="RBOrange" Margin="5, 18, 5, 5" Click="RadioButton_Click">
+                <TextBlock Foreground="Orange" FontSize="20">Naranja</TextBlock>
+            </RadioButton>
+            <RadioButton Name="RBVerde" Margin="5, 18, 5, 5" Click="RadioButton_Click">
+                <TextBlock Foreground="Green" FontSize="20">Verde</TextBlock>
+            </RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Grid Grid.Column="1">
+                <Image Source="/semaforo.png" Width="200" Height="200" />
+                <Ellipse Name="eRojo" Width="35" Height="35" Fill="Red"
+                         Margin="100,0,100,150" Visibility="Visible"/>
+                <Ellipse Name="eAmbar" Width="35" Height="35" Fill="Orange"
+                         Margin="100,0,100,73" Visibility="Visible"/>
+                <Ellipse Name="eVerde" Width="35" Height="35" Fill="Green"
+                         Margin="100,3,100,0" Visibility="Visible"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

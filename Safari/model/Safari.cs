@@ -214,7 +214,6 @@ namespace Safari.model
                     }
                 }
 
-
                 if (ser is Animal)
                 {
                     Animal animal = (Animal) ser;

@@ -1,0 +1,15 @@
+C:\Users\diurno\workspace_di\Semaforo\bin\Debug\Semaforo.exe.config
+C:\Users\diurno\workspace_di\Semaforo\bin\Debug\Semaforo.exe
+C:\Users\diurno\workspace_di\Semaforo\bin\Debug\Semaforo.pdb
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\MainWindow.g.cs
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\App.g.cs
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo_MarkupCompile.cache
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo_MarkupCompile.lref
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\MainWindow.baml
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.g.resources
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.Properties.Resources.resources
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.exe
+C:\Users\diurno\workspace_di\Semaforo\obj\Debug\Semaforo.pdb

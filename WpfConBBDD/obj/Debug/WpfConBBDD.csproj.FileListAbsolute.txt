@@ -1,0 +1,15 @@
+C:\Users\diurno\workspace_di\WpfConBBDD\bin\Debug\WpfConBBDD.exe.config
+C:\Users\diurno\workspace_di\WpfConBBDD\bin\Debug\WpfConBBDD.exe
+C:\Users\diurno\workspace_di\WpfConBBDD\bin\Debug\WpfConBBDD.pdb
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\MainWindow.g.cs
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\App.g.cs
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD_MarkupCompile.cache
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD_MarkupCompile.lref
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\MainWindow.baml
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.g.resources
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.Properties.Resources.resources
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.exe
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.pdb
