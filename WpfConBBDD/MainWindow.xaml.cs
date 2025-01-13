@@ -15,6 +15,7 @@ namespace WpfConBBDD
             String miConexion = ConfigurationManager.ConnectionStrings["WpfConBBDD.Properties.Settings.PruebaWPFConnectionString"].ConnectionString;
             con = new SqlConnection(miConexion);
             muestraCliente();
+            muestraPedidos();
         }
 
         public void muestraCliente()
@@ -44,19 +45,20 @@ namespace WpfConBBDD
                 pedidosClienteListBox.ItemsSource = tablaPedidos.DefaultView;
                 pedidosClienteListBox.SelectedValuePath = "Id";
                 pedidosClienteListBox.DisplayMemberPath = "fecha";
-
             }
         }
 
         private void clientesListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            muestraPedidosCliente();
-
+            if (clientesListBox.SelectedValue != null)
+            {
+                muestraPedidosCliente();
+            }
         }
 
         private void muestraPedidos()
         {
-            String consulta = "SELECT CONCAT(codigoCliente, ' | ', fecha, ' | ', formapago) infopedido FROM Pedido";
+            String consulta = "SELECT Id, CONCAT(codigoCliente, ' | ', fecha, ' | ', formapago) infopedido FROM Pedido";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, con);
             using (adapter)
             {
@@ -70,19 +72,91 @@ namespace WpfConBBDD
 
         private void eliminaPedidoButton_Click(object sender, RoutedEventArgs e)
         {
-            if (pedidosListBox.SelectedValue is null)
-            {
-                MessageBox.Show("Selecciona un pedido");
-            }
-            else
-            {
-                eliminarPedido(); 
-            }
+            if (pedidosListBox.SelectedValue is null) MessageBox.Show("Selecciona un pedido");
+            else eliminarPedido(); 
         }
 
         private void eliminarPedido()
         {
+            String consulta = "DELETE FROM Pedido WHERE id = @idPedido";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            comando.Parameters.AddWithValue("@idPedido", pedidosListBox.SelectedValue);
+            try
+            {
+                con.Open();
+                comando.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                Console.WriteLine(ex.StackTrace);
+            }
+            muestraPedidos();
+        }
+
+        private void pedidosListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            MessageBox.Show(pedidosListBox.SelectedValue?.ToString());
+        }
+
+        private void insertClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (insertClientTextBox.Text.Equals(""))
+            {
+                MessageBox.Show("NO HAY NOMBRE");
+            }
+            else
+            {
+                insertarCliente();
+            }
 
         }
+
+        private void insertarCliente()
+        {
+            String consulta = "INSERT INTO Cliente(nombre) VALUES (@nombre)";
+            SqlCommand command = new SqlCommand(consulta, con);
+            command.Parameters.AddWithValue("@nombre", insertClientTextBox.Text);
+            try
+            {
+                con.Open();
+                command.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                Console.WriteLine(ex.StackTrace);
+            }
+            muestraCliente();
+        }
+
+        private void deleteClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (clientesListBox.SelectedValue is null) MessageBox.Show("Selecciona un cliente");
+            else eliminarCliente(); 
+
+        }
+
+        private void eliminarCliente()
+        {
+            String consulta = "DELETE FROM Cliente WHERE id = @idCliente";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            comando.Parameters.AddWithValue("@idCliente", clientesListBox.SelectedValue);
+            try
+            {
+                con.Open();
+                comando.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                Console.WriteLine(ex.StackTrace);
+            }
+            muestraCliente();
+        }
+
     }
 }
