@@ -56,11 +56,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="InsertClienteWindow.xaml.cs">
+      <DependentUpon>InsertClienteWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PruebaWPFDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PruebaWPFDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateClienteWindow.xaml.cs">
+      <DependentUpon>UpdateClienteWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="InsertClienteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,6 +83,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UpdateClienteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

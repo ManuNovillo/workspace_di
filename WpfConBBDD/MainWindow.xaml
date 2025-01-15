@@ -50,6 +50,9 @@
                     <Button Name="insertClientButton" Margin="5" Click="insertClientButton_Click">
                         Insertar
                     </Button>
+                    <Button Name="updateClientButton" Margin="5" Click="updateClientButton_Click"> 
+                        Actualizar
+                    </Button>
                     <Button Name="deleteClientButton" Margin="5" Click="deleteClientButton_Click"> 
                         Borrar
                     </Button>

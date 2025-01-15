@@ -110,7 +110,6 @@ namespace WpfConBBDD
             {
                 insertarCliente();
             }
-
         }
 
         private void insertarCliente()
@@ -158,5 +157,31 @@ namespace WpfConBBDD
             muestraCliente();
         }
 
+        private void updateClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (clientesListBox.SelectedValue is null) MessageBox.Show("Selecciona un cliente");
+            else mostrarVentanaUpdate(); 
+        }
+
+        private void mostrarVentanaUpdate()
+        {
+            UpdateClienteWindow updateClienteWindow = new UpdateClienteWindow(con);
+            String consulta = "SELECT * FROM Cliente WHERE id = @clienteid";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(comando);
+            using (adapter)
+            {
+                comando.Parameters.AddWithValue("@clienteid", clientesListBox.SelectedValue);
+                DataTable tablaPedidos = new DataTable();
+                adapter.Fill(tablaPedidos);
+                updateClienteWindow.idClienteTextBlock.Text = tablaPedidos.Rows[0]["id"].ToString();
+                updateClienteWindow.nombreClienteTextBox.Text = tablaPedidos.Rows[0]["nombre"].ToString();
+                updateClienteWindow.direccionClienteTextBox.Text = tablaPedidos.Rows[0]["direccion"].ToString();
+                updateClienteWindow.poblacionClienteTextBox.Text = tablaPedidos.Rows[0]["poblacion"].ToString();
+                updateClienteWindow.telefonoClienteTextBox.Text = tablaPedidos.Rows[0]["telefono"].ToString();
+            }
+            updateClienteWindow.ShowDialog();
+            muestraCliente();
+        }
     }
 }

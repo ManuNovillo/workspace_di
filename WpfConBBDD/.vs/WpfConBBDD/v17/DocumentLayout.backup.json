@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|c:\\users\\diurno\\workspace_di\\wpfconbbdd\\updateclientewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|solutionrelative:updateclientewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|c:\\users\\diurno\\workspace_di\\wpfconbbdd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|c:\\users\\diurno\\workspace_di\\wpfconbbdd\\updateclientewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0BA81-A576-4B12-9672-7DBCB3C41490}|WpfConBBDD.csproj|solutionrelative:updateclientewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-15T09:58:12.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateClienteWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\UpdateClienteWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UpdateClienteWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\UpdateClienteWindow.xaml.cs",
+              "RelativeToolTip": "UpdateClienteWindow.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwCcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:57:40.691Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -31,13 +64,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
+              "Title": "UpdateClienteWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\UpdateClienteWindow.xaml",
+              "RelativeDocumentMoniker": "UpdateClienteWindow.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\UpdateClienteWindow.xaml",
+              "RelativeToolTip": "UpdateClienteWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-08T10:52:37.407Z",
+              "WhenOpened": "2025-01-15T10:40:24.954Z",
               "EditorCaption": ""
             },
             {
@@ -48,7 +81,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\diurno\\workspace_di\\WpfConBBDD\\MainWindow.xaml.cs*",
               "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAmwLgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T10:52:36.45Z",
               "EditorCaption": ""

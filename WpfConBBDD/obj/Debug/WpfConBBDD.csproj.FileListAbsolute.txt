@@ -13,3 +13,5 @@ C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.csproj.GenerateReso
 C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.csproj.CoreCompileInputs.cache
 C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.exe
 C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\WpfConBBDD.pdb
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\UpdateClienteWindow.g.cs
+C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\UpdateClienteWindow.baml
