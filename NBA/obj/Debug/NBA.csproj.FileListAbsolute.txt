@@ -1,0 +1,15 @@
+C:\Users\diurno\workspace_di\NBA\bin\Debug\NBA.exe.config
+C:\Users\diurno\workspace_di\NBA\bin\Debug\NBA.exe
+C:\Users\diurno\workspace_di\NBA\bin\Debug\NBA.pdb
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\MainWindow.g.cs
+C:\Users\diurno\workspace_di\NBA\obj\Debug\App.g.cs
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA_MarkupCompile.cache
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA_MarkupCompile.lref
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\MainWindow.baml
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.g.resources
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.Properties.Resources.resources
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.csproj.GenerateResource.cache
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.exe
+C:\Users\diurno\workspace_di\NBA\obj\Debug\NBA.pdb
