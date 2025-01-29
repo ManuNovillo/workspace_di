@@ -1,0 +1,7 @@
+C:\Users\diurno\workspace_di\Linq\bin\Debug\Linq.exe.config
+C:\Users\diurno\workspace_di\Linq\bin\Debug\Linq.exe
+C:\Users\diurno\workspace_di\Linq\bin\Debug\Linq.pdb
+C:\Users\diurno\workspace_di\Linq\obj\Debug\Linq.csproj.AssemblyReference.cache
+C:\Users\diurno\workspace_di\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+C:\Users\diurno\workspace_di\Linq\obj\Debug\Linq.exe
+C:\Users\diurno\workspace_di\Linq\obj\Debug\Linq.pdb

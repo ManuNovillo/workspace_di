@@ -7,5 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <TabItem Header="Equipos">
+                <StackPanel>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                          <Label Grid.Row="0" Grid.Column="1" FontWeight="Bold"
+                    </Grid>
+                </StackPanel>
+
+            </TabItem>
+            <TabItem Header="Plantilla" >
+                
+            </TabItem>
+
+            <TabItem Header="Jugador">
+                
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
