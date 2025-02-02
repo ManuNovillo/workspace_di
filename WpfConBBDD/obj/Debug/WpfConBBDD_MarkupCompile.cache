@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\diurno\workspace_di\WpfConBBDD\obj\Debug\
+C:\visual_studio_workspaces\workspace_di\WpfConBBDD\obj\Debug\
 WpfConBBDD
 none
 false
 DEBUG;TRACE
-C:\Users\diurno\workspace_di\WpfConBBDD\App.xaml
-2-1882777064
+C:\visual_studio_workspaces\workspace_di\WpfConBBDD\App.xaml
+3166315957
 
-71084631297
+9-2131709814
 14-207034072
-MainWindow.xaml;UpdateClienteWindow.xaml;
+InsertClienteWindow.xaml;MainWindow.xaml;UpdateClienteWindow.xaml;
 
-False
+True
 

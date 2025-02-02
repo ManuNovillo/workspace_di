@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\NBA\\",
+  "WorkspaceRootPath": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\visual_studio_workspaces\\workspace_di\\nba\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\visual_studio_workspaces\\workspace_di\\nba\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\visual_studio_workspaces\\workspace_di\\nba\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\visual_studio_workspaces\\workspace_di\\nba\\view\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Modelo.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\Modelo.cs",
+              "RelativeDocumentMoniker": "model\\Modelo.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\Modelo.cs",
+              "RelativeToolTip": "model\\Modelo.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:56:16.383Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\controller\\Controller.cs",
+              "RelativeDocumentMoniker": "controller\\Controller.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\controller\\Controller.cs",
+              "RelativeToolTip": "controller\\Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T16:05:37.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "view\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
+              "RelativeToolTip": "view\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T16:02:33.084Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -27,30 +79,72 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "1dc08ab0-fadf-476b-a80d-90099a422b3d",
+        "Display": 1,
+        "X": -86,
+        "Y": 270,
+        "Width": 1559,
+        "Height": 773,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Modelo.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
-              "RelativeDocumentMoniker": "model\\Modelo.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
-              "RelativeToolTip": "model\\Modelo.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwBMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T10:56:16.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
               "RelativeDocumentMoniker": "view\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
               "RelativeToolTip": "view\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-20T10:57:05.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "af7afa27-9713-45fc-8d27-400457cade44",
+        "Display": 0,
+        "X": 704,
+        "Y": 193,
+        "Width": 1559,
+        "Height": 773,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "view\\MainWindow.xaml",
+              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "RelativeToolTip": "view\\MainWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-31T13:20:07.288Z",
               "EditorCaption": ""
             }
           ]

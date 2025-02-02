@@ -11,6 +11,12 @@ namespace NBA
         public MainWindow()
         {
             InitializeComponent();
+            loadTeams();
+        }
+
+        private void loadTeams()
+        {
+
         }
     }
 }
