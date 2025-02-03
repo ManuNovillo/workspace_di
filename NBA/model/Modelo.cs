@@ -1,5 +1,5 @@
-﻿using System;
-using System.Configuration;
+﻿using NBA.model;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -10,8 +10,7 @@ namespace NBAmodel
         private SqlConnection connection;
 
         public Modelo() {
-            String miConexion = ConfigurationManager.ConnectionStrings["NBA.Properties.Settings.nbadbConnectionString"].ConnectionString;
-            connection = new SqlConnection(miConexion);
+            connection = Conexion.Connection;
         }
 
         public DataTable getAllTeams()

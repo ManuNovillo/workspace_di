@@ -65,6 +65,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="controller\Controller.cs" />
+    <Compile Include="model\Conexion.cs" />
     <Compile Include="model\Modelo.cs" />
     <Compile Include="nbadbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
