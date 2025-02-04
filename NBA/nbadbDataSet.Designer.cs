@@ -2334,7 +2334,7 @@ SELECT id, firstName, lastName, team, position, dateOfBirth, height, weight, jer
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::NBA.Properties.Settings.Default.nbadbConnectionString;
+            this._connection.ConnectionString = global::NBA.Properties.Settings.Default.nbadbConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3309,7 +3309,7 @@ SELECT id, name, conference, record, teamLogoUrl, dateLastUpdated FROM team WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::NBA.Properties.Settings.Default.nbadbConnectionString;
+            this._connection.ConnectionString = global::NBA.Properties.Settings.Default.nbadbConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

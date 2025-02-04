@@ -33,5 +33,16 @@ namespace NBA.Properties {
                 return ((string)(this["nbadbConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-13SNMMO;Initial Catalog=nbadb;Integrated Security=True;Encryp" +
+            "t=True;TrustServerCertificate=True")]
+        public string nbadbConnectionString1 {
+            get {
+                return ((string)(this["nbadbConnectionString1"]));
+            }
+        }
     }
 }

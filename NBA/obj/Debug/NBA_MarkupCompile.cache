@@ -1,20 +1,20 @@
 ﻿NBA
 
 
-winexe
+exe
 C#
 .cs
-C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\
+C:\Users\diurno\workspace_di\NBA\obj\Debug\
 NBA
 none
 false
 DEBUG;TRACE
-C:\visual_studio_workspaces\workspace_di\NBA\App.xaml
+C:\Users\diurno\workspace_di\NBA\App.xaml
 11060443772
 
-10-958408913
+13-144896155
 14-207034072
 view\MainWindow.xaml;
 
-True
+False
 

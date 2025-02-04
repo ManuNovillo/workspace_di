@@ -2,9 +2,7 @@
 using NBA.model.entities;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Documents;
 
 namespace NBAmodel
 {
@@ -19,27 +17,50 @@ namespace NBAmodel
         public List<ModelTeam> getAllTeams()
         {
             String consulta = @"
-                SELECT *
+                SELECT id, name, teamLogoUrl
                 FROM Team
             ";
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta, connection);
-            DataTable teamsTable = new DataTable();
-            dataAdapter.Fill(teamsTable);
-            return teamsTable;
+            SqlCommand comando = new SqlCommand(consulta, connection);
+            Console.WriteLine(connection.ConnectionString);
+            connection.Open();
+            SqlDataReader reader = comando.ExecuteReader();
+            List<ModelTeam> equipos = new List<ModelTeam>();
+            while (reader.Read())
+            {
+                ModelTeam equipo = new ModelTeam();
+                equipo.Id = reader.GetInt32(0);
+                equipo.Nombre = reader.GetString(1);
+                equipo.Imagen = reader.GetString(2);
+                equipos.Add(equipo);
+            } 
+            reader.Close();
+            connection.Close();
+            equipos.ForEach(equipo =>
+            {
+                equipo.Jugadores = getPlayersByTeam(equipo);
+            });
+            return equipos;
         }
 
-        public List<ModelPlayer> getPlayersByTeam(String nombreEquipo)
+        /// <summary>
+        /// Devuelve los jugadores del equipo que tenga el nombre <c><paramref name="equipo"/></c>
+        /// </summary>
+        /// <param name="equipo">El nombre del equipo</param>
+        /// <returns>Lista con los jugadores del equipo</returns>
+        public List<ModelPlayer> getPlayersByTeam(ModelTeam equipo)
         {
              String consulta = @"
-                SELECT id, firstName, lastName, headShotUrl 
+                SELECT id, firstName, lastName, headShotUrl, position
                 FROM Player
                 WHERE team = @nombre
             ";
 
             SqlCommand comando = new SqlCommand(consulta, connection);
-            comando.Parameters.AddWithValue("@nombre", nombreEquipo);
+            comando.Parameters.AddWithValue("@nombre", equipo.Nombre);
+            connection.Open();
             SqlDataReader reader = comando.ExecuteReader();
             List<ModelPlayer> jugadores = new List<ModelPlayer>();
+            // Mientras haya más jugadores por leer
             while (reader.Read())
             {
                 ModelPlayer player = new ModelPlayer();
@@ -47,13 +68,15 @@ namespace NBAmodel
                 player.Nombre = reader.GetString(1);
                 player.Apellidos = reader.GetString(2);
                 player.Imagen = reader.GetString(3);
-                player.Equipo = getTeamByName(nombreEquipo);
-
+                player.Posicion = reader.GetString(4);
+                player.Equipo = equipo;
+                jugadores.Add(player);
             } 
+            connection.Close();
             return jugadores;
         }
 
-        private ModelTeam getTeamByName(String nombreEquipo)
+        /*private ModelTeam getTeamByName(String nombreEquipo)
         {
              String consulta = @"
                 SELECT id, name, teamLogoUrl 
@@ -75,6 +98,6 @@ namespace NBAmodel
             } 
             return null;
 
-        }
+        }*/
     }
 }

@@ -14,8 +14,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -24,8 +23,8 @@
                         </Grid.ColumnDefinitions>
 
                         <Label Grid.Row="0" Grid.Column="1" FontWeight="Bold">Equipos de la NBA</Label>
-                        <Image Name="equipoImage" Width="100" Source="/view/img/bos.png" Grid.Row="1" Grid.Column="1"/>
-                        <ListBox Name="equiposListBox" Grid.Row="2" Grid.Column="1" />
+                        <Image Name="equipoImage" Width="100" Grid.Row="1" Grid.Column="1"/>
+                        <ListBox Name="equiposListBox" Grid.Row="2" Grid.Column="1" SelectionChanged="equiposListBox_SelectionChanged" /> 
                     </Grid>
                 </StackPanel>
 

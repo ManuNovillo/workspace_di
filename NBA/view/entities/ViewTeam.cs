@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NBA.model.entities
+namespace NBA.view.entities
 {
-    /// <summary>
-    /// Clase que representa los equipos del modelo de datos
-    /// </summary>
-    public class ModelTeam
+    public class ViewTeam
     {
         // Campos privados
         private int id;
@@ -16,12 +13,17 @@ namespace NBA.model.entities
         /// <summary>
         /// Lista que contiene los jugadores del equipo
         /// </summary>
-        private List<ModelPlayer> jugadores;
+        private List<ViewPlayer> jugadores;
 
         // Propiedades públicas
         public int Id { get => id; set => id = value; }
         public String Nombre { get => nombre; set => nombre = value; }
         public String Imagen { get => imagen; set => imagen = value; }
-        public List<ModelPlayer> Jugadores { get => jugadores; set => jugadores = value; }
+        public List<ViewPlayer> Jugadores { get => jugadores; set => jugadores = value; }
+
+        public override String ToString()
+        {
+            return nombre;
+        }
     }
 }

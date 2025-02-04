@@ -11,7 +11,7 @@ namespace NBA.model
 
         static Conexion()
         {
-            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["NBA.Properties.Settings.nbadbConnectionString"].ConnectionString);
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["NBA.Properties.Settings.nbadbConnectionString1"].ConnectionString);
         }
     }
 }
