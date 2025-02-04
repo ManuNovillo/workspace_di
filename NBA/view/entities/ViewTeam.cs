@@ -8,7 +8,7 @@ namespace NBA.view.entities
         // Campos privados
         private int id;
         private String nombre;
-        private String imagen;
+        private String logo;
 
         /// <summary>
         /// Lista que contiene los jugadores del equipo
@@ -18,7 +18,7 @@ namespace NBA.view.entities
         // Propiedades públicas
         public int Id { get => id; set => id = value; }
         public String Nombre { get => nombre; set => nombre = value; }
-        public String Imagen { get => imagen; set => imagen = value; }
+        public String Logo { get => logo; set => logo = value; }
         public List<ViewPlayer> Jugadores { get => jugadores; set => jugadores = value; }
 
         public override String ToString()

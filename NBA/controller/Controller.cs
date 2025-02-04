@@ -21,10 +21,10 @@ namespace NBA.controller
                 var equipoVista = new ViewTeam();
                 equipoVista.Id = equipoModelo.Id;
                 equipoVista.Nombre = equipoModelo.Nombre;
-                equipoVista.Imagen = equipoModelo.Imagen;
+                equipoVista.Logo = equipoModelo.Logo;
                 List<ViewPlayer> jugadoresVista = new List<ViewPlayer>();
                 equipoModelo.Jugadores.ForEach(jugadorModelo =>
-            {
+                {
                     var jugadorVista = new ViewPlayer();
                     jugadorVista.Id = jugadorModelo.Id;
                     String info = $"{jugadorModelo.Posicion} -> {jugadorModelo.Apellidos}, {jugadorModelo.Nombre}";

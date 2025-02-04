@@ -30,7 +30,7 @@ namespace NBAmodel
                 ModelTeam equipo = new ModelTeam();
                 equipo.Id = reader.GetInt32(0);
                 equipo.Nombre = reader.GetString(1);
-                equipo.Imagen = reader.GetString(2);
+                equipo.Logo = reader.GetString(2);
                 equipos.Add(equipo);
             } 
             reader.Close();
