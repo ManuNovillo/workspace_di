@@ -2,6 +2,7 @@
 using NBAmodel;
 using System.Collections.Generic;
 using System;
+using NBA.model.entities;
 
 namespace NBA.controller
 {
@@ -15,6 +16,12 @@ namespace NBA.controller
         public List<ViewTeam> getAllTeams()
         {
             var equiposModelo = modelo.getAllTeams();
+            var equiposVista = toListViewTeam(equiposModelo);
+            return equiposVista;
+        }
+
+        private List<ViewTeam> toListViewTeam(List<ModelTeam> equiposModelo)
+        {
             var equiposVista = new List<ViewTeam>();
             equiposModelo.ForEach(equipoModelo =>
             {
@@ -27,8 +34,9 @@ namespace NBA.controller
                 {
                     var jugadorVista = new ViewPlayer();
                     jugadorVista.Id = jugadorModelo.Id;
-                    String info = $"{jugadorModelo.Posicion} -> {jugadorModelo.Apellidos}, {jugadorModelo.Nombre}";
-                    jugadorVista.Info = info;
+                    jugadorVista.Nombre = jugadorModelo.Nombre;
+                    jugadorVista.Apellidos = jugadorModelo.Apellidos;
+                    jugadorVista.Posicion = jugadorModelo.Posicion;
                     jugadorVista.Equipo = equipoVista;
                     jugadoresVista.Add(jugadorVista);
                 });
@@ -36,6 +44,24 @@ namespace NBA.controller
                 equiposVista.Add(equipoVista);
             });
             return equiposVista;
+        }
+
+        private ModelPlayer toModelPlayer(ViewPlayer viewPlayer)
+        {
+            ModelPlayer modelPlayer = new ModelPlayer();
+            modelPlayer.Id = viewPlayer.Id;
+            modelPlayer.Nombre = viewPlayer.Nombre;
+            modelPlayer.Apellidos = viewPlayer.Apellidos;
+            modelPlayer.Imagen = viewPlayer.Imagen;
+            modelPlayer.Posicion = viewPlayer.Posicion;
+            ModelTeam modelTeam = new ModelTeam();
+            ViewTeam viewTeam = viewPlayer.Equipo;
+            modelTeam.Id = viewTeam.Id;
+            modelTeam.Nombre = viewTeam.Nombre;
+            modelTeam.Logo = viewTeam.Logo;
+            modelPlayer.Equipo = modelTeam;
+
+            return modelPlayer;
         }
     }
 }

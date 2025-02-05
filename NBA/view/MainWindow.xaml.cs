@@ -13,14 +13,15 @@ namespace NBA
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ViewTeam equipoSeleccionado;
         private Controller controller;
         public MainWindow()
         {
             controller = new Controller();
             InitializeComponent();
             loadTeams();
-            ViewTeam team = equiposListBox.Items[0] as ViewTeam;
-            loadTeamLogo(team.Logo);
+            equipoSeleccionado = equiposListBox.Items[0] as ViewTeam;
+            loadTeamLogo();
         }
 
 
@@ -29,11 +30,11 @@ namespace NBA
             List<ViewTeam> teams = controller.getAllTeams();
             equiposListBox.ItemsSource = teams;
         }
-        private void loadTeamLogo(String logo)
+        private void loadTeamLogo()
         {
             BitmapImage logoBitMap = new BitmapImage();
             logoBitMap.BeginInit();
-            logoBitMap.UriSource = new Uri(logo);
+            logoBitMap.UriSource = new Uri(equipoSeleccionado.Logo);
             logoBitMap.EndInit();
             equipoImage.Source = logoBitMap;
         }
@@ -43,7 +44,8 @@ namespace NBA
             if (equiposListBox.SelectedItem != null)
             {
                 ViewTeam team = equiposListBox.SelectedValue as ViewTeam;
-                loadTeamLogo(team.Logo);
+                equipoSeleccionado = team;
+                loadTeamLogo();
             }
         }
     }

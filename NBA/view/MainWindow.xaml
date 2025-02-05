@@ -4,27 +4,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NBA"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1000">
     <Grid>
         <TabControl>
             <TabItem Header="Equipos">
                 <StackPanel>
                     <Grid>
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
+                            <RowDefinition Height="350" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
+                        
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="1" FontWeight="Bold">Equipos de la NBA</Label>
-                        <Image Name="equipoImage" Width="100" Grid.Row="1" Grid.Column="1"/>
-                        <ListBox Name="equiposListBox" Grid.Row="2" Grid.Column="1" SelectionChanged="equiposListBox_SelectionChanged" /> 
+                        <Label Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
+                        <Image Name="equipoImage" Width="100" Height="100" Grid.Row="2" Grid.Column="1"/>
+                        <ListBox Name="equiposListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="equiposListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                     </Grid>
                 </StackPanel>
 

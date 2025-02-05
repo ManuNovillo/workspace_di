@@ -1,38 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\",
+  "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\NBA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\visual_studio_workspaces\\workspace_di\\nba\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\modelteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\entities\\modelteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\modelplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\entities\\modelplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\viewteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\entities\\viewteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\viewplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\entities\\viewplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\entities\\viewplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\model\\entities\\modelplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\entities\\modelplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\diurno\\workspace_di\\NBA\\model\\entities\\modelteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\entities\\modelteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\diurno\\workspace_di\\NBA\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\diurno\\workspace_di\\NBA\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,99 +42,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModelTeam.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\ModelTeam.cs",
-              "RelativeDocumentMoniker": "model\\entities\\ModelTeam.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\ModelTeam.cs",
-              "RelativeToolTip": "model\\entities\\ModelTeam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:30:49.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewTeam.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\ViewTeam.cs",
-              "RelativeDocumentMoniker": "view\\entities\\ViewTeam.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\ViewTeam.cs",
-              "RelativeToolTip": "view\\entities\\ViewTeam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:28:25.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModelPlayer.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\ModelPlayer.cs",
-              "RelativeDocumentMoniker": "model\\entities\\ModelPlayer.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\entities\\ModelPlayer.cs",
-              "RelativeToolTip": "model\\entities\\ModelPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T10:02:51.714Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "view\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
-              "RelativeToolTip": "view\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAAArAAAAAAAAAA==",
+              "Title": "ViewPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\entities\\ViewPlayer.cs",
+              "RelativeDocumentMoniker": "view\\entities\\ViewPlayer.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\entities\\ViewPlayer.cs",
+              "RelativeToolTip": "view\\entities\\ViewPlayer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:46:45.062Z",
+              "WhenOpened": "2025-02-05T10:47:19.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "view\\MainWindow.xaml",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\MainWindow.xaml",
-              "RelativeToolTip": "view\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-04T10:59:52.794Z"
+              "DocumentIndex": 1,
+              "Title": "ModelPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\entities\\ModelPlayer.cs",
+              "RelativeDocumentMoniker": "model\\entities\\ModelPlayer.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\entities\\ModelPlayer.cs",
+              "RelativeToolTip": "model\\entities\\ModelPlayer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAywBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T10:47:17.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewPlayer.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\ViewPlayer.cs",
-              "RelativeDocumentMoniker": "view\\entities\\ViewPlayer.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\view\\entities\\ViewPlayer.cs",
-              "RelativeToolTip": "view\\entities\\ViewPlayer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ModelTeam.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\entities\\ModelTeam.cs",
+              "RelativeDocumentMoniker": "model\\entities\\ModelTeam.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\entities\\ModelTeam.cs",
+              "RelativeToolTip": "model\\entities\\ModelTeam.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T10:02:56.075Z"
+              "WhenOpened": "2025-02-04T16:30:49.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\controller\\Controller.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\controller\\Controller.cs",
               "RelativeDocumentMoniker": "controller\\Controller.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\controller\\Controller.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\controller\\Controller.cs",
               "RelativeToolTip": "controller\\Controller.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:45:52.994Z"
+              "WhenOpened": "2025-02-04T09:45:52.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Modelo.cs",
-              "DocumentMoniker": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\Modelo.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
               "RelativeDocumentMoniker": "model\\Modelo.cs",
-              "ToolTip": "C:\\visual_studio_workspaces\\workspace_di\\NBA\\model\\Modelo.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
               "RelativeToolTip": "model\\Modelo.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T09:45:21.623Z"
+              "WhenOpened": "2025-02-04T09:45:21.623Z",
+              "EditorCaption": ""
             }
           ]
         }
