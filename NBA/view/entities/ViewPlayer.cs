@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NBA.view.entities
 {
@@ -27,7 +23,7 @@ namespace NBA.view.entities
         public String Imagen { get => imagen; set => imagen = value; }
         public ViewTeam Equipo { get => equipo; set => equipo = value; }
         
-        public string ToString()
+        public override string ToString()
         {
             return $"{posicion} -> {apellidos}, {nombre}";
         }
