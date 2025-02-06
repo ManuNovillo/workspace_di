@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:NBA"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1000">
+        Title="MainWindow" Height="800" Width="1000">
     <Grid>
         <TabControl>
-            <TabItem Header="Equipos">
+            <TabItem Header="Equipos" Name="equiposTab">
                 <StackPanel>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -17,6 +17,7 @@
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="350" />
+                            <RowDefinition Height="auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         
@@ -27,17 +28,18 @@
                         </Grid.ColumnDefinitions>
 
                         <Label Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
-                        <Image Name="equipoImage" Width="100" Height="100" Grid.Row="2" Grid.Column="1"/>
+                        <Image Name="equipoImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="equiposListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="equiposListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                     </Grid>
                 </StackPanel>
-
             </TabItem>
-            <TabItem Header="Plantilla">
-                <ListBox Name="plantillaListBox" />
-            </TabItem>
-                
-            <TabItem Header="Jugador">
+            <TabItem Name="plantillaTab">
+                <TabItem.Header>
+                    <StackPanel Background="LightGray" Orientation="Horizontal">
+                        <Image Name="tabPlantillaImage" Width="16" Height="16" Margin="3" />
+                        <TextBlock Text="Plantilla" />
+                    </StackPanel>
+                </TabItem.Header>
                 <StackPanel>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -45,6 +47,7 @@
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="350" />
+                            <RowDefinition Height="auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         
@@ -54,11 +57,30 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
-                        <Image Name="jugadorImage" Width="100" Height="100" Grid.Row="2" Grid.Column="1"/>
+                        <Label Name="titulo" Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Plantilla del equipo </Label>
+                        <Image Name="jugadorPlantillaImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="jugadoresListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="jugadoresListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                     </Grid>
                 </StackPanel>
+            </TabItem>
+            <TabItem Header="Jugador" Name="jugadorTab">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Name="jugadorImage" Width="100" Height="100" Grid.Row="1" Grid.Column="1"/>
+                    <DataGrid Name="jugadorDataGrid" Grid.Row="2" Grid.Column="1" />
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

@@ -37,6 +37,7 @@ namespace NBA.controller
                     jugadorVista.Nombre = jugadorModelo.Nombre;
                     jugadorVista.Apellidos = jugadorModelo.Apellidos;
                     jugadorVista.Posicion = jugadorModelo.Posicion;
+                    jugadorVista.Imagen = jugadorModelo.Imagen;
                     jugadorVista.Equipo = equipoVista;
                     jugadoresVista.Add(jugadorVista);
                 });

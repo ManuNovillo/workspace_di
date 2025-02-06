@@ -47,7 +47,7 @@ namespace NBAmodel
         /// </summary>
         /// <param name="equipo">El nombre del equipo</param>
         /// <returns>Lista con los jugadores del equipo</returns>
-        public List<ModelPlayer> getPlayersByTeam(ModelTeam equipo)
+        private List<ModelPlayer> getPlayersByTeam(ModelTeam equipo)
         {
              String consulta = @"
                 SELECT id, firstName, lastName, headShotUrl, position
