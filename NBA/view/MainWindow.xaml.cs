@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media.Imaging;
 
 namespace NBA
@@ -94,19 +95,62 @@ namespace NBA
         /// <param name="uri">La URI con la foto a mostrar</param>
         private void loadImage(Image image, String uri)
         {
-            BitmapImage logoBitMap = new BitmapImage();
-            logoBitMap.BeginInit();
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
 
             // Si existe la foto a mostrar, mostrarla
             if (uri != null && uri != "" && uri != "null")
-                logoBitMap.UriSource = new Uri(uri);
+                bitmap.UriSource = new Uri(uri);
 
             // Si no, poner la imagen
             else
-                logoBitMap.UriSource = new Uri("../view/img/no-image.jpg", UriKind.Relative);
+                bitmap.UriSource = new Uri("../view/img/no-image.jpg", UriKind.Relative);
 
-            logoBitMap.EndInit();
-            image.Source = logoBitMap;
+            bitmap.EndInit();
+            image.Source = bitmap;
+        }
+
+        /// <summary>
+        /// Manejador del evento de cuando se genera una columna del DataGrid del jugador (<c>jugadorDataGrid</c>)
+        /// Este método evita que se genere la columna Imagen
+        /// </summary>
+        private void jugadorDataGrid_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            if (e.PropertyName == "Imagen")
+                e.Column = null;
+        }
+
+        private void updateTeam_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void insertPLayer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            var ctrlPulsado = (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control;
+            if (ctrlPulsado)
+            {
+                if (pulsadoInsertarJugador())
+                {
+                    openInsertWindow();
+                }
+            }
+        }
+
+
+        private bool pulsadoInsertarJugador()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void openInsertWindow()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -6,8 +6,21 @@
         xmlns:local="clr-namespace:NBA"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
+        
+        KeyDown="Window_KeyDown"
         Title="MainWindow" Height="800" Width="1000">
-    <Grid>
+
+    <StackPanel>
+        <DockPanel LastChildFill="False">
+            <Menu>
+                <MenuItem Header="Acciones">
+                    <MenuItem Header="Actualizar Equipo" InputGestureText="Ctrl+E" Click="updateTeam_Click"/>
+                    <MenuItem Header="Insertar Jugador" InputGestureText="Ctrl+I" Click="updateTeam_Click"/>
+                    <MenuItem Header="Actualizar Jugador" InputGestureText="Ctrl+J" Click="updateTeam_Click"/>
+                    <MenuItem Header="Borrar Jugador" InputGestureText="Ctrl+D" Click="updateTeam_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
         <TabControl>
             <TabItem Header="Equipos" Name="equiposTab">
                 <StackPanel>
@@ -30,14 +43,15 @@
                         <Label Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
                         <Image Name="equipoImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="equiposListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="equiposListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        <Button Grid.Row="4" Grid.Column="1" Margin="10" Click="updateTeam_Click">Actualizar Equipo</Button>
                     </Grid>
                 </StackPanel>
             </TabItem>
             <TabItem Name="plantillaTab">
                 <TabItem.Header>
-                    <StackPanel Background="LightGray" Orientation="Horizontal">
-                        <Image Name="tabPlantillaImage" Width="16" Height="16" Margin="3" />
-                        <TextBlock Text="Plantilla" />
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Name="tabPlantillaImage" Width="16" Height="16" Margin="3" VerticalAlignment="Center"/>
+                        <TextBlock Text="Plantilla" VerticalAlignment="Center"/>
                     </StackPanel>
                 </TabItem.Header>
                 <StackPanel>
@@ -60,6 +74,10 @@
                         <Label Name="titulo" Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Plantilla del equipo </Label>
                         <Image Name="jugadorPlantillaImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="jugadoresListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="jugadoresListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                            
+                            <Button Grid.Row="4" Grid.Column="1" Margin="10" Click="insertPLayer_Click">Insertar</Button>
+                        </StackPanel>
                     </Grid>
                 </StackPanel>
             </TabItem>
@@ -79,9 +97,9 @@
                     </Grid.ColumnDefinitions>
 
                     <Image Name="jugadorImage" Width="100" Height="100" Grid.Row="1" Grid.Column="1"/>
-                    <DataGrid Name="jugadorDataGrid" Grid.Row="2" Grid.Column="1" />
+                    <DataGrid Name="jugadorDataGrid" Grid.Row="2" Grid.Column="1" AutoGenerateColumns="true" AutoGeneratingColumn="jugadorDataGrid_AutoGeneratingColumn"/>
                 </Grid>
             </TabItem>
         </TabControl>
-    </Grid>
+    </StackPanel>
 </Window>

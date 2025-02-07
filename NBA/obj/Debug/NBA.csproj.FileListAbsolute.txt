@@ -28,3 +28,5 @@ C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.csproj.GenerateResour
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.csproj.CoreCompileInputs.cache
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.exe
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.pdb
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\PlayerWindow.g.cs
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\PlayerWindow.baml
