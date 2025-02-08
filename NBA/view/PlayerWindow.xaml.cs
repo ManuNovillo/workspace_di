@@ -61,7 +61,7 @@ namespace NBA.view
                 if (hayQueInsertar) 
                     player.Equipo.Jugadores.Add(player);
 
-                if (equipoAnterior.Nombre != player.Equipo.Nombre)
+                if (equipoAnterior != null && equipoAnterior.Nombre != player.Equipo.Nombre)
                 {
                     // Si ha cambiado de equipo, borrarlo y añadirlo al otro
                     equipoAnterior.Jugadores.Remove(player);

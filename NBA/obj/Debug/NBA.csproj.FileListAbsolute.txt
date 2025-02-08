@@ -34,3 +34,7 @@ C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\PlayerWindow.g.cs
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\PlayerWindow.baml
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\ActualizaEquipoWindow.g.cs
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\ActualizaEquipoWindow.baml
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\AyudaWindow.g.cs
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\AyudaWindow.baml
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\AcercaDeWindow.g.cs
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\AcercaDeWindow.baml

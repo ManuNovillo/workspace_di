@@ -21,7 +21,6 @@ namespace NBA
         private ViewTeam equipoSeleccionado;
         private ViewPlayer jugadorSeleccionado;
 
-        private TabItem tabSeleccionada;
         public MainWindow()
         {
             controller = new Controller();
@@ -149,12 +148,28 @@ namespace NBA
             {
                 if (pulsadoUpdateEquipo(e.Key))
                     openUpdateTeamWindow();
+
                 else if (pulsadoInsertarJugador(e.Key))
                     openPlayerWindow(JugadorAction.INSERT);
+
                 else if (pulsadoUpdateJugador(e.Key))
                     openPlayerWindow(JugadorAction.UPDATE);
+
+                else if (pulsadoDeleteJugador(e.Key))
+                    deleteSelectedPlayer();
+
+                else if (pulsadoAyuda(e.Key))
+                    mostrarAyuda();
+
+                else if (pulsadoAcercaDe(e.Key))
+                    mostrarAcercaDe();
+
+                else if (pulsadoSalir(e.Key))
+                    Close();
             }
         }
+
+
 
         private bool pulsadoUpdateEquipo(Key key)
         {
@@ -170,6 +185,25 @@ namespace NBA
             return key == Key.J;
         }
 
+        private bool pulsadoDeleteJugador(Key key)
+        {
+            return key == Key.D;
+        }
+
+        private bool pulsadoAyuda(Key key)
+        {
+            return key == Key.H;
+        }
+
+        private bool pulsadoAcercaDe(Key key)
+        {
+            return key == Key.P;
+        }
+
+        private bool pulsadoSalir(Key key)
+        {
+            return key == Key.Q;
+        }
         private void openPlayerWindow(JugadorAction action)
         {
             bool esInsert = action == JugadorAction.INSERT;
@@ -196,17 +230,18 @@ namespace NBA
 
         private void help_Click(object sender, RoutedEventArgs e)
         {
-            
+            mostrarAyuda();
         }
 
         private void acercaDe_Click(object sender, RoutedEventArgs e)
         {
-            
+            mostrarAcercaDe();
         }
 
-        private enum JugadorAction
+        private void mostrarAcercaDe()
         {
-            INSERT, UPDATE
+            AcercaDeWindow acercaDeWindow = new AcercaDeWindow();
+            acercaDeWindow.ShowDialog();
         }
 
         private void actualizarButton_Click(object sender, RoutedEventArgs e)
@@ -233,7 +268,24 @@ namespace NBA
 
                 equipoSeleccionado.Jugadores.Remove(jugadorSeleccionado);
                 jugadoresListBox.Items.Refresh();
+                jugadorSeleccionado = equipoSeleccionado.Jugadores[0];
+                loadJugadorSeleccionado();
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+        private void mostrarAyuda()
+        {
+            AyudaWindow ayudaWindow = new AyudaWindow();
+            ayudaWindow.ShowDialog();
+        }
+        private enum JugadorAction
+        {
+            INSERT, UPDATE
+        }
+
     }
 }

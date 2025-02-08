@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\visual_studio_workspaces\workspace_di\NBA\App.xaml
-41642829601
+5684506418
 
-17-768440950
+18-1623353731
 14-207034072
-view\ActualizaEquipoWindow.xaml;view\AyudaWindow.xaml;view\MainWindow.xaml;view\PlayerWindow.xaml;
+view\AcercaDeWindow.xaml;view\ActualizaEquipoWindow.xaml;view\AyudaWindow.xaml;view\MainWindow.xaml;view\PlayerWindow.xaml;
 
-True
+False
 

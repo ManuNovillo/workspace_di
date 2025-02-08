@@ -59,6 +59,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="view\AcercaDeWindow.xaml.cs">
+      <DependentUpon>AcercaDeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\ActualizaEquipoWindow.xaml.cs">
       <DependentUpon>ActualizaEquipoWindow.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,10 @@
     <Compile Include="view\PlayerWindow.xaml.cs">
       <DependentUpon>PlayerWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="view\AcercaDeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\ActualizaEquipoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

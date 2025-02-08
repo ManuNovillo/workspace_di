@@ -191,7 +191,7 @@ namespace NBAmodel
         }
 
 
-        internal int getNewId()
+        public int getNewId()
         {
             String query = @"
                 SELECT max(id)+1 
@@ -242,7 +242,7 @@ namespace NBAmodel
 
         }
 
-        internal bool deletePlayer(ModelPlayer modelPlayer)
+        public bool deletePlayer(ModelPlayer modelPlayer)
         {
             var sql = @"
                 DELETE FROM Player

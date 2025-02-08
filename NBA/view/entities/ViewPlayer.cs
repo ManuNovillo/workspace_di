@@ -6,9 +6,6 @@ namespace NBA.view.entities
     {
         // Campos privados
         private int id;
-        /// <summary>
-        /// Campo que tiene como texto "posicion -> apellidos, nombre"
-        /// </summary>
         private String nombre;
         private String apellidos;
         private String posicion;

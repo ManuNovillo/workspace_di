@@ -6,23 +6,25 @@
         xmlns:local="clr-namespace:NBA"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        
         KeyDown="Window_KeyDown"
-        Title="MainWindow" Height="800" Width="1000">
+        Title="NBA" Height="800" Width="1000">
 
     <StackPanel>
         <DockPanel LastChildFill="False">
             <Menu>
                 <MenuItem Header="Acciones">
                     <MenuItem Header="Actualizar Equipo" InputGestureText="Ctrl+E" Click="updateTeam_Click"/>
-                    <MenuItem Header="Insertar Jugador" InputGestureText="Ctrl+I" Click="updateTeam_Click"/>
-                    <MenuItem Header="Actualizar Jugador" InputGestureText="Ctrl+J" Click="updateTeam_Click"/>
-                    <MenuItem Header="Borrar Jugador" InputGestureText="Ctrl+D" Click="updateTeam_Click"/>
+                    <MenuItem Header="Insertar Jugador" InputGestureText="Ctrl+I" Click="insertPLayer_Click"/>
+                    <MenuItem Header="Actualizar Jugador" InputGestureText="Ctrl+J" Click="actualizarButton_Click"/>
+                    <MenuItem Header="Borrar Jugador" InputGestureText="Ctrl+D" Click="borrarButton_Click"/>
                 </MenuItem>
                 <MenuItem Header="Ayuda">
                     <MenuItem Header="Ayuda" Click="help_Click" InputGestureText="Ctrl+H"/>
-                    <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+A"/>
+                    <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+P"/>
                 </MenuItem>
+                <MenuItem Header="Salir" Click="MenuItem_Click" InputGestureText="Ctrl+Q" />
+
+
             </Menu>
         </DockPanel>
         <DockPanel>

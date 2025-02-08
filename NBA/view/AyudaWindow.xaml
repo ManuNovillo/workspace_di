@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NBA.view"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="AyudaWindow" Height="450" Width="800">
+        Title="Ayuda" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock Name="textBlock" HorizontalAlignment="Center" VerticalAlignment="Center"> 
+            En la primera pestaña, aparecerán todos los equipos de la NBA.
+            <LineBreak />
+            Podemos modificar cualquiera de los equipos seleccionándolo y dándole al botón, o pulsando Ctrl + E;
+            <LineBreak />
+            En la segunda, veremos a los jugadores de ese equipo.
+            <LineBreak />
+            En esta pestaña podemos añadir, modificar o borrar jugadores, tanto con botones como con combinaciones de teclas
+            <LineBreak />
+            Finalmente, en la tercera pestaña veremos la información del jugador selecciondo en la anterior pestaña
+        </TextBlock>
     </Grid>
 </Window>
