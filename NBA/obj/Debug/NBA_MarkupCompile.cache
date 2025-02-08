@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\diurno\workspace_di\NBA\obj\Debug\
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\
 NBA
 none
 false
 DEBUG;TRACE
-C:\Users\diurno\workspace_di\NBA\App.xaml
-2955089056
+C:\visual_studio_workspaces\workspace_di\NBA\App.xaml
+3-378199270
 
-14-1962238815
+151162582311
 14-207034072
-view\MainWindow.xaml;view\PlayerWindow.xaml;
+view\ActualizaEquipoWindow.xaml;view\MainWindow.xaml;view\PlayerWindow.xaml;
 
 False
 

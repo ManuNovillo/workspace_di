@@ -19,7 +19,41 @@
                     <MenuItem Header="Actualizar Jugador" InputGestureText="Ctrl+J" Click="updateTeam_Click"/>
                     <MenuItem Header="Borrar Jugador" InputGestureText="Ctrl+D" Click="updateTeam_Click"/>
                 </MenuItem>
+                <MenuItem Header="Ayuda">
+                    <MenuItem Header="Ayuda" Click="help_Click" InputGestureText="Ctrl+H"/>
+                    <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+A"/>
+                </MenuItem>
             </Menu>
+        </DockPanel>
+        <DockPanel>
+            
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar Band="0" BandIndex="0" Margin="0">
+                    <Button Click="updateTeam_Click" ToolTip="Actualizar equipo">
+                        <Image Source="/view/actualizarEquipo.png" Height="30" Width="30"/>
+                    </Button>
+                    <Button Click="insertPLayer_Click" ToolTip="Insertar jugador">
+                        <Image Source="/view/insertarJugador.png" Height="30" Width="30"/>
+                    </Button>
+                    <Button Click="actualizarButton_Click" ToolTip="Actualizar jugador">
+                        <Image Source="/view/actualizarJugador.jpeg" Height="30" Width="30"/>
+                    </Button>
+                    <Button Click="borrarButton_Click" ToolTip="Borrar jugador">
+                        <Image Source="/view/eliminarJugador.png" Height="30" Width="30"/>
+                    </Button>
+
+                    <Separator/>
+                    <Button Click="help_Click" ToolTip="Ayuda">
+                        <Image Source="/view/ayuda.png" Height="30" Width="30"/>
+
+                    </Button>
+                    <Button Click="acercaDe_Click" ToolTip="Acerca de">
+                        <Image Source="/view/acercaDe.png" Height="30" Width="30"/>
+
+                    </Button>
+
+                </ToolBar>
+            </ToolBarTray>
         </DockPanel>
         <TabControl>
             <TabItem Header="Equipos" Name="equiposTab">
@@ -33,24 +67,24 @@
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
+                        <Label Grid.Row="1" Grid.Column="1" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
                         <Image Name="equipoImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="equiposListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="equiposListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-                        <Button Grid.Row="4" Grid.Column="1" Margin="10" Click="updateTeam_Click">Actualizar Equipo</Button>
+                        <Button Foreground="White" Background="Blue" Grid.Row="4" Grid.Column="1" Margin="10" Click="updateTeam_Click">Actualizar Equipo</Button>
                     </Grid>
                 </StackPanel>
             </TabItem>
             <TabItem Name="plantillaTab">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <Image Name="tabPlantillaImage" Width="16" Height="16" Margin="3" VerticalAlignment="Center"/>
+                        <Image Name="tabPlantillaImage" Width="20" Height="20" Margin="3" VerticalAlignment="Center"/>
                         <TextBlock Text="Plantilla" VerticalAlignment="Center"/>
                     </StackPanel>
                 </TabItem.Header>
@@ -64,19 +98,20 @@
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Name="titulo" Grid.Row="1" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center">Plantilla del equipo </Label>
+                        <Label Name="tituloLabel" Grid.Row="1" Grid.Column="1" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center">Plantilla del equipo</Label>
                         <Image Name="jugadorPlantillaImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="jugadoresListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="jugadoresListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
-                            
-                            <Button Grid.Row="4" Grid.Column="1" Margin="10" Click="insertPLayer_Click">Insertar</Button>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
+                            <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
+                            <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
                         </StackPanel>
                     </Grid>
                 </StackPanel>
@@ -87,17 +122,24 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="auto" />
                         <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-
-                    <Image Name="jugadorImage" Width="100" Height="100" Grid.Row="1" Grid.Column="1"/>
-                    <DataGrid Name="jugadorDataGrid" Grid.Row="2" Grid.Column="1" AutoGenerateColumns="true" AutoGeneratingColumn="jugadorDataGrid_AutoGeneratingColumn"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold">Datos del jugador</Label>
+                    <Image Name="jugadorImage" Width="400" Height="400" Grid.Row="2" Grid.Column="1" Margin="0,63,0,0" />
+                    <DataGrid Name="jugadorDataGrid" Grid.Row="3" Grid.Column="1" Height="80" AutoGenerateColumns="true" AutoGeneratingColumn="jugadorDataGrid_AutoGeneratingColumn" />
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
+                            <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
+                            <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
+                        </StackPanel>
                 </Grid>
             </TabItem>
         </TabControl>

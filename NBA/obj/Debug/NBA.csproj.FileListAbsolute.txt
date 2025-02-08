@@ -30,3 +30,7 @@ C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.exe
 C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\NBA.pdb
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\PlayerWindow.g.cs
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\PlayerWindow.baml
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\PlayerWindow.g.cs
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\PlayerWindow.baml
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\ActualizaEquipoWindow.g.cs
+C:\visual_studio_workspaces\workspace_di\NBA\obj\Debug\view\ActualizaEquipoWindow.baml

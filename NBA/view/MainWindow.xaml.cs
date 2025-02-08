@@ -1,4 +1,5 @@
 ﻿using NBA.controller;
+using NBA.view;
 using NBA.view.entities;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace NBA
     {
         private Controller controller;
 
+        private List<ViewTeam> equipos;
         private ViewTeam equipoSeleccionado;
         private ViewPlayer jugadorSeleccionado;
 
@@ -24,16 +26,17 @@ namespace NBA
         {
             controller = new Controller();
             InitializeComponent();
-            List<ViewTeam> teams = controller.getAllTeams();
-            equiposListBox.ItemsSource = teams;
-            // Establecer el primer equipo de la lista como el seleccionado por defecto
-            equipoSeleccionado = equiposListBox.Items[0] as ViewTeam;
+            equipos = controller.getAllTeams();
+            equiposListBox.ItemsSource = equipos;
+            // Establecer como equipo por defecto el primer equipo
+            equipoSeleccionado = equipos[0];
             loadTeamLogos();
-            // Establecer el primer jugador del equipo seleccionado como el jugador seleccionado por defecto
+            jugadoresListBox.ItemsSource = equipoSeleccionado.Jugadores;
+            // Establecer como jugador por defecto el primer jugador del equipo por defecto
             jugadorSeleccionado = equipoSeleccionado.Jugadores[0];
             loadJugadorSeleccionado();
-        }
 
+        }
 
         private void loadJugadorSeleccionado()
         {
@@ -43,6 +46,7 @@ namespace NBA
             jugadorDataGrid.ItemsSource = data;
             jugadorDataGrid.IsReadOnly = true;
         }
+
 
         private void equiposListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -122,12 +126,20 @@ namespace NBA
 
         private void updateTeam_Click(object sender, RoutedEventArgs e)
         {
+            openUpdateTeamWindow();
+        }
 
+        private void openUpdateTeamWindow()
+        {
+            ActualizaEquipoWindow actualizaEquipoWindow = new ActualizaEquipoWindow(controller, equipoSeleccionado);
+            actualizaEquipoWindow.ShowDialog();
+            equiposListBox.Items.Refresh();
+            jugadorDataGrid.Items.Refresh();
         }
 
         private void insertPLayer_Click(object sender, RoutedEventArgs e)
         {
-
+            openPlayerWindow(JugadorAction.INSERT);
         }
 
         private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
@@ -135,22 +147,93 @@ namespace NBA
             var ctrlPulsado = (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control;
             if (ctrlPulsado)
             {
-                if (pulsadoInsertarJugador())
-                {
-                    openInsertWindow();
-                }
+                if (pulsadoUpdateEquipo(e.Key))
+                    openUpdateTeamWindow();
+                else if (pulsadoInsertarJugador(e.Key))
+                    openPlayerWindow(JugadorAction.INSERT);
+                else if (pulsadoUpdateJugador(e.Key))
+                    openPlayerWindow(JugadorAction.UPDATE);
             }
         }
 
-
-        private bool pulsadoInsertarJugador()
+        private bool pulsadoUpdateEquipo(Key key)
         {
-            throw new NotImplementedException();
+            return key == Key.E;
         }
 
-        private void openInsertWindow()
+        private bool pulsadoInsertarJugador(Key key)
         {
-            throw new NotImplementedException();
+            return key == Key.I;
+        }
+        private bool pulsadoUpdateJugador(Key key)
+        {
+            return key == Key.J;
+        }
+
+        private void openPlayerWindow(JugadorAction action)
+        {
+            bool esInsert = action == JugadorAction.INSERT;
+            PlayerWindow playerWindow;
+            if (esInsert)
+            {
+                playerWindow = new PlayerWindow(controller, "Insertar nuevo jugador", equipos);
+            }
+            else
+            {
+                if (jugadorSeleccionado is null)
+                {
+                    MessageBox.Show("Elige un jugador");
+                    return;
+                }
+                playerWindow = new PlayerWindow(controller, "Actualizar jugador", jugadorSeleccionado, equipos);
+            }
+            playerWindow.ShowDialog();
+
+            // Refrescar jugadores para mostrar los cambios
+            jugadoresListBox.Items.Refresh();
+            jugadorDataGrid.Items.Refresh();
+        }
+
+        private void help_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void acercaDe_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private enum JugadorAction
+        {
+            INSERT, UPDATE
+        }
+
+        private void actualizarButton_Click(object sender, RoutedEventArgs e)
+        {
+            openPlayerWindow(JugadorAction.UPDATE);
+        }
+
+        private void borrarButton_Click(object sender, RoutedEventArgs e)
+        {
+            deleteSelectedPlayer();
+        }
+
+        private void deleteSelectedPlayer()
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("¿Seguro que quieres borrar este jugador?", "Delete Confirmation", MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                bool haIdoBien = controller.deletePlayer(jugadorSeleccionado);
+
+                if (haIdoBien)
+                    MessageBox.Show("Operación realizada con éxito");
+                else
+                    MessageBox.Show("Error al realizar la operación");
+
+                equipoSeleccionado.Jugadores.Remove(jugadorSeleccionado);
+                jugadoresListBox.Items.Refresh();
+            }
         }
     }
 }

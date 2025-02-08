@@ -59,9 +59,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="view\ActualizaEquipoWindow.xaml.cs">
+      <DependentUpon>ActualizaEquipoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\AyudaWindow.xaml.cs">
+      <DependentUpon>AyudaWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\PlayerWindow.xaml.cs">
       <DependentUpon>PlayerWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="view\ActualizaEquipoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\AyudaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -132,7 +146,30 @@
     <Resource Include="view\img\no-image.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="view\img\bos.png" />
+    <Resource Include="view\img\acercaDe.png" />
+    <Resource Include="view\img\actualizarEquipo.png" />
+    <Resource Include="view\img\actualizarJugador.jpeg" />
+    <Resource Include="view\img\ayuda.png" />
+    <Resource Include="view\img\eliminarJugador.png" />
+    <Resource Include="view\img\insertarJugador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\actualizarEquipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\insertarJugador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\actualizarJugador.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\eliminarJugador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\acercaDe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
