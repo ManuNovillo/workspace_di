@@ -38,7 +38,7 @@ namespace Safari
                     var fila = int.Parse(partes[1]);
                     var columna = int.Parse(partes[2]);
                     // Dibujar el icono del ser
-                    var image = Image.FromFile($"..\\..\\..\\view\\img\\{tipoSer}.png");
+                    var image = Image.FromFile($"img\\{tipoSer}.png");
                     var bitmap = new Bitmap(40, 40);
                     g.DrawImage(image, columna * 50, fila * 50, 40, 40); // Multiplicar por 50 para separación de 50px en ambos ejes
                 }

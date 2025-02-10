@@ -12,7 +12,8 @@ namespace Safari.controller
         private int columnas;
 
         public Controller(MiSafari safari) 
-        { 
+        {
+            String.IsNullOrEmpty("");
             this.safari = safari;
         }
 
