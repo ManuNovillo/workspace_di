@@ -23,8 +23,6 @@
                     <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+P"/>
                 </MenuItem>
                 <MenuItem Header="Salir" Click="MenuItem_Click" InputGestureText="Ctrl+Q" />
-
-
             </Menu>
         </DockPanel>
         <DockPanel>
@@ -114,6 +112,7 @@
                             <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
                             <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
                             <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
+                            <Button Foreground="White" Background="Yellow" Margin="10" Click="imprimirButton_Click">Imprimir</Button>
                         </StackPanel>
                     </Grid>
                 </StackPanel>

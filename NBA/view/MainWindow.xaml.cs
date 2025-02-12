@@ -296,5 +296,9 @@ namespace NBA
             INSERT, UPDATE
         }
 
+        private void imprimirButton_Click(object sender, RoutedEventArgs e)
+        {
+                  
+        }
     }
 }
