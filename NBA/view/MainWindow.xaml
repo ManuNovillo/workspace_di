@@ -22,7 +22,7 @@
                     <MenuItem Header="Ayuda" Click="help_Click" InputGestureText="Ctrl+H"/>
                     <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+P"/>
                 </MenuItem>
-                <MenuItem Header="Salir" Click="MenuItem_Click" InputGestureText="Ctrl+Q" />
+                <MenuItem Header="Salir" Click="salir_Click" InputGestureText="Ctrl+Q" />
             </Menu>
         </DockPanel>
         <DockPanel>
@@ -58,7 +58,7 @@
         <TabControl>
             <TabItem Header="Equipos" Name="equiposTab">
                 <StackPanel>
-                    <Grid>
+                    <Grid Name="equiposGrid">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                             <RowDefinition Height="auto" />
@@ -77,7 +77,10 @@
                         <Label Grid.Row="1" Grid.Column="1" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center">Equipos de la NBA</Label>
                         <Image Name="equipoImage" Width="200" Height="200" Grid.Row="2" Grid.Column="1"/>
                         <ListBox Name="equiposListBox" Grid.Row="3" Grid.Column="1" Width="300" SelectionChanged="equiposListBox_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-                        <Button Foreground="White" Background="Blue" Grid.Row="4" Grid.Column="1" Margin="10" Click="updateTeam_Click">Actualizar Equipo</Button>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Foreground="White" Background="Blue" Margin="10" Click="updateTeam_Click">Actualizar Equipo</Button>
+                            <Button Foreground="Black" Background="Yellow" Margin="10" Click="imprimirEquipoButton_Click">Imprimir</Button>
+                        </StackPanel>
                     </Grid>
                 </StackPanel>
             </TabItem>
@@ -112,13 +115,13 @@
                             <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
                             <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
                             <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
-                            <Button Foreground="White" Background="Yellow" Margin="10" Click="imprimirButton_Click">Imprimir</Button>
+                            <Button Foreground="Black" Background="Yellow" Margin="10" Click="imprimirPlantillaButton_Click">Imprimir</Button>
                         </StackPanel>
                     </Grid>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Jugador" Name="jugadorTab">
-                <Grid>
+                <Grid Name="playerGrid">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="auto" />
@@ -136,11 +139,12 @@
                     <Label Grid.Row="1" Grid.Column="1" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold">Datos del jugador</Label>
                     <Image Name="jugadorImage" Width="400" Height="400" Grid.Row="2" Grid.Column="1" Margin="0,63,0,0" />
                     <DataGrid Name="jugadorDataGrid" Grid.Row="3" Grid.Column="1" Height="80" AutoGenerateColumns="true" AutoGeneratingColumn="jugadorDataGrid_AutoGeneratingColumn" />
-                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
-                            <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
-                            <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
-                        </StackPanel>
+                    <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Foreground="White" Background="Green" Margin="10" Click="insertPLayer_Click">Insertar</Button>
+                        <Button Foreground="White" Background="Blue" Margin="10" Click="actualizarButton_Click">Actualizar</Button>
+                        <Button Foreground="White" Background="Red" Margin="10" Click="borrarButton_Click">Borrar</Button>
+                        <Button Foreground="Black" Background="Yellow" Margin="10" Click="imprimirJugadorButton_Click">Imprimir</Button>
+                    </StackPanel>
                 </Grid>
             </TabItem>
         </TabControl>

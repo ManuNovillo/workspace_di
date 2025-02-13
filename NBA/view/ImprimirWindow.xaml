@@ -14,9 +14,8 @@
         </Grid.RowDefinitions>
         <DocumentViewer Grid.Row="0" Name="documentViewer" />
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Foreground="White" Background="Red"  Margin="10" Click="Button_Click_1">Borrar</Button>
-            <Button Foreground="White" Background="Yellow" Margin="10" Click="Button_Click">Imprimir</Button>
+            <Button Foreground="White" Background="Green" Margin="10" Click="Aceptar_Click">Imprimir</Button>
+            <Button Foreground="White" Background="Red"  Margin="10" Click="Cancelar_Click">Borrar</Button>
         </StackPanel>
-
     </Grid>
 </Window> 

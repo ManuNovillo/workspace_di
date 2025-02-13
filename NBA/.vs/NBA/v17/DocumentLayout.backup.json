@@ -3,27 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|NBA||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\smurf\\desktop\\fp\\segundo\\workspace_di\\nba\\view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\imprimirwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\imprimirwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\model\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\model\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|NBA||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -80,11 +80,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ImprimirWindow.xaml",
               "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\ImprimirWindow.xaml",
               "RelativeDocumentMoniker": "view\\ImprimirWindow.xaml",
@@ -97,27 +97,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "view\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\MainWindow.xaml.cs",
               "RelativeToolTip": "view\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAAwAUBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQBAAAAAAAAAAAmwCwBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T09:23:45.87Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NBA",
-              "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\NBA.csproj",
-              "RelativeDocumentMoniker": "NBA.csproj",
-              "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\NBA.csproj",
-              "RelativeToolTip": "NBA.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-13T20:25:11.011Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -130,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\model\\Conexion.cs",
               "RelativeDocumentMoniker": "model\\Conexion.cs",
@@ -138,30 +127,45 @@
               "RelativeToolTip": "model\\Conexion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:42:50.705Z"
+              "WhenOpened": "2025-02-13T16:42:50.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ImprimirWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\ImprimirWindow.xaml.cs",
               "RelativeDocumentMoniker": "view\\ImprimirWindow.xaml.cs",
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\ImprimirWindow.xaml.cs",
               "RelativeToolTip": "view\\ImprimirWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwC0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:07:58.956Z"
+              "WhenOpened": "2025-02-13T09:07:58.956Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\MainWindow.xaml",
               "RelativeDocumentMoniker": "view\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\MainWindow.xaml",
               "RelativeToolTip": "view\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T01:02:59.994Z"
+              "WhenOpened": "2025-02-08T01:02:59.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NBA",
+              "DocumentMoniker": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\NBA.csproj",
+              "RelativeDocumentMoniker": "NBA.csproj",
+              "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\NBA.csproj",
+              "RelativeToolTip": "NBA.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-13T20:25:11.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -220,7 +224,8 @@
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\ActualizaEquipoWindow.xaml",
               "RelativeToolTip": "view\\ActualizaEquipoWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T08:24:53.118Z"
+              "WhenOpened": "2025-02-08T08:24:53.118Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -243,7 +248,8 @@
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\AcercaDeWindow.xaml",
               "RelativeToolTip": "view\\AcercaDeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T01:41:07.198Z"
+              "WhenOpened": "2025-02-08T01:41:07.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -290,7 +296,8 @@
               "ToolTip": "C:\\Users\\smurf\\Desktop\\FP\\SEGUNDO\\workspace_di\\NBA\\view\\AyudaWindow.xaml",
               "RelativeToolTip": "view\\AyudaWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T01:25:04.238Z"
+              "WhenOpened": "2025-02-08T01:25:04.238Z",
+              "EditorCaption": ""
             }
           ]
         }

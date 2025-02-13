@@ -279,7 +279,7 @@ namespace NBA
             }
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void salir_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
@@ -296,9 +296,23 @@ namespace NBA
             INSERT, UPDATE
         }
 
-        private void imprimirButton_Click(object sender, RoutedEventArgs e)
+        private void imprimirEquipoButton_Click(object sender, RoutedEventArgs e)
         {
-            var imprimirWindow = new ImprimirWindow(plantillaGrid);
+            showImprimirWindow(equiposGrid);
+        }
+
+        private void imprimirPlantillaButton_Click(object sender, RoutedEventArgs e)
+        {
+            showImprimirWindow(plantillaGrid);
+        }
+        private void imprimirJugadorButton_Click(object sender, RoutedEventArgs e)
+        {
+            showImprimirWindow(playerGrid);
+        }
+
+        private void showImprimirWindow(Grid grid)
+        {
+            var imprimirWindow = new ImprimirWindow(grid);
             imprimirWindow.ShowDialog();
         }
     }
