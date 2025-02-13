@@ -42,8 +42,8 @@ using System.Windows.Media;
                 ((IAddChild)pageContent).AddChild(fixedPage);
                 pageContent.Width = grid.ActualWidth;
                 pageContent.Height = grid.ActualHeight;
-            fixedPage.Height = grid.ActualHeight;
-            fixedPage.Width = grid.ActualWidth;
+            /*fixedPage.Height = grid.ActualHeight;
+            fixedPage.Width = grid.ActualWidth;*/
             fixedDoc.Pages.Add(pageContent);
             documentViewer.Document = fixedDoc;
         }
@@ -55,7 +55,7 @@ using System.Windows.Media;
             {
                 printDialog.PrintQueue = new PrintQueue(new PrintServer(), "Microsoft Print to PDF") ;
                 printDialog.PrintTicket.PageMediaSize = new PageMediaSize(grid.ActualWidth, grid.ActualHeight);
-                printDialog.PrintTicket. PageOrientation = PageOrientation. Landscape;
+                printDialog.PrintTicket. PageOrientation = PageOrientation.Landscape;
                 printDialog.PrintVisual(grid, "Grid a PDF");
             }
         }
