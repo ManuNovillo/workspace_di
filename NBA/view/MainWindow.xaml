@@ -89,7 +89,7 @@
                     </StackPanel>
                 </TabItem.Header>
                 <StackPanel>
-                    <Grid>
+                    <Grid Name="plantillaGrid">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                             <RowDefinition Height="auto" />

@@ -19,6 +19,16 @@ namespace Linq
             {
                 Console.WriteLine(num);
             }
+
+            List<Empleado> empleados = new List<Empleado>();
+
         }
+    }
+
+    class Empleado
+    {
+        public int Id;
+
+        public String Nombre;
     }
 }

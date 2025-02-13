@@ -44,3 +44,5 @@ C:\Users\diurno\workspace_di\NBA\obj\Debug\view\AyudaWindow.g.cs
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\AcercaDeWindow.baml
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\ActualizaEquipoWindow.baml
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\AyudaWindow.baml
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\ImprimirWindow.g.cs
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\ImprimirWindow.baml

@@ -1,0 +1,15 @@
+﻿<Window x:Class="NBA.view.ImprimirWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NBA.view"
+        mc:Ignorable="d"
+        Title="ImprimirWindow" Height="450" Width="800">
+    <Grid>
+        <DocumentViewer Name="documentViewer" />
+        <Button Name="Aceptar" Click="Aceptar_Click">Aceptar</Button>
+        <Button Name="Cancelar" Click="Cancelar_Click">Cancelar</Button>
+
+    </Grid>
+</Window>

@@ -298,7 +298,8 @@ namespace NBA
 
         private void imprimirButton_Click(object sender, RoutedEventArgs e)
         {
-                  
+            var imprimirWindow = new ImprimirWindow(plantillaGrid);
+            imprimirWindow.ShowDialog();
         }
     }
 }
