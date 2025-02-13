@@ -32,20 +32,22 @@ using System.Windows.Media;
                 PageContent pageContent = new PageContent();
                 FixedPage fixedPage = new FixedPage();
                 var visualBrush = new VisualBrush(grid);
-                var rectangle = new Rectangle
+                visualBrush.Stretch = Stretch.Uniform;
+                var rectangle = new Rectangle()
                 {
                     Width = grid.ActualWidth,
                     Height = grid.ActualHeight,
                     Fill = visualBrush
                 };
+                fixedPage.Width = grid.ActualWidth;
+                fixedPage.Height = grid.ActualHeight;
                 fixedPage.Children.Add(rectangle);
                 ((IAddChild)pageContent).AddChild(fixedPage);
-                pageContent.Width = grid.ActualWidth;
-                pageContent.Height = grid.ActualHeight;
-            /*fixedPage.Height = grid.ActualHeight;
-            fixedPage.Width = grid.ActualWidth;*/
-            fixedDoc.Pages.Add(pageContent);
-            documentViewer.Document = fixedDoc;
+
+
+
+                fixedDoc.Pages.Add(pageContent);
+                documentViewer.Document = fixedDoc;
         }
 
         private void Aceptar_Click(object sender, RoutedEventArgs e)
