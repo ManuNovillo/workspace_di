@@ -14,9 +14,9 @@ using System.Windows.Media;
     using System.Windows.Media.Imaging;
     using System.Windows.Shapes;
 
-    namespace NBA.view
+    namespace NBA
     {
-        /// <summary>
+        /// <summary>       
         /// Lógica de interacción para ImprimirWindow.xaml
         /// </summary>
         public partial class ImprimirWindow : Window
@@ -42,7 +42,10 @@ using System.Windows.Media;
                 ((IAddChild)pageContent).AddChild(fixedPage);
                 pageContent.Width = grid.ActualWidth;
                 pageContent.Height = grid.ActualHeight;
-                fixedDoc.Pages.Add(pageContent);
+            fixedPage.Height = grid.ActualHeight;
+            fixedPage.Width = grid.ActualWidth;
+            fixedDoc.Pages.Add(pageContent);
+            documentViewer.Document = fixedDoc;
         }
 
         private void Aceptar_Click(object sender, RoutedEventArgs e)
@@ -60,6 +63,16 @@ using System.Windows.Media;
         private void Cancelar_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
