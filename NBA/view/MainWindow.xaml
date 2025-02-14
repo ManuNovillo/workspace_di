@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         KeyDown="Window_KeyDown"
         Title="NBA" Height="800" Width="1000">
-    <!-- EXAMEN 1 -->
+    <!-- EXAMEN 2 -->
     <Window.Resources>
         <ResourceDictionary Source="Style.xaml" />
     </Window.Resources>
@@ -21,10 +21,14 @@
                     <MenuItem Header="Insertar Jugador" InputGestureText="Ctrl+I" Click="insertPLayer_Click"/>
                     <MenuItem Header="Actualizar Jugador" InputGestureText="Ctrl+J" Click="actualizarButton_Click"/>
                     <MenuItem Header="Borrar Jugador" InputGestureText="Ctrl+D" Click="borrarButton_Click"/>
+                    <!--EXAMEN 3-->
+                    <MenuItem Header="Buscar Jugador" InputGestureText="Ctrl+B" Click="buscarJugador_Click"/>
+                    <!--EXAMEN 1-->
+                    <MenuItem Header="Imprimir equipos" InputGestureText="Ctrl+P" Click="imprimirEquipoButton_Click"/>
                 </MenuItem>
                 <MenuItem Header="Ayuda">
                     <MenuItem Header="Ayuda" Click="help_Click" InputGestureText="Ctrl+H"/>
-                    <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+P"/>
+                    <MenuItem Header="Acerca de" Click="acercaDe_Click" InputGestureText="Ctrl+T"/>
                 </MenuItem>
                 <MenuItem Header="Salir" Click="salir_Click" InputGestureText="Ctrl+Q" />
             </Menu>
@@ -39,23 +43,34 @@
                     <Button Click="insertPLayer_Click" ToolTip="Insertar jugador">
                         <Image Source="/view/insertarJugador.png" Height="30" Width="30"/>
                     </Button>
+
                     <Button Click="actualizarButton_Click" ToolTip="Actualizar jugador">
                         <Image Source="/view/actualizarJugador.jpeg" Height="30" Width="30"/>
                     </Button>
+
                     <Button Click="borrarButton_Click" ToolTip="Borrar jugador">
                         <Image Source="/view/eliminarJugador.png" Height="30" Width="30"/>
                     </Button>
 
+                    <!--EXAMEN 3-->
+                    <Button Click="buscarJugador_Click" ToolTip="Buscar jugador">
+                        <Image Source="/view/lupa.png" Height="30" Width="30"/>
+                    </Button>
+
+                    <!--EXAMEN 1-->
+                    <Button Click="imprimirEquipoButton_Click" ToolTip="Imprimir equipos">
+                        <Image Source="/view/imprimir.png" Height="30" Width="30"/>
+                    </Button>
+
                     <Separator/>
+
                     <Button Click="help_Click" ToolTip="Ayuda">
                         <Image Source="/view/ayuda.png" Height="30" Width="30"/>
-
                     </Button>
+
                     <Button Click="acercaDe_Click" ToolTip="Acerca de">
                         <Image Source="/view/acercaDe.png" Height="30" Width="30"/>
-
                     </Button>
-
                 </ToolBar>
             </ToolBarTray>
         </DockPanel>

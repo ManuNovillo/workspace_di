@@ -74,10 +74,10 @@ namespace NBA.controller
         }
 
         /// <summary>
-        /// Devuelve un objeto de tipo <c>ViewPlayer</c> con los datos de <c><paramref name="modelPlayer"/></c>, incluyendo el equipo entero
+        /// Devuelve un objeto de tipo <c>ViewPlayer</c> con los datos de <c><paramref name="modelPlayer"/></c>, sin el equipo
         /// </summary>
         /// <param name="modelPlayer">El jugador del modelo con los datos</param>
-        /// <returns>Un objeto <c>ViewPlayer</c> con los datos del jugador del modelo, con el equipo incluido</returns>
+        /// <returns>Un objeto <c>ViewPlayer</c> con los datos del jugador del modelo, sin el equipo</returns>
         private ViewPlayer toViewPlayer(ModelPlayer modelPlayer)
         {
             var viewPlayer = new ViewPlayer();
@@ -91,7 +91,7 @@ namespace NBA.controller
         }
 
         /// <summary>
-        /// Devuelve una lista de <c>ViewPlayer</c> con los datos de <c><paramref name="modelPlayers" /></c>
+        /// Devuelve una lista de <c>ViewPlayer</c> listcon los datos de <c><paramref name="modelPlayers" /></c>
         /// </summary>
         /// <param name="modelPlayers">La lista con los jugadores del modelo</param>
         /// <returns>Una lista de <c>ViewPlayer</c> con los datos de los jugadores del modelo</returns>
@@ -150,6 +150,22 @@ namespace NBA.controller
         {
             var modelTeam = toModelTeam(equipo);
             return modelo.updateEquipo(modelTeam, nombreViejo);
+        }
+
+        // EXAMEN 3
+        /// <summary>
+        /// Devuelve todos los jugadores de la NBA, pero sin información de su equipo
+        /// </summary>
+        /// <returns>Todos los jugadores de la NBA sin su equipo</returns>
+        public List<ViewPlayer> getAllPlayers()
+        {
+            var modelPlayers = modelo.getAllPlayers();
+            var viewPlayers = toListViewPlayer(modelPlayers);
+            for (int i = 0; i < modelPlayers.Count; i++)
+            {
+                viewPlayers[i].Equipo = toViewTeam(modelPlayers[i].Equipo);
+            }
+            return viewPlayers;
         }
     }
 }

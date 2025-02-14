@@ -72,3 +72,5 @@ C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.csproj.CoreComp
 C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.exe
 C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.pdb
 C:\Users\diurno\workspace_di\NBA\obj\Debug\view\Style.baml
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\BuscarJugadorWindow.g.cs
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\BuscarJugadorWindow.baml

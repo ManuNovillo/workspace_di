@@ -1,5 +1,6 @@
 ﻿using NBA.model;
 using NBA.model.entities;
+using NBA.view.entities;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -273,7 +274,23 @@ namespace NBAmodel
                 Console.WriteLine(ex.StackTrace);
                 return false;
             }
+        }
 
+        // EXAMEN 3
+
+        /// <summary>
+        /// Obtiene todos los jugadores de la BDD
+        /// </summary>
+        /// <returns>Todos los jugadores</returns>
+        public List<ModelPlayer> getAllPlayers()
+        {
+            var teams = getAllTeams();
+            var allPlayers = new List<ModelPlayer>();
+            foreach (var team in teams)
+            {
+                allPlayers.AddRange(team.Jugadores);
+            }
+            return allPlayers;
         }
     }
 }

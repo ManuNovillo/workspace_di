@@ -3,8 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\NBA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\imprimirwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\imprimirwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|NBA||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\diurno\\workspace_di\\NBA\\view\\buscarjugadorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\buscarjugadorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\imprimirwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\buscarjugadorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\buscarjugadorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\style.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\style.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|C:\\Users\\diurno\\workspace_di\\NBA\\model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|solutionrelative:model\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDE5CB8-3D13-46AB-8F51-322BAFD53DAF}|NBA.csproj|c:\\users\\diurno\\workspace_di\\nba\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +44,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NBA",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\NBA.csproj",
+              "RelativeDocumentMoniker": "NBA.csproj",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\NBA.csproj",
+              "RelativeToolTip": "NBA.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T12:59:51.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImprimirWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\ImprimirWindow.xaml",
+              "RelativeDocumentMoniker": "view\\ImprimirWindow.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\ImprimirWindow.xaml",
+              "RelativeToolTip": "view\\ImprimirWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T12:54:29.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Style.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\Style.xaml",
+              "RelativeDocumentMoniker": "view\\Style.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\Style.xaml",
+              "RelativeToolTip": "view\\Style.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T12:53:53.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuscarJugadorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\BuscarJugadorWindow.xaml",
+              "RelativeDocumentMoniker": "view\\BuscarJugadorWindow.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\BuscarJugadorWindow.xaml",
+              "RelativeToolTip": "view\\BuscarJugadorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T12:50:28.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "view\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\MainWindow.xaml",
+              "RelativeToolTip": "view\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T12:36:41.386Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -26,16 +116,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImprimirWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\ImprimirWindow.xaml.cs",
-              "RelativeDocumentMoniker": "view\\ImprimirWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\ImprimirWindow.xaml.cs",
-              "RelativeToolTip": "view\\ImprimirWindow.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAUwEMAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BuscarJugadorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\BuscarJugadorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "view\\BuscarJugadorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\view\\BuscarJugadorWindow.xaml.cs",
+              "RelativeToolTip": "view\\BuscarJugadorWindow.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T11:08:44.386Z",
+              "WhenOpened": "2025-02-14T11:54:57.92Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\controller\\Controller.cs",
+              "RelativeDocumentMoniker": "controller\\Controller.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\controller\\Controller.cs",
+              "RelativeToolTip": "controller\\Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T11:53:05.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Modelo.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
+              "RelativeDocumentMoniker": "model\\Modelo.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\NBA\\model\\Modelo.cs",
+              "RelativeToolTip": "model\\Modelo.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAACQBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T11:49:18.037Z"
             }
           ]
         }

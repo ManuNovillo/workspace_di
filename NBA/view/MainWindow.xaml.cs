@@ -169,9 +169,29 @@ namespace NBA
                 else if (pulsadoAcercaDe(e.Key))
                     mostrarAcercaDe();
 
+                // EXAMEN 3
+                else if (pulsadoBuscarJugador(e.Key))
+                    showBuscarJugadorWindow();
+
+                // EXAMEN 1
+                else if (pulsadoImprimirEquipos(e.Key))
+                    showImprimirWindow();
+
                 else if (pulsadoSalir(e.Key))
                     Close();
             }
+        }
+
+        // EXAMEN 1
+        private bool pulsadoImprimirEquipos(Key key)
+        {
+            return key == Key.P;
+        }
+
+        // EXAMEN 3
+        private bool pulsadoBuscarJugador(Key key)
+        {
+            return key == Key.B;
         }
 
         private bool pulsadoUpdateEquipo(Key key)
@@ -201,7 +221,7 @@ namespace NBA
 
         private bool pulsadoAcercaDe(Key key)
         {
-            return key == Key.P;
+            return key == Key.T;
         }
 
         private bool pulsadoSalir(Key key)
@@ -298,7 +318,7 @@ namespace NBA
 
         private void imprimirEquipoButton_Click(object sender, RoutedEventArgs e)
         {
-            showImprimirWindow(equiposGrid);
+            showImprimirWindow();
         }
 
         private void imprimirPlantillaButton_Click(object sender, RoutedEventArgs e)
@@ -314,6 +334,29 @@ namespace NBA
         {
             var imprimirWindow = new ImprimirWindow(grid);
             imprimirWindow.ShowDialog();
+        }
+        // EXAMEN 1
+        private void showImprimirWindow()
+        {
+            var imprimirWindow = new ImprimirWindow(equipos);
+            imprimirWindow.ShowDialog();
+        }
+
+        // EXAMEN 3
+        /// <summary>
+        /// Manejador de eventos de cuando se pulsa el botón de buscar jugador de la barra de herramientas o del menú
+        /// </summary>
+        private void buscarJugador_Click(object sender, RoutedEventArgs e)
+        {
+            showBuscarJugadorWindow();
+        }
+
+        // EXAMEN 3
+        private void showBuscarJugadorWindow()
+        {
+            BuscarJugadorWindow buscarJugadorWindow = new BuscarJugadorWindow(controller, jugadorDataGrid);
+            buscarJugadorWindow.ShowDialog();
+            jugadorTab.IsSelected = true;
         }
     }
 }
