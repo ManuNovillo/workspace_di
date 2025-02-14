@@ -7,6 +7,10 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="Ayuda" Height="450" Width="800">
+    <!--EXAMEN 2-->
+    <Window.Resources>
+        <ResourceDictionary Source="Style.xaml" />
+    </Window.Resources>
     <Grid>
         <TextBlock Name="textBlock" HorizontalAlignment="Center" VerticalAlignment="Center"> 
             En la primera pestaña, aparecerán todos los equipos de la NBA.

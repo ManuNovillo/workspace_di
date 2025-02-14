@@ -21,20 +21,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_27E3F1210FA045049D2DE59BDCA4BE04"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_405100A557DE4B0596A1993D8070D0BF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_525F7C58157AC8474E4130E7B6C198AE"
-        "OwnerKey" = "8:_27E3F1210FA045049D2DE59BDCA4BE04"
+        "MsmKey" = "8:_5589BDE54EFE27C0FDF6B4084CC39471"
+        "OwnerKey" = "8:_C38ACC97F46F459BACC61D3D7450E6EA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,6 +40,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A5D199EBFA8240EA9CD2EA1A5507D553"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C38ACC97F46F459BACC61D3D7450E6EA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -70,13 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_525F7C58157AC8474E4130E7B6C198AE"
+        "OwnerKey" = "8:_5589BDE54EFE27C0FDF6B4084CC39471"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_27E3F1210FA045049D2DE59BDCA4BE04"
+        "OwnerKey" = "8:_C38ACC97F46F459BACC61D3D7450E6EA"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -97,6 +97,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -113,6 +121,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -182,14 +198,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_525F7C58157AC8474E4130E7B6C198AE"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5589BDE54EFE27C0FDF6B4084CC39471"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_525F7C58157AC8474E4130E7B6C198AE"
+                    "_5589BDE54EFE27C0FDF6B4084CC39471"
                     {
                     "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
@@ -198,7 +214,7 @@
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_334F36ADB01C4C6A9F256A8318AA1FA1"
+            "Folder" = "8:_4D03BECC77304A53B233BB6AE8B76A31"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -501,7 +517,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_12E6C3CF53E043518DB64C3BB34BF324"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2266C201107747C984FFA8BB98181464"
             {
             "Name" = "8:NBA"
             "Arguments" = "8:"
@@ -509,9 +525,9 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_27E3F1210FA045049D2DE59BDCA4BE04"
+            "Target" = "8:_C38ACC97F46F459BACC61D3D7450E6EA"
             "Folder" = "8:_334F36ADB01C4C6A9F256A8318AA1FA1"
-            "WorkingFolder" = "8:_334F36ADB01C4C6A9F256A8318AA1FA1"
+            "WorkingFolder" = "8:_4D03BECC77304A53B233BB6AE8B76A31"
             "Icon" = "8:"
             "Feature" = "8:"
             }
@@ -914,12 +930,12 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_27E3F1210FA045049D2DE59BDCA4BE04"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C38ACC97F46F459BACC61D3D7450E6EA"
             {
             "SourcePath" = "8:..\\NBA\\obj\\Debug\\NBA.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_334F36ADB01C4C6A9F256A8318AA1FA1"
+            "Folder" = "8:_4D03BECC77304A53B233BB6AE8B76A31"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"

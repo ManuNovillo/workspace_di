@@ -71,3 +71,4 @@ C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.csproj.Generate
 C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.csproj.CoreCompileInputs.cache
 C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.exe
 C:\Users\smurf\Desktop\FP\SEGUNDO\workspace_di\NBA\obj\Debug\NBA.pdb
+C:\Users\diurno\workspace_di\NBA\obj\Debug\view\Style.baml
