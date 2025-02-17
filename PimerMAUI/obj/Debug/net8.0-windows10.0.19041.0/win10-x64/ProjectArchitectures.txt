@@ -1,0 +1,1 @@
+C:\Users\diurno\workspace_di\PimerMAUI\PimerMAUI.csproj;x64
