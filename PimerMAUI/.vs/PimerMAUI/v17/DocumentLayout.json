@@ -62,9 +62,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\Program.cs",
               "RelativeDocumentMoniker": "Platforms\\MacCatalyst\\Program.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\Program.cs*",
-              "RelativeToolTip": "Platforms\\MacCatalyst\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\Program.cs",
+              "RelativeToolTip": "Platforms\\MacCatalyst\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T11:27:41.314Z",
               "EditorCaption": ""
@@ -88,8 +88,8 @@
               "Title": "AppDelegate.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
               "RelativeDocumentMoniker": "Platforms\\iOS\\AppDelegate.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs*",
-              "RelativeToolTip": "Platforms\\iOS\\AppDelegate.cs*",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeToolTip": "Platforms\\iOS\\AppDelegate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T09:46:44.636Z",
@@ -118,7 +118,8 @@
               "RelativeToolTip": "Platforms\\Android\\MainApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:44:04.036Z"
+              "WhenOpened": "2025-02-19T09:44:04.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -143,7 +144,8 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:43:37.399Z"
+              "WhenOpened": "2025-02-19T09:43:37.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -155,7 +157,8 @@
               "RelativeToolTip": "AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T10:51:36.164Z"
+              "WhenOpened": "2025-02-17T10:51:36.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -167,7 +170,8 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T10:51:31.448Z"
+              "WhenOpened": "2025-02-17T10:51:31.448Z",
+              "EditorCaption": ""
             }
           ]
         }

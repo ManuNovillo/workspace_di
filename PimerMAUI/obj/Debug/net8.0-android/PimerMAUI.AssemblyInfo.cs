@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PimerMAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f10432f64bf8436e3555ce2b70986d8b81fe902b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9687578d23cba6bdc688787c65f30afcad50b809")]
 [assembly: System.Reflection.AssemblyProductAttribute("PimerMAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PimerMAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

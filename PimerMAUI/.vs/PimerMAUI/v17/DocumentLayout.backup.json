@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\maccatalyst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\maccatalyst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\maccatalyst\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\maccatalyst\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA698F34-8298-4D61-9F5D-A73471DA4C3F}|PimerMAUI.csproj|c:\\users\\diurno\\workspace_di\\pimermaui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,19 +59,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDelegate.cs",
-              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
-              "RelativeDocumentMoniker": "Platforms\\iOS\\AppDelegate.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
-              "RelativeToolTip": "Platforms\\iOS\\AppDelegate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\Program.cs",
+              "RelativeDocumentMoniker": "Platforms\\MacCatalyst\\Program.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\Program.cs",
+              "RelativeToolTip": "Platforms\\MacCatalyst\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:46:44.636Z",
+              "WhenOpened": "2025-02-19T11:27:41.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDelegate.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\AppDelegate.cs",
+              "RelativeDocumentMoniker": "Platforms\\MacCatalyst\\AppDelegate.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\MacCatalyst\\AppDelegate.cs",
+              "RelativeToolTip": "Platforms\\MacCatalyst\\AppDelegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T11:27:39.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDelegate.cs",
+              "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeDocumentMoniker": "Platforms\\iOS\\AppDelegate.cs",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeToolTip": "Platforms\\iOS\\AppDelegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T09:46:44.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\iOS\\Program.cs",
               "RelativeDocumentMoniker": "Platforms\\iOS\\Program.cs",
@@ -75,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainApplication.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\Platforms\\Android\\MainApplication.cs",
               "RelativeDocumentMoniker": "Platforms\\Android\\MainApplication.cs",
@@ -99,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -111,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -123,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\PimerMAUI\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
