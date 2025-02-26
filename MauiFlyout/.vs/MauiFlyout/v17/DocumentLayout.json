@@ -86,8 +86,7 @@
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T11:07:12.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T11:07:12.068Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T11:07:04.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T11:07:04.533Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,8 @@
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\MauiFlyout\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\MauiFlyout\\App.xaml.cs*",
-              "RelativeToolTip": "App.xaml.cs*",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\MauiFlyout\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T20:24:55.734Z",
@@ -197,8 +195,7 @@
               "RelativeToolTip": "Pages\\Page3.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T20:17:50.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T20:17:50.853Z"
             },
             {
               "$type": "Document",
@@ -210,8 +207,7 @@
               "RelativeToolTip": "Pages\\Page2.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T20:17:38.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T20:17:38.745Z"
             },
             {
               "$type": "Document",
@@ -223,8 +219,7 @@
               "RelativeToolTip": "Pages\\Page1.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T20:17:28.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T20:17:28.312Z"
             },
             {
               "$type": "Document",
@@ -236,8 +231,7 @@
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAcwCsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T20:00:59.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T20:00:59.3Z"
             },
             {
               "$type": "Document",
@@ -249,8 +243,7 @@
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T20:00:38.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T20:00:38.589Z"
             }
           ]
         }

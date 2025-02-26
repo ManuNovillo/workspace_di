@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MauiFlyout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5c6334003727471565fc2da2310a3357d144585c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+aca7d2486d88c7ec67eb68ffbb4437fe7b053b8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MauiFlyout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MauiFlyout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

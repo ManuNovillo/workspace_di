@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Calculator\\Calculator.csproj|c:\\users\\diurno\\workspace_di\\calculator\\src\\calculator\\resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,8 @@
               "RelativeToolTip": "Calculator\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-11T20:36:25.389Z"
+              "WhenOpened": "2025-02-11T20:36:25.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,36 +83,38 @@
               "RelativeToolTip": "Calculator\\Resources\\Styles.xaml",
               "ViewState": "AgIAALcAAAAAAAAAAAAAAGIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T18:40:36.42Z"
+              "WhenOpened": "2025-02-18T18:40:36.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MainPage.xaml",
               "RelativeDocumentMoniker": "Calculator\\MainPage.xaml",
               "ToolTip": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MainPage.xaml",
               "RelativeToolTip": "Calculator\\MainPage.xaml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T18:44:54.518Z"
+              "WhenOpened": "2025-02-18T18:44:54.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Calculator\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MainPage.xaml.cs",
-              "RelativeToolTip": "Calculator\\MainPage.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwC4AAAAEAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MainPage.xaml.cs*",
+              "RelativeToolTip": "Calculator\\MainPage.xaml.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T18:44:55.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\MauiProgram.cs",
               "RelativeDocumentMoniker": "Calculator\\MauiProgram.cs",
@@ -119,19 +122,21 @@
               "RelativeToolTip": "Calculator\\MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:45:12.565Z"
+              "WhenOpened": "2025-02-18T18:45:12.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Calculator.cs",
               "DocumentMoniker": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\Calculator.cs",
               "RelativeDocumentMoniker": "Calculator\\Calculator.cs",
               "ToolTip": "C:\\Users\\diurno\\workspace_di\\Calculator\\src\\Calculator\\Calculator.cs",
               "RelativeToolTip": "Calculator\\Calculator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:45:13.628Z"
+              "WhenOpened": "2025-02-18T18:45:13.628Z",
+              "EditorCaption": ""
             }
           ]
         }
