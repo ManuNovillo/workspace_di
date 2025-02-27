@@ -1,1 +1,0 @@
-C:\Users\diurno\workspace_di\Calculator\src\Calculator\Calculator.csproj;x64

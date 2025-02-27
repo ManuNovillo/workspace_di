@@ -19,7 +19,7 @@ namespace MauiFlyout
             if (currentPage is not Page1)
             {
                 // Regresa a la raíz antes de navegar
-                //await NavPage.PopToRootAsync();
+                await NavPage.PopToRootAsync();
                 // Si no estamos en Page1, navega a ella
                 await NavPage.PushAsync(new Page1());
             }
@@ -41,7 +41,7 @@ namespace MauiFlyout
                 // Regresa a la raíz antes de navegar
                 await NavPage.PopToRootAsync();
                 // Si no estamos en Page1, navega a ella
-                //await NavPage.PushAsync(new Page2());
+                await NavPage.PushAsync(new Page2());
             }
             else
             {
@@ -59,7 +59,7 @@ namespace MauiFlyout
             if (currentPage is not Page3)
             {
                 // Regresa a la raíz antes de navegar
-                //await NavPage.PopToRootAsync();
+                await NavPage.PopToRootAsync();
                 // Si no estamos en Page1, navega a ella
                 await NavPage.PushAsync(new Page3());
             }
