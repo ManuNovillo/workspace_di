@@ -1,0 +1,18 @@
+{
+  "Task": "FastDeploy",
+  "Properties": {
+    "target.prop.ro.product.build.version.sdk": "26",
+    "target.prop.ro.product.cpu.abilist": "x86",
+    "target.prop.ro.product.manufacturer": "Google",
+    "target.prop.ro.product.model": "Android SDK built for x86",
+    "target.prop.ro.product.cpu.abi": "x86",
+    "deploy.error.code": "ADB0020",
+    "deploy.tool": "xamarin.sync",
+    "deploy.result": "Failed",
+    "deploy.supports.fastdev": "True",
+    "deploy.systemapp": "False",
+    "deploy.duration.ms": "629",
+    "pii.deploy.error": "Mono.AndroidTools.IncompatibleCpuAbiException: The package does not support the CPU architecture of this device.\r\n   en Mono.AndroidTools.Internal.AdbOutputParsing.CheckInstallSuccess(String output, String packageName) en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Mono.AndroidTools/Internal/AdbOutputParsing.cs:l\u00EDnea 319\r\n   en System.Threading.Tasks.Task.Execute()\r\n--- Fin del seguimiento de la pila de la ubicaci\u00F3n anterior donde se produjo la excepci\u00F3n ---\r\n   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   en AndroidDeviceExtensions.\u003CPushAndInstallPackageAsync\u003Ed__13.MoveNext() en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Xamarin.AndroidTools/Devices/AndroidDeviceExtensions.cs:l\u00EDnea 225\r\n--- Fin del seguimiento de la pila de la ubicaci\u00F3n anterior donde se produjo la excepci\u00F3n ---\r\n   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   en AndroidDeviceExtensions.\u003CPushAndInstallPackageAsync\u003Ed__13.MoveNext() en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Xamarin.AndroidTools/Devices/AndroidDeviceExtensions.cs:l\u00EDnea 242\r\n--- Fin del seguimiento de la pila de la ubicaci\u00F3n anterior donde se produjo la excepci\u00F3n ---\r\n   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   en Xamarin.Android.Tasks.FastDeploy.\u003CInstallPackage\u003Ed__127.MoveNext() en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Xamarin.Android.Build.Debugging.Tasks/Tasks/FastDeploy.cs:l\u00EDnea 444\r\n--- Fin del seguimiento de la pila de la ubicaci\u00F3n anterior donde se produjo la excepci\u00F3n ---\r\n   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   en Xamarin.Android.Tasks.FastDeploy.\u003CInstallPackage\u003Ed__127.MoveNext() en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Xamarin.Android.Build.Debugging.Tasks/Tasks/FastDeploy.cs:l\u00EDnea 461\r\n--- Fin del seguimiento de la pila de la ubicaci\u00F3n anterior donde se produjo la excepci\u00F3n ---\r\n   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   en Xamarin.Android.Tasks.FastDeploy.\u003CRunInstall\u003Ed__121.MoveNext() en /Users/runner/work/1/s/xamarin-android/external/android-platform-support/src/Xamarin.Android.Build.Debugging.Tasks/Tasks/FastDeploy.cs:l\u00EDnea 312",
+    "pii.deploy.file": ""
+  }
+}
